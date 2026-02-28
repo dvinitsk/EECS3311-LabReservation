@@ -1,0 +1,167 @@
+<diagram program="umletino" version="15.1"><zoom_level>4</zoom_level><help_text></help_text><element><id>UMLClass</id><coordinates><x>624</x><y>210</y><w>76</w><h>64</h></coordinates><panel_attributes>/User/
+--
+- userId : String
+- fullName : String
+- credentials : Credentials
+- status : AccountStatus
+- hourlyRate: double
+- affiliation : AffiliationType
+- idOrCertificationNo : String
++ isActive() : boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>776</x><y>218</y><w>76</w><h>40</h></coordinates><panel_attributes>Credentials
+--
+- email : String
+- passwordHash : String
+--
++ verifyPassword() : boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>696</x><y>238</y><w>88</w><h>16</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=1</panel_attributes><additional_attributes>10;10;200;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>560</x><y>302</y><w>40</w><h>32</h></coordinates><panel_attributes>Student
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>652</x><y>330</y><w>48</w><h>32</h></coordinates><panel_attributes>Faculty
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>712</x><y>298</y><w>44</w><h>32</h></coordinates><panel_attributes>Researcher
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>608</x><y>302</y><w>44</w><h>32</h></coordinates><panel_attributes>Guest
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>688</x><y>270</y><w>44</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;90;70</additional_attributes></element><element><id>Relation</id><coordinates><x>668</x><y>270</y><w>16</w><h>68</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;20;150</additional_attributes></element><element><id>Relation</id><coordinates><x>628</x><y>270</y><w>28</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>50;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>576</x><y>270</y><w>64</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>140;10;10;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>400</x><y>378</y><w>212</w><h>24</h></coordinates><panel_attributes>LabCoordinator
+--
++ autoGenerateManagerAccount(name: String, email: String, department: String) : Manager</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>780</x><y>402</y><w>104</w><h>32</h></coordinates><panel_attributes>DepartmentApprover
+--
++ approve(ApprovalRequest) : void
++ reject(ApprovalRequest, reason) : void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>624</x><y>398</y><w>136</w><h>48</h></coordinates><panel_attributes>Manager
+--
+Manager
++ addEquipment(id, description, location) : Equipment
++ enableEquipment(Equipment) : void
++ disableEquipment(Equipment) : void
++ markMaintenance(Equipment, unavailable) : void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>672</x><y>358</y><w>16</w><h>48</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;20;100</additional_attributes></element><element><id>Relation</id><coordinates><x>496</x><y>358</y><w>176</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>420;10;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>408</x><y>130</y><w>76</w><h>52</h></coordinates><panel_attributes>ApprovalRequest
+--
+- requestId : String
+- status : ApprovalStatus
+- rejectReason : String
+--
++ approve() : void
++ reject(reason: String) : void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>154</y><w>152</w><h>92</h></coordinates><panel_attributes>lt=-
+m1=0..1
+m2=0..1</panel_attributes><additional_attributes>10;10;360;210</additional_attributes></element><element><id>Relation</id><coordinates><x>684</x><y>358</y><w>156</w><h>52</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;370;110</additional_attributes></element><element><id>UMLClass</id><coordinates><x>388</x><y>226</y><w>136</w><h>44</h></coordinates><panel_attributes>RegistrationService
+--
++ register(User, Password) : User
++ validateEmailUnique(email) : boolean
++ validatePasswordStrength(rawPassword) : boolean
++ createApprovalRequest(user) : ApprovalRequest</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>520</x><y>238</y><w>112</w><h>16</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>260;20;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>452</x><y>178</y><w>12</w><h>56</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>UMLClass</id><coordinates><x>484</x><y>518</y><w>132</w><h>60</h></coordinates><panel_attributes>Equipment
+--
+- equipmentID: String
+- description : String
+- labLocation : String
+- operationalStatus : OperationalStatus
+--
++ isReservable() : boolean
++ setOperationalStatus(s: OperationalStatus) : void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>584</x><y>442</y><w>112</w><h>84</h></coordinates><panel_attributes>lt=-
+m1=0..*
+m2=0..*</panel_attributes><additional_attributes>260;10;10;190</additional_attributes></element><element><id>UMLClass</id><coordinates><x>220</x><y>298</y><w>144</w><h>76</h></coordinates><panel_attributes>Reservation
+--
+- reservationId : String
+- startTime : DateTime
+- endTime : DateTime
+- status : BookingStatus
+- arrived : boolean
+--
++ modify(newStart: DateTime, newEnd: DateTime) : void
++ cancel() : void
++ extend(newEnd: DateTime) : void
++ markArrived() : void
++ markNoShow() : void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>258</y><w>272</w><h>84</h></coordinates><panel_attributes>lt=-
+m1=0..1
+m2=1</panel_attributes><additional_attributes>10;190;660;10</additional_attributes></element><element><id>Text</id><coordinates><x>208</x><y>262</y><w>52</w><h>32</h></coordinates><panel_attributes>It is to note that 0..* reservations to a single equipment
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>288</x><y>606</y><w>100</w><h>52</h></coordinates><panel_attributes>BookingService
+--
++ checkAvailability(Equipment) : boolean
++ createReservation() : Reservation
++ modifyReservation() : void
++ cancelReservation() : void
++ extendReservation() : void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>316</x><y>370</y><w>28</w><h>244</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>50;10;10;590</additional_attributes></element><element><id>Relation</id><coordinates><x>356</x><y>534</y><w>136</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>320;10;10;180</additional_attributes></element><element><id>UMLClass</id><coordinates><x>76</x><y>538</y><w>80</w><h>40</h></coordinates><panel_attributes>PaymentTransaction
+--
+- transactionId : String
+- amount : double
+- type : PaymentType
+- status : PaymentStatus</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>112</x><y>370</y><w>160</w><h>176</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=0..*</panel_attributes><additional_attributes>380;10;10;420</additional_attributes></element><element><id>UMLClass</id><coordinates><x>4</x><y>286</y><w>144</w><h>32</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+PaymentGateway
+--
++ authorize(double,  PaymentMethod) : boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>386</y><w>148</w><h>32</h></coordinates><panel_attributes>PaymentProcessor
+--
+- gateway : PaymentGateway
+--
++ payFee(Reservation, PaymentMethod) : PaymentTransaction</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>184</x><y>478</y><w>116</w><h>36</h></coordinates><panel_attributes>ArrivalMonitor
+--
++ startArrivalWindow(r: Reservation) : void
++ handleArrivalDetected(r: Reservation) : void
++ handleNoShow(r: Reservation) : void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>370</y><w>56</w><h>116</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>120;10;10;270</additional_attributes></element><element><id>Relation</id><coordinates><x>96</x><y>334</y><w>132</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>310;10;10;130</additional_attributes></element><element><id>Relation</id><coordinates><x>72</x><y>314</y><w>20</w><h>80</h></coordinates><panel_attributes>lt=-
+m1=0..*
+m2=1</panel_attributes><additional_attributes>10;180;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>76</x><y>414</y><w>32</w><h>132</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>60;310;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>564</x><y>674</y><w>100</w><h>44</h></coordinates><panel_attributes>UsageRecord
+--
+- recordId : String
+- timestamp : DateTime
+- inUse : boolean
+- status : OperationalStatus
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>548</x><y>574</y><w>88</w><h>108</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=0..*</panel_attributes><additional_attributes>10;10;190;250</additional_attributes></element><element><id>UMLClass</id><coordinates><x>276</x><y>758</y><w>256</w><h>32</h></coordinates><panel_attributes>UsageMonitoringService
+--
++ recordUpdate(e: Equipment, inUse: boolean, status: OperationalStatus, timestamp: DateTime) : UsageRecord
++ updateEquipmentStatus(e: Equipment, status: OperationalStatus) : void
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>372</x><y>574</y><w>128</w><h>192</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>300;10;10;460</additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>714</y><w>104</w><h>52</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>240;10;10;110</additional_attributes></element><element><id>UMLClass</id><coordinates><x>988</x><y>190</y><w>64</w><h>44</h></coordinates><panel_attributes>&lt;&lt;enumeration&gt;&gt;
+AccountStatus
+--
+PENDING_APPROVAL
+ACTIVE
+REJECTED
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>988</x><y>258</y><w>64</w><h>44</h></coordinates><panel_attributes>&lt;&lt;enumeration&gt;&gt;
+ApprovalStatus
+--
+PENDING
+APPROVED
+REJECTED
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>988</x><y>326</y><w>64</w><h>44</h></coordinates><panel_attributes>&lt;&lt;enumeration&gt;&gt;
+AffiliationType
+--
+UNIVERSITY_AFFILIATED
+GUEST
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>988</x><y>390</y><w>64</w><h>52</h></coordinates><panel_attributes>&lt;&lt;enumeration&gt;&gt;
+BookingStatus
+--
+CONFIRMED
+CANCELLED
+ACTIVE
+COMPLETED
+NO_SHOW
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>988</x><y>462</y><w>64</w><h>44</h></coordinates><panel_attributes>&lt;&lt;enumeration&gt;&gt;
+PaymentType
+--
+DEPOSIT
+FINAL_PAYMENT
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>988</x><y>526</y><w>64</w><h>44</h></coordinates><panel_attributes>&lt;&lt;enumeration&gt;&gt;
+PaymentMethod
+--
+CREDIT
+DEBIT
+INSTITUTIONAL
+RESEARCH_GRANT
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>988</x><y>590</y><w>64</w><h>44</h></coordinates><panel_attributes>&lt;&lt;enumeration&gt;&gt;
+PaymentStatus
+--
+AUTHORIZED
+FAILED
+FORFEITED
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>988</x><y>654</y><w>64</w><h>44</h></coordinates><panel_attributes>&lt;&lt;enumeration&gt;&gt;
+OperationalStatus
+--
+OK
+FAULT
+MAINTENANCE
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>348</x><y>370</y><w>180</w><h>156</h></coordinates><panel_attributes>lt=-
+m1=0..*
+m2=1</panel_attributes><additional_attributes>10;10;430;370</additional_attributes></element></diagram>
