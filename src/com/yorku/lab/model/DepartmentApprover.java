@@ -3,12 +3,10 @@ package com.yorku.lab.model;
 public class DepartmentApprover {
     private String approverId;
     private String name;
-    private String department;
 
     public DepartmentApprover(String approverId, String name, String department) {
         this.approverId = approverId;
         this.name = name;
-        this.department = department;
     }
 
     public void approve(ApprovalRequest request) {
@@ -28,7 +26,4 @@ public class DepartmentApprover {
     	return name;
     }
     
-    public String getDepartment() {
-    	return department;
-	}
 }

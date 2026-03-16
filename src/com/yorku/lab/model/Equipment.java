@@ -19,5 +19,23 @@ public class Equipment {
         this.operationalStatus = OperationalStatus.AVAILABLE;
         this.usageRecords = new ArrayList<>();
     }
+    
+    public boolean isReservable() {
+        return operationalStatus == OperationalStatus.AVAILABLE;
+    }
+
+    public void setOperationalStatus(OperationalStatus status) {
+        this.operationalStatus = status;
+    }
+
+    public void addUsageRecord(UsageRecord record) {
+        this.usageRecords.add(record);
+    }
+
+    public String getEquipmentId() { return equipmentId; }
+    public String getDescription() { return description; }
+    public String getLabLocation() { return labLocation; }
+    public OperationalStatus getOperationalStatus() { return operationalStatus; }
+    public List<UsageRecord> getUsageRecords() { return usageRecords; }
 	
 }
