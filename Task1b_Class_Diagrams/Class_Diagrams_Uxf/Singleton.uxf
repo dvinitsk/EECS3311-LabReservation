@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>760</x>
+      <y>288</y>
+      <w>144</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>User
+--
+- userId : String
+- fullName : String
+- credentials : Credentials
+- status : AccountStatus
+- affiliation : AffiliationType
+- idNo : String
++ isActive() : boolean
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>304</x>
+      <y>520</y>
+      <w>472</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>LabCoordinatorService
+--
+
+- _instance_ : LabCoordinatorService
+- userRepository : UserRepository
+- LabCoordinatorService()
++ getInstance() : LabCoordinatorService
++ autoGenerateManagerAccount(name : String, email : String, department : String) : Manager</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>280</x>
+      <y>400</y>
+      <w>336</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Governs manager-account creation, such that only one head lab
+coordinator handles this authority
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>416</x>
+      <y>432</y>
+      <w>96</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>100.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>560</x>
+      <y>216</y>
+      <w>112</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>*_Singleton Pattern_*
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>576</x>
+      <y>392</y>
+      <w>264</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>310.0;10.0;10.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>808</x>
+      <y>544</y>
+      <w>184</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>LabCoordinator
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>824</x>
+      <y>392</y>
+      <w>80</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;80.0;190.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1024</x>
+      <y>544</y>
+      <w>184</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>Manager
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>208</x>
+      <y>560</y>
+      <w>112</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>10.0;20.0;120.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>32</x>
+      <y>544</y>
+      <w>184</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>UserRepository
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>864</x>
+      <y>392</y>
+      <w>264</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;310.0;190.0</additional_attributes>
+  </element>
+</diagram>
