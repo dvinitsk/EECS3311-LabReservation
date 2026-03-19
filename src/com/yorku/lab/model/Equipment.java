@@ -37,5 +37,9 @@ public class Equipment {
     public String getLabLocation() { return labLocation; }
     public OperationalStatus getOperationalStatus() { return operationalStatus; }
     public List<UsageRecord> getUsageRecords() { return usageRecords; }
-	
+
+    @Override
+    public String toString() {
+        return equipmentId + " - " + description + " (" + labLocation + ")";
+    }
 }
