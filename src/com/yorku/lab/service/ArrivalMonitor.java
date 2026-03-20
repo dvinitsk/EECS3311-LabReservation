@@ -21,6 +21,8 @@ public class ArrivalMonitor {
 
     private final ReservationRepository reservationRepository = new ReservationRepository();
     private final ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(2);
+    private final BookingService bookingService = new BookingService();
+    private final BalanceService balanceService = new BalanceService();
 
     public void startMonitoring() {
         scheduler.scheduleAtFixedRate(this::checkArrivalWindows, 0, 1, TimeUnit.MINUTES);
@@ -49,6 +51,7 @@ public class ArrivalMonitor {
 
     public void markArrived(String reservationId) {
         reservationRepository.findById(reservationId).ifPresent(r -> {
+        	balanceService.addFunds(r.getUser(), bookingService.calculateDeposit(r.getUser()));
             r.markArrived();
             reservationRepository.save(r);
         });
