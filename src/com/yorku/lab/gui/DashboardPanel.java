@@ -9,6 +9,7 @@ public class DashboardPanel extends JPanel {
 
     private final LabReservationApp app;
     private JPanel center;
+    
 
     public DashboardPanel(LabReservationApp app) {
         this.app = app;
@@ -18,6 +19,10 @@ public class DashboardPanel extends JPanel {
         JPanel top = new JPanel(new FlowLayout(FlowLayout.RIGHT));
         JButton logoutBtn = new JButton("Log Out");
         logoutBtn.addActionListener(e -> app.onLogout());
+        
+        JButton depositBtn = new JButton("Balance");
+        top.add(depositBtn);
+        depositBtn.addActionListener(e -> app.showPanel(LabReservationApp.BALANCE));
         top.add(logoutBtn);
 
         center = new JPanel(new GridLayout(0, 1, 10, 10));

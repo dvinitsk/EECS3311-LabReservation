@@ -8,13 +8,13 @@ public class Manager extends User {
 
 	private String department;
 
-	public Manager(String userId, String fullName, Credentials credentials) {
-		super(userId, fullName, credentials);
+	public Manager(String userId, String fullName, Credentials credentials, double funds) {
+		super(userId, fullName, credentials, funds);
 		this.affiliation = AffiliationType.UNIVERSITY;
 	}
 
-	public Manager(String userId, String fullName, Credentials credentials, String department) {
-		super(userId, fullName, credentials);
+	public Manager(String userId, String fullName, Credentials credentials, String department, double funds) {
+		super(userId, fullName, credentials, funds);
 		this.affiliation = AffiliationType.UNIVERSITY;
 		this.department = department;
 	}

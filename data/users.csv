@@ -1,5 +1,5 @@
-LABCOORDINATOR|coord-1|Head Lab Coordinator|coordinator@yorku.ca|Admin123!|ACTIVE|UNIVERSITY|
-MANAGER|mgr-5b3ce382|Daniel Vinitski|dvinitsk@my.yorku.ca|apqa!GupWS3n|ACTIVE|UNIVERSITY||Engineering
-MANAGER|mgr-01b9f7af|ZOoli|aol@f.com|feVXJZEAQHKA|ACTIVE|UNIVERSITY||Engineering
-GUEST|192cb29f-8b8e-489d-81a8-f68538815fbe|Danny V|dvinitsk@yorku.ca|Pizdets123!|ACTIVE|GUEST|215180607
-STUDENT|83e6ee39-3dc9-46bf-a01e-ea3c5e0a81db|Rythem Ghimire|rythem2899@gmail.com|CHRis2899$$|ACTIVE|UNIVERSITY|220429
+LABCOORDINATOR|coord-1|Head Lab Coordinator|coordinator@yorku.ca|Admin123!|ACTIVE|UNIVERSITY||
+MANAGER|mgr-5b3ce382|Daniel Vinitski|dvinitsk@my.yorku.ca|apqa!GupWS3n|ACTIVE|UNIVERSITY|||Engineering
+MANAGER|mgr-01b9f7af|ZOoli|aol@f.com|feVXJZEAQHKA|ACTIVE|UNIVERSITY|||Engineering
+GUEST|192cb29f-8b8e-489d-81a8-f68538815fbe|Danny V|dvinitsk@yorku.ca|Pizdets123!|ACTIVE|GUEST|215180607|
+RESEARCHER|130b7567-777b-4793-9d11-d9510f038af3|Rythem G|rythem@gmail.com|Rythem12!|ACTIVE|UNIVERSITY|12345|60.0

@@ -38,7 +38,7 @@ public class LabCoordinatorService {
         String userId = "mgr-" + UUID.randomUUID().toString().substring(0, 8);
         String autoPassword = generateSecurePassword(12);
         Credentials credentials = new Credentials(email, autoPassword);
-        Manager manager = new Manager(userId, name, credentials, department);
+        Manager manager = new Manager(userId, name, credentials, department, 0.0);
         manager.setStatus(AccountStatus.ACTIVE);
         userRepository.save(manager);
 

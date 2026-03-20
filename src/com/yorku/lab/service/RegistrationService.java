@@ -32,7 +32,7 @@ public class RegistrationService {
         }
 
         String userId = UUID.randomUUID().toString();
-        User user = UserFactory.createUser(userType, userId, fullName, email, password, idOrCertificationNumber);
+        User user = UserFactory.createUser(userType, userId, fullName, email, password, idOrCertificationNumber,0.0);
 
         if (user.getAffiliation() == AffiliationType.UNIVERSITY) {
             user.setStatus(AccountStatus.PENDING_APPROVAL);

@@ -5,6 +5,7 @@ import com.yorku.lab.enums.PaymentStatus;
 import com.yorku.lab.enums.PaymentType;
 import com.yorku.lab.model.PaymentTransaction;
 import com.yorku.lab.model.Reservation;
+import com.yorku.lab.model.User;
 import com.yorku.lab.repository.PaymentRepository;
 import com.yorku.lab.repository.ReservationRepository;
 
@@ -18,8 +19,10 @@ public class PaymentProcessor {
 
     private final PaymentRepository paymentRepository = new PaymentRepository();
     private final ReservationRepository reservationRepository = new ReservationRepository();
+    BalanceService balanceService = new BalanceService();
 
-    public PaymentResult processDeposit(Reservation reservation, double amount, PaymentMethod method) {
+    public PaymentResult processDeposit(Reservation reservation, double amount, PaymentMethod method, User user) {
+    	balanceService.deductFunds(user, amount);
         String transactionId = UUID.randomUUID().toString();
         PaymentTransaction tx = new PaymentTransaction(transactionId, amount, PaymentType.DEPOSIT, method, reservation.getReservationId());
 
@@ -32,7 +35,8 @@ public class PaymentProcessor {
         return new PaymentResult(true, transactionId, "Deposit authorized");
     }
 
-    public PaymentResult processExtensionFee(Reservation reservation, double amount, PaymentMethod method) {
+    public PaymentResult processExtensionFee(Reservation reservation, double amount, PaymentMethod method, User user) {
+    	balanceService.deductFunds(user, amount);
         String transactionId = UUID.randomUUID().toString();
         PaymentTransaction tx = new PaymentTransaction(transactionId, amount, PaymentType.FINAL_CHARGE, method, reservation.getReservationId());
 

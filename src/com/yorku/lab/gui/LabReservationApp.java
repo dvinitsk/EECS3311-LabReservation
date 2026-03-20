@@ -24,6 +24,7 @@ public class LabReservationApp extends JFrame {
     public static final String BROWSE = "browse";
     public static final String MY_RESERVATIONS = "my_reservations";
     public static final String ADMIN = "admin";
+    public static final String BALANCE = "balance";
 
     public LabReservationApp() {
         DataBootstrap.runIfNeeded();
@@ -38,6 +39,7 @@ public class LabReservationApp extends JFrame {
         mainPanel.add(new BrowsePanel(this), BROWSE);
         mainPanel.add(new MyReservationsPanel(this), MY_RESERVATIONS);
         mainPanel.add(new AdminPanel(this), ADMIN);
+        mainPanel.add(new BalancePanel(this), BALANCE);
 
         add(mainPanel);
         showPanel(LOGIN);
@@ -54,6 +56,8 @@ public class LabReservationApp extends JFrame {
                 ((BrowsePanel) mainPanel.getComponent(3)).refresh();
             } else if (ADMIN.equals(name)) {
                 ((AdminPanel) mainPanel.getComponent(5)).refresh();
+            }else if (BALANCE.equals(name)) {          
+                ((BalancePanel) mainPanel.getComponent(6)).refresh();
             }
         } catch (Exception ignored) {}
     }

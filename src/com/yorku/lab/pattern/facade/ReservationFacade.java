@@ -22,6 +22,7 @@ public class ReservationFacade {
     private final PaymentProcessor paymentProcessor = new PaymentProcessor();
     private final EquipmentManagementService equipmentManagementService = new EquipmentManagementService();
     private final ArrivalMonitor arrivalMonitor = new ArrivalMonitor();
+    private final BalanceService balanceService = new BalanceService();
 
     // --- Registration (UC1, UC2, UC3) ---
     public RegistrationResult register(String email, String password, String fullName, com.yorku.lab.enums.UserType userType, String idOrCertificationNumber) {
@@ -86,7 +87,7 @@ public class ReservationFacade {
         }
         Reservation r = opt.get();
         double deposit = bookingService.calculateDeposit(user);
-        var payResult = paymentProcessor.processDeposit(r, deposit, paymentMethod);
+        var payResult = paymentProcessor.processDeposit(r, deposit, paymentMethod,user);
         if (!payResult.success()) {
             bookingService.cancelReservation(r.getReservationId());
             return new ReserveResult(false, null, "Payment failed: " + payResult.message());
@@ -107,7 +108,7 @@ public class ReservationFacade {
     }
 
     // --- Extend (UC7) ---
-    public ExtendResult extendReservation(String reservationId, LocalDateTime newEnd, PaymentMethod paymentMethod) {
+    public ExtendResult extendReservation(String reservationId, LocalDateTime newEnd, PaymentMethod paymentMethod, User currentUser) {
         Optional<Reservation> opt = bookingService.getReservation(reservationId);
         if (opt.isEmpty()) return new ExtendResult(false, null, "Reservation not found");
 
@@ -117,13 +118,17 @@ public class ReservationFacade {
 
         double extraHours = java.time.Duration.between(r.getEndTime(), newEnd).toMinutes() / 60.0;
         double fee = bookingService.calculateHourlyRate(r.getUser()) * extraHours;
-        var payResult = paymentProcessor.processExtensionFee(extended.get(), fee, paymentMethod);
+        var payResult = paymentProcessor.processExtensionFee(extended.get(), fee, paymentMethod,currentUser);
         if (!payResult.success()) {
             // Revert extension - would need to implement
             return new ExtendResult(false, null, "Payment failed");
         }
         return new ExtendResult(true, extended.get(), null);
     }
+    
+    public void addBalance(User currentUser, double amount) {
+		balanceService.addFunds(currentUser, amount);
+	}
 
     // --- User reservations ---
     public List<Reservation> getUserReservations(String userId) {
@@ -160,4 +165,5 @@ public class ReservationFacade {
     public record ReserveResult(boolean success, Reservation reservation, String message) {}
     public record ModifyResult(boolean success, Reservation reservation, String message) {}
     public record ExtendResult(boolean success, Reservation reservation, String message) {}
+	
 }

@@ -14,16 +14,18 @@ public abstract class User {
 	protected AffiliationType affiliation;
 	protected String idOrCertificationNumber;
 	protected boolean isActive;
+	protected double funds;
 	
-	public User(String userId, String fullName, Credentials credentials) {
+	public User(String userId, String fullName, Credentials credentials, double funds) {
 		this.userId = userId;
 		this.fullName = fullName;
 		this.credentials = credentials;
 		this.isActive = true;
+		this.funds = funds;
 	}
 	
-	public User(String userId, String fullName, Credentials credentials, String idOrCertificationNumber) {
-		this(userId, fullName, credentials);
+	public User(String userId, String fullName, Credentials credentials, String idOrCertificationNumber, double funds) {
+		this(userId, fullName, credentials,funds);
 		this.idOrCertificationNumber = idOrCertificationNumber;
 	}
 
@@ -89,6 +91,14 @@ public abstract class User {
 
 	public void setIdOrCertificationNumber(String idOrCertificationNumber) {
 		this.idOrCertificationNumber = idOrCertificationNumber;
+	}
+
+	public double getFunds() {
+		return funds;
+	}
+
+	public void setFunds(double funds) {
+		this.funds = funds;
 	}
 
 	public abstract UserType getType();

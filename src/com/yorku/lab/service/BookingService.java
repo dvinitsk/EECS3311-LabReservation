@@ -82,7 +82,7 @@ public class BookingService {
     }
 
     public double calculateDeposit(User user) {
-        PricingStrategy strategy = PricingStrategyFactory.getStrategy(user.getType());
+        PricingStrategy strategy = PricingStrategyFactory.getStrategy(user.getType());  
         return strategy.calculateDeposit();
     }
 

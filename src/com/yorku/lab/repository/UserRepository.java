@@ -23,7 +23,8 @@ public class UserRepository extends CsvRepository<User> {
             escape(user.getCredentials().getPasswordHash()) + "|" +
             escape(user.getStatus() != null ? user.getStatus().name() : "") + "|" +
             escape(user.getAffiliation() != null ? user.getAffiliation().name() : "") + "|" +
-            escape(user.getIdOrCertificationNumber());
+            escape(user.getIdOrCertificationNumber()) + "|" +
+            escape(user.getFunds() != 0.0 ? String.valueOf(user.getFunds()) : "");
         if (user instanceof com.yorku.lab.model.Manager m) {
             base += "|" + escape(m.getDepartment());
         }
@@ -40,10 +41,13 @@ public class UserRepository extends CsvRepository<User> {
         String email = parts[3];
         String passwordHash = parts[4];
         AccountStatus status = parts[5].isEmpty() ? null : AccountStatus.valueOf(parts[5]);
+        AffiliationType affiliation = (parts.length > 6 && !parts[6].isEmpty()) ? AffiliationType.valueOf(parts[6]) : null;  
         String idOrCert = parts.length > 7 ? parts[7] : null;
-        String department = parts.length > 8 ? parts[8] : null;
+        double balance = parts.length > 8 && !parts[8].isEmpty() ? Double.parseDouble(parts[8]) : 0.0;
+        String department = parts.length > 9 ? parts[9] : null;
 
-        User user = UserFactory.createUser(type, userId, fullName, email, passwordHash, idOrCert);
+        User user = UserFactory.createUser(type, userId, fullName, email, passwordHash, idOrCert, balance);
+        user.setAffiliation(affiliation);
         if (status != null) user.setStatus(status);
         if (user instanceof com.yorku.lab.model.Manager m && department != null) {
             m.setDepartment(department);
