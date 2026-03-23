@@ -53,14 +53,14 @@ public class MyReservationsPanel extends JPanel {
                     }
                 });
                 actions.add(cancelBtn);
-            }
-            if (r.getStatus() == BookingStatus.ARRIVED || r.getStatus() == BookingStatus.ACTIVE || r.getStatus() == BookingStatus.EXTENDED) {
-                JButton arriveBtn = new JButton("Mark Arrived");
-                arriveBtn.addActionListener(e -> {
-                    app.getFacade().markArrived(r.getReservationId());
-                    refresh();
-                });
-                actions.add(arriveBtn);
+                if (app.getFacade().isWithinArrivalWindow(r)) {
+                    JButton arriveBtn = new JButton("Mark Arrived");
+                    arriveBtn.addActionListener(e -> {
+                        app.getFacade().markArrived(r.getReservationId());
+                        refresh();
+                    });
+                    actions.add(arriveBtn);
+                }
             }
             card.add(actions, BorderLayout.SOUTH);
             listPanel.add(card);

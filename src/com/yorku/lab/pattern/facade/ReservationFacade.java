@@ -148,6 +148,24 @@ public class ReservationFacade {
         return bookingService.getReservationsByUser(userId);
     }
 
+    /** Total amount paid by user (deposits + extension fees across all reservations). */
+    public double getTotalPaidByUser(String userId) {
+        List<String> ids = bookingService.getReservationsByUser(userId).stream()
+            .map(Reservation::getReservationId)
+            .toList();
+        return paymentProcessor.getPaymentsForReservations(ids).stream()
+            .mapToDouble(p -> p.getAmount())
+            .sum();
+    }
+
+    /** All payment transactions for user's reservations (from persistence). */
+    public List<com.yorku.lab.model.PaymentTransaction> getPaymentsForUser(String userId) {
+        List<String> ids = bookingService.getReservationsByUser(userId).stream()
+            .map(Reservation::getReservationId)
+            .toList();
+        return paymentProcessor.getPaymentsForReservations(ids);
+    }
+
     public Optional<Reservation> getReservation(String reservationId) {
         return bookingService.getReservation(reservationId);
     }
@@ -155,6 +173,11 @@ public class ReservationFacade {
     // --- Arrival (UC8) ---
     public void markArrived(String reservationId) {
         arrivalMonitor.markArrived(reservationId);
+    }
+
+    /** Whether the reservation is within the 20-min arrival window (start to start+20). */
+    public boolean isWithinArrivalWindow(Reservation r) {
+        return arrivalMonitor.isWithinArrivalWindow(r);
     }
 
     // --- Equipment Management (UC10) ---

@@ -7,6 +7,7 @@ import com.yorku.lab.model.PaymentTransaction;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 
 public class PaymentRepository extends CsvRepository<PaymentTransaction> {
 
@@ -40,6 +41,12 @@ public class PaymentRepository extends CsvRepository<PaymentTransaction> {
         return findAll().stream()
             .filter(p -> transactionId.equals(p.getTransactionId()))
             .findFirst();
+    }
+
+    public List<PaymentTransaction> findByReservationIds(Set<String> reservationIds) {
+        return findAll().stream()
+            .filter(p -> p.getReservationId() != null && reservationIds.contains(p.getReservationId()))
+            .toList();
     }
 
     public void save(PaymentTransaction payment) {

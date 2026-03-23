@@ -8,7 +8,9 @@ import com.yorku.lab.model.Reservation;
 import com.yorku.lab.repository.PaymentRepository;
 import com.yorku.lab.repository.ReservationRepository;
 
+import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 import java.util.UUID;
 
 /**
@@ -46,6 +48,10 @@ public class PaymentProcessor {
 
     public Optional<PaymentTransaction> getTransaction(String transactionId) {
         return paymentRepository.findById(transactionId);
+    }
+
+    public List<PaymentTransaction> getPaymentsForReservations(List<String> reservationIds) {
+        return paymentRepository.findByReservationIds(Set.copyOf(reservationIds));
     }
 
     public record PaymentResult(boolean success, String transactionId, String message) {}

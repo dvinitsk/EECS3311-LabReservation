@@ -40,6 +40,10 @@ public class DashboardPanel extends JPanel {
         myResBtn.addActionListener(e -> app.showPanel(LabReservationApp.MY_RESERVATIONS));
         center.add(myResBtn);
 
+        JButton balanceBtn = new JButton("Balance & Payment History");
+        balanceBtn.addActionListener(e -> app.showPanel(LabReservationApp.BALANCE));
+        center.add(balanceBtn);
+
         UserType type = app.getCurrentUser() != null ? app.getCurrentUser().getType() : null;
         if (type == UserType.LABCOORDINATOR || type == UserType.MANAGER) {
             JButton adminBtn = new JButton("Admin / Equipment Management");
