@@ -51,6 +51,7 @@ public class ArrivalMonitor {
 
     public void markArrived(String reservationId) {
         reservationRepository.findById(reservationId).ifPresent(r -> {
+        	//REQ4: If user arrives within 20-minute window, mark as Arrived and refund deposit.
         	balanceService.addFunds(r.getUser(), bookingService.calculateDeposit(r.getUser()));
             r.markArrived();
             reservationRepository.save(r);

@@ -21,7 +21,7 @@ public class RegistrationService {
     private final UserRepository userRepository = com.yorku.lab.repository.RepositoryProvider.getUserRepository();
     private final ApprovalRequestRepository approvalRepository = new ApprovalRequestRepository();
 
-    private static final String PASSWORD_PATTERN = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$";
+    private static final String PASSWORD_PATTERN = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&#])[A-Za-z\\d@$!%*?&#]{8,}$";
 
     public RegistrationResult register(String email, String password, String fullName, UserType userType, String idOrCertificationNumber) {
         if (findByEmail(email).isPresent()) {
