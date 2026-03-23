@@ -18,8 +18,20 @@ public class BrowsePanel extends JPanel {
     private JPanel equipmentPanel;
     private JComboBox<Equipment> equipmentCombo;
     private JSpinner dateSpinner;
-    private JSpinner startHourSpinner;
+    private JComboBox<String> startHourCombo;
     private JSpinner durationSpinner;
+
+    private static final String[] HOUR_OPTIONS = buildHourOptions();
+
+    private static String[] buildHourOptions() {
+        String[] opts = new String[24];
+        for (int h = 0; h < 24; h++) {
+            String ampm = h < 12 ? "AM" : "PM";
+            int display = h == 0 ? 12 : (h > 12 ? h - 12 : h);
+            opts[h] = String.format("%d:00 %s", display, ampm);
+        }
+        return opts;
+    }
 
     public BrowsePanel(LabReservationApp app) {
         this.app = app;
@@ -44,7 +56,7 @@ public class BrowsePanel extends JPanel {
         dateSpinner = new JSpinner(new SpinnerDateModel());
         JSpinner.DateEditor dateEditor = new JSpinner.DateEditor(dateSpinner, "yyyy-MM-dd");
         dateSpinner.setEditor(dateEditor);
-        startHourSpinner = new JSpinner(new SpinnerNumberModel(9, 0, 23, 1));
+        startHourCombo = new JComboBox<>(HOUR_OPTIONS);
         durationSpinner = new JSpinner(new SpinnerNumberModel(1, 1, 8, 1));
 
         gbc.gridy = 0;
@@ -60,9 +72,9 @@ public class BrowsePanel extends JPanel {
 
         gbc.gridx = 0;
         gbc.gridy = 2;
-        reserveForm.add(new JLabel("Start Hour (0-23):"), gbc);
+        reserveForm.add(new JLabel("Start Time:"), gbc);
         gbc.gridx = 1;
-        reserveForm.add(startHourSpinner, gbc);
+        reserveForm.add(startHourCombo, gbc);
 
         gbc.gridx = 0;
         gbc.gridy = 3;
@@ -87,6 +99,9 @@ public class BrowsePanel extends JPanel {
 
     public void refresh() {
         equipmentPanel.removeAll();
+        LocalDateTime next = app.getFacade().getNextValidStartTime();
+        startHourCombo.setSelectedIndex(next.getHour());
+        dateSpinner.setValue(java.sql.Date.valueOf(next.toLocalDate()));
         List<Equipment> equipment = app.getFacade().browseEquipment();
         equipmentCombo.removeAllItems();
         DefaultListModel<String> model = new DefaultListModel<>();
@@ -113,7 +128,7 @@ public class BrowsePanel extends JPanel {
         }
         java.util.Date d = (java.util.Date) dateSpinner.getValue();
         LocalDate date = new java.sql.Date(d.getTime()).toLocalDate();
-        int hour = (Integer) startHourSpinner.getValue();
+        int hour = startHourCombo.getSelectedIndex();
         int duration = (Integer) durationSpinner.getValue();
         LocalDateTime start = LocalDateTime.of(date, LocalTime.of(hour, 0));
         LocalDateTime end = start.plusHours(duration);

@@ -8,6 +8,7 @@ import com.yorku.lab.service.*;
 import com.yorku.lab.service.RegistrationService.RegistrationResult;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Optional;
 
@@ -22,6 +23,11 @@ public class ReservationFacade {
     private final PaymentProcessor paymentProcessor = new PaymentProcessor();
     private final EquipmentManagementService equipmentManagementService = new EquipmentManagementService();
     private final ArrivalMonitor arrivalMonitor = new ArrivalMonitor();
+
+    /** Start the background monitor for 20-min arrival window (UC8). Call at app launch. */
+    public void startArrivalMonitor() {
+        arrivalMonitor.startMonitoring();
+    }
 
     // --- Registration (UC1, UC2, UC3) ---
     public RegistrationResult register(String email, String password, String fullName, com.yorku.lab.enums.UserType userType, String idOrCertificationNumber) {
@@ -80,6 +86,12 @@ public class ReservationFacade {
         if (user.getStatus() != com.yorku.lab.enums.AccountStatus.ACTIVE) {
             return new ReserveResult(false, null, "Account must be active to reserve");
         }
+        LocalDateTime now = LocalDateTime.now();
+        if (!now.isBefore(start.plusMinutes(20))) {
+            LocalDateTime next = nextValidStartTime();
+            return new ReserveResult(false, null,
+                "Start time has passed (20-min arrival window expired). Next available: " + formatSlot(next));
+        }
         Optional<Reservation> opt = bookingService.createReservation(user, equipmentId, start, end);
         if (opt.isEmpty()) {
             return new ReserveResult(false, null, "Slot not available");
@@ -96,6 +108,12 @@ public class ReservationFacade {
 
     // --- Modify/Cancel (UC6) ---
     public ModifyResult modifyReservation(String reservationId, LocalDateTime newStart, LocalDateTime newEnd) {
+        LocalDateTime now = LocalDateTime.now();
+        if (!now.isBefore(newStart.plusMinutes(20))) {
+            LocalDateTime next = nextValidStartTime();
+            return new ModifyResult(false, null,
+                "Start time has passed. Next available: " + formatSlot(next));
+        }
         Optional<Reservation> opt = bookingService.modifyReservation(reservationId, newStart, newEnd);
         return opt.isPresent()
             ? new ModifyResult(true, opt.get(), null)
@@ -154,6 +172,24 @@ public class ReservationFacade {
 
     public boolean markEquipmentMaintenance(String equipmentId) {
         return equipmentManagementService.markMaintenance(equipmentId).isPresent();
+    }
+
+    /** Earliest start time that still allows arrival within 20 minutes of start. */
+    public LocalDateTime getNextValidStartTime() {
+        return nextValidStartTime();
+    }
+
+    private static LocalDateTime nextValidStartTime() {
+        LocalDateTime now = LocalDateTime.now();
+        int min = now.getMinute();
+        return min < 20
+            ? now.withMinute(0).withSecond(0).withNano(0)
+            : now.plusHours(1).withMinute(0).withSecond(0).withNano(0);
+    }
+
+    /** Format date and time in 12hr AM/PM for user-facing messages. */
+    public static String formatSlot(LocalDateTime dt) {
+        return dt.toLocalDate() + " " + dt.format(DateTimeFormatter.ofPattern("h:mm a"));
     }
 
     // --- Result records ---

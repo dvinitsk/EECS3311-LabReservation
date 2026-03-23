@@ -35,7 +35,7 @@ public class MyReservationsPanel extends JPanel {
         if (app.getCurrentUser() == null) return;
 
         List<Reservation> reservations = app.getFacade().getUserReservations(app.getCurrentUser().getUserId());
-        DateTimeFormatter fmt = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
+        DateTimeFormatter fmt = DateTimeFormatter.ofPattern("yyyy-MM-dd h:mm a");
 
         for (Reservation r : reservations) {
             JPanel card = new JPanel(new BorderLayout());

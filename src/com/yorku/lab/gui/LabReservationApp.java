@@ -27,6 +27,7 @@ public class LabReservationApp extends JFrame {
 
     public LabReservationApp() {
         DataBootstrap.runIfNeeded();
+        getFacade().startArrivalMonitor();
         setTitle("YorkU Lab Equipment Reservation System");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(900, 600);
