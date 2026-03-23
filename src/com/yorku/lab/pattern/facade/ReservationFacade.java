@@ -23,6 +23,7 @@ public class ReservationFacade {
     private final PaymentProcessor paymentProcessor = new PaymentProcessor();
     private final EquipmentManagementService equipmentManagementService = new EquipmentManagementService();
     private final ArrivalMonitor arrivalMonitor = new ArrivalMonitor();
+    private final BalanceService balanceService = new BalanceService();
 
     /** Start the background monitor for 20-min arrival window (UC8). Call at app launch. */
     public void startArrivalMonitor() {
@@ -148,22 +149,14 @@ public class ReservationFacade {
         return bookingService.getReservationsByUser(userId);
     }
 
-    /** Total amount paid by user (deposits + extension fees across all reservations). */
+    /** Total amount paid by user (delegates to BalanceService). */
     public double getTotalPaidByUser(String userId) {
-        List<String> ids = bookingService.getReservationsByUser(userId).stream()
-            .map(Reservation::getReservationId)
-            .toList();
-        return paymentProcessor.getPaymentsForReservations(ids).stream()
-            .mapToDouble(p -> p.getAmount())
-            .sum();
+        return balanceService.getTotalPaidByUser(userId);
     }
 
-    /** All payment transactions for user's reservations (from persistence). */
+    /** All payment transactions for user's reservations (delegates to BalanceService). */
     public List<com.yorku.lab.model.PaymentTransaction> getPaymentsForUser(String userId) {
-        List<String> ids = bookingService.getReservationsByUser(userId).stream()
-            .map(Reservation::getReservationId)
-            .toList();
-        return paymentProcessor.getPaymentsForReservations(ids);
+        return balanceService.getPaymentsForUser(userId);
     }
 
     public Optional<Reservation> getReservation(String reservationId) {
