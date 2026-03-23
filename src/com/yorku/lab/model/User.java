@@ -2,6 +2,7 @@ package com.yorku.lab.model;
 
 import com.yorku.lab.enums.AccountStatus;
 import com.yorku.lab.enums.AffiliationType;
+import com.yorku.lab.enums.UserType;
 
 public abstract class User {
 	
@@ -11,15 +12,19 @@ public abstract class User {
 	protected AccountStatus status;
 	protected double hourlyRate;
 	protected AffiliationType affiliation;
-	//protected String idOrCertificationNO;//was in the UML but don't have a need yet
+	protected String idOrCertificationNumber;
 	protected boolean isActive;
 	
-	public User(String userId,String fullName, Credentials credentials) {
-		this.userId=userId;
-		this.fullName=fullName;
-		this.credentials=credentials;
-		this.isActive=true;
-		//this.idOrCertificationNO=idOrCert;
+	public User(String userId, String fullName, Credentials credentials) {
+		this.userId = userId;
+		this.fullName = fullName;
+		this.credentials = credentials;
+		this.isActive = true;
+	}
+	
+	public User(String userId, String fullName, Credentials credentials, String idOrCertificationNumber) {
+		this(userId, fullName, credentials);
+		this.idOrCertificationNumber = idOrCertificationNumber;
 	}
 
 	public String getUserId() {
@@ -78,14 +83,13 @@ public abstract class User {
 		this.affiliation = affiliation;
 	}
 
-	/*public String getIdOrCertificationNO() {
-		return idOrCertificationNO;
+	public String getIdOrCertificationNumber() {
+		return idOrCertificationNumber;
 	}
 
-	public void setIdOrCertificationNO(String idOrCertificationNO) {
-		this.idOrCertificationNO = idOrCertificationNO;
-	}*/
-	
-	
+	public void setIdOrCertificationNumber(String idOrCertificationNumber) {
+		this.idOrCertificationNumber = idOrCertificationNumber;
+	}
 
+	public abstract UserType getType();
 }

@@ -29,5 +29,7 @@ public class ApprovalRequest {
     public String getRequestId() { return requestId; }
     public User getUser() { return user; }
     public ApprovalStatus getStatus() { return status; }
+    public void setStatus(ApprovalStatus status) { this.status = status; }
+    public void setRejectReason(String reason) { this.rejectReason = reason; }
     public String getRejectReason() { return rejectReason; }
 }

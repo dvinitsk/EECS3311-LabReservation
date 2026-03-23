@@ -11,7 +11,8 @@ public class Credentials {
 	}
 	
 	public boolean verifyPassword(String rawPassword) {
-		return passwordHash.equals(rawPassword);//replace with proper implementation
+		if (passwordHash == null || rawPassword == null) return false;
+		return passwordHash.trim().equals(rawPassword.trim());
 	}
 	
 	public String getEmail() { return email; }
