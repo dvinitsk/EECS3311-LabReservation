@@ -1,43 +1,23 @@
 package com.yorku.lab.service;
 
-import com.yorku.lab.enums.PaymentMethod;
-import com.yorku.lab.enums.PaymentStatus;
-import com.yorku.lab.enums.PaymentType;
 import com.yorku.lab.model.PaymentTransaction;
-import com.yorku.lab.model.Reservation;
-import com.yorku.lab.repository.PaymentRepository;
-import com.yorku.lab.repository.ReservationRepository;
 import com.yorku.lab.pattern.strategy.PaymentStrategy;
+import com.yorku.lab.repository.PaymentRepository;
 
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
-import java.util.UUID;
 
 /**
  * Handles UC5 (Process payment for deposit), UC7 (Process payment for extension).
+ * Uses the Strategy pattern: set a PaymentStrategy, then call processPayment().
  */
 public class PaymentProcessor {
 
     private final PaymentRepository paymentRepository = new PaymentRepository();
-    private final ReservationRepository reservationRepository = new ReservationRepository();
     private PaymentStrategy paymentStrategy;
 
-
-    public PaymentResult processDeposit(Reservation reservation, double amount, PaymentMethod method) {
-        String transactionId = UUID.randomUUID().toString();
-        PaymentTransaction tx = new PaymentTransaction(transactionId, amount, PaymentType.DEPOSIT, method, reservation.getReservationId());
-
-        // Simulate payment authorization (in real system, call PaymentGateway)
-        tx.setStatus(PaymentStatus.AUTHORIZED);
-        paymentRepository.save(tx);
-        reservation.addPayment(tx);
-        reservationRepository.save(reservation);
-
-        return new PaymentResult(true, transactionId, "Deposit authorized");
-    }
-
-    public void setPaymentStrategy(PaymentStrategy strategy){
+    public void setPaymentStrategy(PaymentStrategy strategy) {
         this.paymentStrategy = strategy;
     }
 
@@ -45,17 +25,8 @@ public class PaymentProcessor {
         return paymentStrategy.pay(amount);
     }
 
-
-    public PaymentResult processExtensionFee(Reservation reservation, double amount, PaymentMethod method) {
-        String transactionId = UUID.randomUUID().toString();
-        PaymentTransaction tx = new PaymentTransaction(transactionId, amount, PaymentType.FINAL_CHARGE, method, reservation.getReservationId());
-
-        tx.setStatus(PaymentStatus.AUTHORIZED);
+    public void saveTransaction(PaymentTransaction tx) {
         paymentRepository.save(tx);
-        reservation.addPayment(tx);
-        reservationRepository.save(reservation);
-
-        return new PaymentResult(true, transactionId, "Extension fee authorized");
     }
 
     public Optional<PaymentTransaction> getTransaction(String transactionId) {
@@ -65,6 +36,4 @@ public class PaymentProcessor {
     public List<PaymentTransaction> getPaymentsForReservations(List<String> reservationIds) {
         return paymentRepository.findByReservationIds(Set.copyOf(reservationIds));
     }
-
-    public record PaymentResult(boolean success, String transactionId, String message) {}
 }

@@ -2,6 +2,7 @@ package com.yorku.lab.gui;
 
 import com.yorku.lab.enums.OperationalStatus;
 import com.yorku.lab.enums.PaymentMethod;
+import com.yorku.lab.enums.UserType;
 import com.yorku.lab.model.Equipment;
 import com.yorku.lab.pattern.facade.ReservationFacade;
 
@@ -20,6 +21,7 @@ public class BrowsePanel extends JPanel {
     private JSpinner dateSpinner;
     private JComboBox<String> startHourCombo;
     private JSpinner durationSpinner;
+    private JComboBox<PaymentMethod> paymentMethodCombo;
 
     private static final String[] HOUR_OPTIONS = buildHourOptions();
 
@@ -82,9 +84,16 @@ public class BrowsePanel extends JPanel {
         gbc.gridx = 1;
         reserveForm.add(durationSpinner, gbc);
 
+        paymentMethodCombo = new JComboBox<>(PaymentMethod.values());
+        gbc.gridx = 0;
+        gbc.gridy = 4;
+        reserveForm.add(new JLabel("Payment Method:"), gbc);
+        gbc.gridx = 1;
+        reserveForm.add(paymentMethodCombo, gbc);
+
         JButton reserveBtn = new JButton("Reserve (Pay Deposit)");
         reserveBtn.addActionListener(e -> doReserve());
-        gbc.gridy = 4;
+        gbc.gridy = 5;
         gbc.gridx = 1;
         reserveForm.add(reserveBtn, gbc);
 
@@ -114,6 +123,20 @@ public class BrowsePanel extends JPanel {
         equipmentPanel.add(new JScrollPane(list), BorderLayout.CENTER);
         equipmentPanel.revalidate();
         equipmentPanel.repaint();
+
+        // Filter payment methods based on user type
+        paymentMethodCombo.removeAllItems();
+        if (app.getCurrentUser() != null) {
+            UserType type = app.getCurrentUser().getType();
+            paymentMethodCombo.addItem(PaymentMethod.CREDIT);
+            paymentMethodCombo.addItem(PaymentMethod.DEBIT);
+            if (type == UserType.STUDENT || type == UserType.FACULTY || type == UserType.RESEARCHER) {
+                paymentMethodCombo.addItem(PaymentMethod.INSTITUTIONAL);
+            }
+            if (type == UserType.RESEARCHER) {
+                paymentMethodCombo.addItem(PaymentMethod.GRANTS);
+            }
+        }
     }
 
     private void doReserve() {
@@ -139,7 +162,8 @@ public class BrowsePanel extends JPanel {
             "Confirm", JOptionPane.YES_NO_OPTION);
         if (pay != JOptionPane.YES_OPTION) return;
 
-        var result = app.getFacade().reserveEquipment(app.getCurrentUser(), eq.getEquipmentId(), start, end, PaymentMethod.CREDIT);
+        PaymentMethod selectedMethod = (PaymentMethod) paymentMethodCombo.getSelectedItem();
+        var result = app.getFacade().reserveEquipment(app.getCurrentUser(), eq.getEquipmentId(), start, end, selectedMethod);
         if (result.success()) {
             JOptionPane.showMessageDialog(this, "Reservation confirmed! ID: " + result.reservation().getReservationId());
             app.showPanel(LabReservationApp.MY_RESERVATIONS);

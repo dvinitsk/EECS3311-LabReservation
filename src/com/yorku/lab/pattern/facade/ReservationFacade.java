@@ -2,11 +2,13 @@ package com.yorku.lab.pattern.facade;
 
 import com.yorku.lab.enums.PaymentMethod;
 import com.yorku.lab.model.Equipment;
+import com.yorku.lab.model.PaymentTransaction;
 import com.yorku.lab.model.Reservation;
 import com.yorku.lab.model.User;
 import com.yorku.lab.service.*;
 import com.yorku.lab.service.RegistrationService.RegistrationResult;
 import com.yorku.lab.pattern.observer.SensorSystem;
+import com.yorku.lab.pattern.strategy.*;
 import com.yorku.lab.enums.OperationalStatus;
 
 import java.time.LocalDateTime;
@@ -102,11 +104,14 @@ public class ReservationFacade {
         }
         Reservation r = opt.get();
         double deposit = bookingService.calculateDeposit(user);
-        var payResult = paymentProcessor.processDeposit(r, deposit, paymentMethod);
-        if (!payResult.success()) {
-            bookingService.cancelBooking(r.getReservationId());
-            return new ReserveResult(false, null, "Payment failed: " + payResult.message());
-        }
+
+        // Strategy pattern: map PaymentMethod to PaymentStrategy, then processPayment
+        paymentProcessor.setPaymentStrategy(getPaymentStrategy(paymentMethod));
+        PaymentTransaction tx = paymentProcessor.processPayment(deposit);
+        tx.setReservationId(r.getReservationId());
+        paymentProcessor.saveTransaction(tx);
+        r.addPayment(tx);
+
         return new ReserveResult(true, r, "Reservation confirmed");
     }
 
@@ -139,11 +144,14 @@ public class ReservationFacade {
 
         double extraHours = java.time.Duration.between(r.getEndTime(), newEnd).toMinutes() / 60.0;
         double fee = bookingService.calculateHourlyRate(r.getUser()) * extraHours;
-        var payResult = paymentProcessor.processExtensionFee(extended.get(), fee, paymentMethod);
-        if (!payResult.success()) {
-            // Revert extension - would need to implement
-            return new ExtendResult(false, null, "Payment failed");
-        }
+
+        // Strategy pattern: map PaymentMethod to PaymentStrategy, then processPayment
+        paymentProcessor.setPaymentStrategy(getPaymentStrategy(paymentMethod));
+        PaymentTransaction tx = paymentProcessor.processPayment(fee);
+        tx.setReservationId(reservationId);
+        paymentProcessor.saveTransaction(tx);
+        extended.get().addPayment(tx);
+
         return new ExtendResult(true, extended.get(), null);
     }
 
@@ -191,6 +199,16 @@ public class ReservationFacade {
 
     public boolean markEquipmentMaintenance(String equipmentId) {
         return equipmentManagementService.markMaintenance(equipmentId).isPresent();
+    }
+
+    /** Maps a PaymentMethod enum to the corresponding PaymentStrategy implementation. */
+    private PaymentStrategy getPaymentStrategy(PaymentMethod method) {
+        return switch (method) {
+            case CREDIT -> new CreditPaymentStrategy();
+            case DEBIT -> new DebitPaymentStrategy();
+            case INSTITUTIONAL -> new InstitutionalPaymentStrategy();
+            case GRANTS -> new ResearchGrantPaymentStrategy();
+        };
     }
 
     /** Earliest start time that still allows arrival within 20 minutes of start. */

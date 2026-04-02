@@ -45,7 +45,7 @@ public class BalancePanel extends JPanel {
         for (PaymentTransaction p : facade.getPaymentsForUser(app.getCurrentUser().getUserId())) {
             Reservation r = resMap.get(p.getReservationId());
             String ctx = r != null ? r.getEquipment().getEquipmentId() + ", " + r.getStartTime().toLocalDate() : p.getReservationId();
-            String line = p.getType().name().replace("_", " ") + " $" + String.format("%.2f", p.getAmount()) + " (" + ctx + ")";
+            String line = p.getType().name().replace("_", " ") + " $" + String.format("%.2f", p.getAmount()) + " via " + p.getMethod().name() + " (" + ctx + ")";
             contentPanel.add(new JLabel(line));
         }
         contentPanel.revalidate();
