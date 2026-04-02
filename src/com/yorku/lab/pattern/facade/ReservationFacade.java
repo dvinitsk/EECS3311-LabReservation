@@ -6,6 +6,8 @@ import com.yorku.lab.model.Reservation;
 import com.yorku.lab.model.User;
 import com.yorku.lab.service.*;
 import com.yorku.lab.service.RegistrationService.RegistrationResult;
+import com.yorku.lab.pattern.observer.SensorSystem;
+import com.yorku.lab.enums.OperationalStatus;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -24,6 +26,7 @@ public class ReservationFacade {
     private final EquipmentManagementService equipmentManagementService = new EquipmentManagementService();
     private final ArrivalMonitor arrivalMonitor = new ArrivalMonitor();
     private final BalanceService balanceService = new BalanceService();
+    private final SensorSystem sensorSystem = new SensorSystem();
 
     /** Start the background monitor for 20-min arrival window (UC8). Call at app launch. */
     public void startArrivalMonitor() {
@@ -31,8 +34,8 @@ public class ReservationFacade {
     }
 
     // --- Registration (UC1, UC2, UC3) ---
-    public RegistrationResult register(String email, String password, String fullName, com.yorku.lab.enums.UserType userType, String idOrCertificationNumber) {
-        return registrationService.register(email, password, fullName, userType, idOrCertificationNumber);
+    public RegistrationResult registerUser(String email, String password, String fullName, com.yorku.lab.enums.UserType userType, String idOrCertificationNumber) {
+        return registrationService.registerUser(email, password, fullName, userType, idOrCertificationNumber);
     }
 
     public Optional<User> login(String email, String password) {
@@ -101,28 +104,28 @@ public class ReservationFacade {
         double deposit = bookingService.calculateDeposit(user);
         var payResult = paymentProcessor.processDeposit(r, deposit, paymentMethod);
         if (!payResult.success()) {
-            bookingService.cancelReservation(r.getReservationId());
+            bookingService.cancelBooking(r.getReservationId());
             return new ReserveResult(false, null, "Payment failed: " + payResult.message());
         }
         return new ReserveResult(true, r, "Reservation confirmed");
     }
 
     // --- Modify/Cancel (UC6) ---
-    public ModifyResult modifyReservation(String reservationId, LocalDateTime newStart, LocalDateTime newEnd) {
+    public ModifyResult modifyBooking(String reservationId, LocalDateTime newStart, LocalDateTime newEnd) {
         LocalDateTime now = LocalDateTime.now();
         if (!now.isBefore(newStart.plusMinutes(20))) {
             LocalDateTime next = nextValidStartTime();
             return new ModifyResult(false, null,
                 "Start time has passed. Next available: " + formatSlot(next));
         }
-        Optional<Reservation> opt = bookingService.modifyReservation(reservationId, newStart, newEnd);
+        Optional<Reservation> opt = bookingService.modifyBooking(reservationId, newStart, newEnd);
         return opt.isPresent()
             ? new ModifyResult(true, opt.get(), null)
             : new ModifyResult(false, null, "Slot not available");
     }
 
-    public boolean cancelReservation(String reservationId) {
-        return bookingService.cancelReservation(reservationId);
+    public boolean cancelBooking(String reservationId) {
+        return bookingService.cancelBooking(reservationId);
     }
 
     // --- Extend (UC7) ---
@@ -164,8 +167,8 @@ public class ReservationFacade {
     }
 
     // --- Arrival (UC8) ---
-    public void markArrived(String reservationId) {
-        arrivalMonitor.markArrived(reservationId);
+    public void handleArrivalDetected(String reservationId) {
+        arrivalMonitor.handleArrivalDetected(reservationId);
     }
 
     /** Whether the reservation is within the 20-min arrival window (start to start+20). */
@@ -206,6 +209,14 @@ public class ReservationFacade {
     /** Format date and time in 12hr AM/PM for user-facing messages. */
     public static String formatSlot(LocalDateTime dt) {
         return dt.toLocalDate() + " " + dt.format(DateTimeFormatter.ofPattern("h:mm a"));
+    }
+
+    public void checkIn(String reservationId) {
+        arrivalMonitor.handleArrivalDetected(reservationId);
+    }
+
+    public void processSensorUpdate(Equipment equipment, boolean inUse, OperationalStatus status) {
+        sensorSystem.sendUpdate(equipment, inUse, status);
     }
 
     // --- Result records ---

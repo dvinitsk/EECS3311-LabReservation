@@ -7,6 +7,7 @@ import com.yorku.lab.model.PaymentTransaction;
 import com.yorku.lab.model.Reservation;
 import com.yorku.lab.repository.PaymentRepository;
 import com.yorku.lab.repository.ReservationRepository;
+import com.yorku.lab.pattern.strategy.PaymentStrategy;
 
 import java.util.List;
 import java.util.Optional;
@@ -20,6 +21,8 @@ public class PaymentProcessor {
 
     private final PaymentRepository paymentRepository = new PaymentRepository();
     private final ReservationRepository reservationRepository = new ReservationRepository();
+    private PaymentStrategy paymentStrategy;
+
 
     public PaymentResult processDeposit(Reservation reservation, double amount, PaymentMethod method) {
         String transactionId = UUID.randomUUID().toString();
@@ -33,6 +36,15 @@ public class PaymentProcessor {
 
         return new PaymentResult(true, transactionId, "Deposit authorized");
     }
+
+    public void setPaymentStrategy(PaymentStrategy strategy){
+        this.paymentStrategy = strategy;
+    }
+
+    public PaymentTransaction processPayment(double amount) {
+        return paymentStrategy.pay(amount);
+    }
+
 
     public PaymentResult processExtensionFee(Reservation reservation, double amount, PaymentMethod method) {
         String transactionId = UUID.randomUUID().toString();

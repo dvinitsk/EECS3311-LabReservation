@@ -48,7 +48,7 @@ public class MyReservationsPanel extends JPanel {
                 JButton cancelBtn = new JButton("Cancel");
                 cancelBtn.addActionListener(e -> {
                     if (JOptionPane.showConfirmDialog(this, "Cancel this reservation?") == JOptionPane.YES_OPTION) {
-                        app.getFacade().cancelReservation(r.getReservationId());
+                        app.getFacade().cancelBooking(r.getReservationId());
                         refresh();
                     }
                 });
@@ -56,7 +56,7 @@ public class MyReservationsPanel extends JPanel {
                 if (app.getFacade().isWithinArrivalWindow(r)) {
                     JButton arriveBtn = new JButton("Mark Arrived");
                     arriveBtn.addActionListener(e -> {
-                        app.getFacade().markArrived(r.getReservationId());
+                        app.getFacade().checkIn(r.getReservationId());
                         refresh();
                     });
                     actions.add(arriveBtn);

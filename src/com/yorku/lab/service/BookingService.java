@@ -25,6 +25,7 @@ public class BookingService {
     private final ReservationRepository reservationRepository;
     private final EquipmentRepository equipmentRepository;
     private final UserRepository userRepository;
+    private PricingStrategy pricingStrategy;
 
     public BookingService() {
         this.reservationRepository = new ReservationRepository();
@@ -36,6 +37,10 @@ public class BookingService {
         this.reservationRepository = resRepo;
         this.equipmentRepository = eqRepo;
         this.userRepository = userRepo;
+    }
+
+    public void setPricingStrategy(PricingStrategy strategy){
+        this.pricingStrategy = strategy;
     }
 
     public List<Equipment> browseEquipment() {
@@ -83,12 +88,18 @@ public class BookingService {
 
     public double calculateDeposit(User user) {
         PricingStrategy strategy = PricingStrategyFactory.getStrategy(user.getType());
-        return strategy.calculateDeposit();
+        return strategy.calculateDeposit(1); //signature requires that we pass any int - mb remove
     }
 
     public double calculateHourlyRate(User user) {
         PricingStrategy strategy = PricingStrategyFactory.getStrategy(user.getType());
         return strategy.calculateHourlyRate();
+    }
+
+    public double calculateReservationCost(int hours){
+        double deposit = pricingStrategy.calculateDeposit(hours);
+        double total = pricingStrategy.calculateHourlyRate() * hours;
+        return total; //deposit is deducted from this
     }
 
     public Optional<Reservation> createReservation(User user, String equipmentId, LocalDateTime start, LocalDateTime end) {
@@ -102,7 +113,7 @@ public class BookingService {
         return Optional.of(reservation);
     }
 
-    public Optional<Reservation> modifyReservation(String reservationId, LocalDateTime newStart, LocalDateTime newEnd) {
+    public Optional<Reservation> modifyBooking(String reservationId, LocalDateTime newStart, LocalDateTime newEnd) {
         Optional<Reservation> opt = reservationRepository.findById(reservationId);
         if (opt.isEmpty()) return Optional.empty();
 
@@ -115,7 +126,7 @@ public class BookingService {
         return Optional.of(r);
     }
 
-    public boolean cancelReservation(String reservationId) {
+    public boolean cancelBooking(String reservationId) {
         Optional<Reservation> opt = reservationRepository.findById(reservationId);
         if (opt.isEmpty()) return false;
         opt.get().cancel();

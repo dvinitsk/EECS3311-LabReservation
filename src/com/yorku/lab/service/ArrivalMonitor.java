@@ -47,7 +47,7 @@ public class ArrivalMonitor {
         }
     }
 
-    public void markArrived(String reservationId) {
+    public void handleArrivalDetected(String reservationId) {
         reservationRepository.findById(reservationId).ifPresent(r -> {
             r.markArrived();
             reservationRepository.save(r);

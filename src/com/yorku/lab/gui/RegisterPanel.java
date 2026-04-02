@@ -78,7 +78,7 @@ public class RegisterPanel extends JPanel {
             return;
         }
 
-        var result = app.getFacade().register(email, password, name, type, id.isEmpty() ? null : id);
+        var result = app.getFacade().registerUser(email, password, name, type, id.isEmpty() ? null : id);
         if (result.success()) {
             JOptionPane.showMessageDialog(this, result.message());
             if (result.user() != null) {

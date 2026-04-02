@@ -18,19 +18,19 @@ public class SensorSystem implements SensorSubject {
     }
 
     @Override
-    public void addObserver(SensorObserver observer) {
+    public void attach(SensorObserver observer) {
         observers.add(observer);
     }
 
     @Override
-    public void removeObserver(SensorObserver observer) {
+    public void detach(SensorObserver observer) {
         observers.remove(observer);
     }
 
     @Override
     public void notifyObservers() {
         for (SensorObserver observer : observers) {
-            observer.onSensorUpdate(currentEquipment, inUse, currentStatus);
+            observer.update(currentEquipment);
         }
     }
 
@@ -38,6 +38,8 @@ public class SensorSystem implements SensorSubject {
         this.currentEquipment = equipment;
         this.inUse = inUse;
         this.currentStatus = status;
+        equipment.setInUse(inUse);
+        equipment.setOperationalStatus(status);
         notifyObservers();
     }
 

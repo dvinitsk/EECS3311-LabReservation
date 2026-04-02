@@ -13,8 +13,8 @@ public class ReservationMonitorObserver implements SensorObserver{
     }
 
     @Override
-    public void onSensorUpdate(Equipment equipment, boolean inUse, OperationalStatus status) {
-        if (inUse) {
+    public void update(Equipment equipment) {
+        if (equipment.isInUse()) {
             //Arrival Monitor
         }
     }

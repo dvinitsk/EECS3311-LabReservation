@@ -24,7 +24,7 @@ public class RegistrationService {
     /** At least one lowercase, uppercase, digit, and symbol (non-alphanumeric). Min 8 chars. */
     private static final String PASSWORD_PATTERN = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[^A-Za-z0-9]).{8,}$";
 
-    public RegistrationResult register(String email, String password, String fullName, UserType userType, String idOrCertificationNumber) {
+    public RegistrationResult registerUser(String email, String password, String fullName, UserType userType, String idOrCertificationNumber) {
         if (findByEmail(email).isPresent()) {
             return RegistrationResult.error("Email already in use");
         }

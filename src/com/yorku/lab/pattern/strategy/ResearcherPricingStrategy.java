@@ -9,7 +9,7 @@ public class ResearcherPricingStrategy implements PricingStrategy {
     }
 
     @Override
-    public double calculateDeposit() {
+    public double calculateDeposit(int hours) {
         return HOURLY_RATE;
     }
 
