@@ -108,6 +108,7 @@ public class ReservationFacade {
         // Strategy pattern: map PaymentMethod to PaymentStrategy, then processPayment
         paymentProcessor.setPaymentStrategy(getPaymentStrategy(paymentMethod));
         PaymentTransaction tx = paymentProcessor.processPayment(deposit);
+        tx.setType(com.yorku.lab.enums.PaymentType.DEPOSIT);
         tx.setReservationId(r.getReservationId());
         paymentProcessor.saveTransaction(tx);
         r.addPayment(tx);

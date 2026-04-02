@@ -27,6 +27,7 @@ public class PaymentTransaction {
     public String getTransactionId() { return transactionId; }
     public double getAmount() { return amount; }
     public PaymentType getType() { return type; }
+    public void setType(PaymentType type) { this.type = type; }
     public PaymentMethod getMethod() { return method; }
     public PaymentStatus getStatus() { return status; }
     public void setStatus(PaymentStatus status) { this.status = status; }
