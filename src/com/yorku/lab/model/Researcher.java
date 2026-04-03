@@ -8,14 +8,14 @@ public class Researcher extends User {
 
 	public Researcher(String userId, String fullName, Credentials credentials) {
 		super(userId, fullName, credentials);
-		this.hourlyRate = 20.0;
+		//this.hourlyRate = 20.0; other types don't have this here
 		this.affiliation = AffiliationType.UNIVERSITY;
 		this.status = AccountStatus.PENDING_APPROVAL;
 	}
 
 	public Researcher(String userId, String fullName, Credentials credentials, String idOrCertificationNumber) {
 		super(userId, fullName, credentials, idOrCertificationNumber);
-		this.hourlyRate = 20.0;
+		//this.hourlyRate = 20.0;
 		this.affiliation = AffiliationType.UNIVERSITY;
 		this.status = AccountStatus.PENDING_APPROVAL;
 	}
