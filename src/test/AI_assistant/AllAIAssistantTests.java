@@ -61,7 +61,7 @@ import test.AI_assistant.pattern.strategy.StudentPricingStrategyAITest;
 
 // Pattern tests - State
 import test.AI_assistant.pattern.state.ReservationStateFactoryAITest;
-
+import test.AI_assistant.pattern.facade.ReservationFacadeAITest;
 // Pattern tests - Factory
 import test.AI_assistant.pattern.factory.UserFactoryAITest;
 
@@ -70,6 +70,7 @@ import test.AI_assistant.pattern.singleton.LabCoordinatorServiceAITest;
 
 // Pattern tests - Observer
 import test.AI_assistant.pattern.observer.ReservationMonitorObserverAITest;
+import test.AI_assistant.pattern.observer.SensorSystemAITest;
 import test.AI_assistant.pattern.observer.UsageMonitoringObserverAITest;
 
 /**
@@ -145,7 +146,10 @@ import test.AI_assistant.pattern.observer.UsageMonitoringObserverAITest;
     
     // Pattern tests - Observer
     ReservationMonitorObserverAITest.class,
-    UsageMonitoringObserverAITest.class
+    UsageMonitoringObserverAITest.class,
+    SensorSystemAITest.class,
+    
+    ReservationFacadeAITest.class
 })
 public class AllAIAssistantTests {
 }

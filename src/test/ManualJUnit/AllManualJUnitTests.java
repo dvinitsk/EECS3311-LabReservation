@@ -64,7 +64,9 @@ import test.ManualJUnit.pattern.factory.UserFactoryTest;
 
 // Pattern tests - Singleton
 import test.ManualJUnit.pattern.singleton.LabCoordinatorServiceTest;
-
+import test.ManualJUnit.pattern.observer.ReservationMonitorObserverTest;
+import test.ManualJUnit.pattern.observer.SensorObserverInterfaceTest;
+import test.ManualJUnit.pattern.observer.SensorSubjectInterfaceTest;
 // Pattern tests - Observer
 import test.ManualJUnit.pattern.observer.SensorSystemTest;
 import test.ManualJUnit.pattern.observer.UsageMonitoringObserverTest;
@@ -143,6 +145,9 @@ import test.ManualJUnit.pattern.facade.ReservationFacadeTest;
     // Pattern tests - Observer
     SensorSystemTest.class,
     UsageMonitoringObserverTest.class,
+    ReservationMonitorObserverTest.class,
+    SensorObserverInterfaceTest.class,
+    SensorSubjectInterfaceTest.class,
     
     // Pattern tests - Facade
     ReservationFacadeTest.class
