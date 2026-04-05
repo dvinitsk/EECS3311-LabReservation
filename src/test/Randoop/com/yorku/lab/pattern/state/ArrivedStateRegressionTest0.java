@@ -3083,7 +3083,14 @@ public class ArrivedStateRegressionTest0 {
         com.yorku.lab.model.Reservation reservation31 = null;
         arrivedState0.markArrived(reservation31);
         com.yorku.lab.model.Reservation reservation33 = null;
-        arrivedState0.markArrived(reservation33);
+        java.time.LocalDateTime localDateTime34 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.extend(reservation33, localDateTime34);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setEndTime(java.time.LocalDateTime)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
     }
 
     @Test
@@ -3124,14 +3131,11281 @@ public class ArrivedStateRegressionTest0 {
         com.yorku.lab.model.Reservation reservation31 = null;
         arrivedState0.markArrived(reservation31);
         com.yorku.lab.model.Reservation reservation33 = null;
-        java.time.LocalDateTime localDateTime34 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
         // The following exception was thrown during execution in test generation
         try {
-            arrivedState0.extend(reservation33, localDateTime34);
+            arrivedState0.markNoShow(reservation35);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: User has already arrived.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test104() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test104");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.cancel(reservation35);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot cancel a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test105() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test105");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        java.time.LocalDateTime localDateTime36 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.extend(reservation35, localDateTime36);
             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setEndTime(java.time.LocalDateTime)\" because \"<parameter1>\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
+    }
+
+    @Test
+    public void test106() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test106");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        java.lang.Class<?> wildcardClass35 = arrivedState0.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass35);
+    }
+
+    @Test
+    public void test107() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test107");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        java.time.LocalDateTime localDateTime32 = null;
+        java.time.LocalDateTime localDateTime33 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.modify(reservation31, localDateTime32, localDateTime33);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot modify a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test108() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test108");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.cancel(reservation37);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot cancel a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test109() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test109");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.markNoShow(reservation37);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: User has already arrived.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test110() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test110");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        java.time.LocalDateTime localDateTime40 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.extend(reservation39, localDateTime40);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setEndTime(java.time.LocalDateTime)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test111() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test111");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.complete(reservation37);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setStatus(com.yorku.lab.enums.BookingStatus)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test112() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test112");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        java.time.LocalDateTime localDateTime36 = null;
+        java.time.LocalDateTime localDateTime37 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.modify(reservation35, localDateTime36, localDateTime37);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot modify a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test113() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test113");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.markNoShow(reservation39);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: User has already arrived.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test114() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test114");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.complete(reservation41);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setStatus(com.yorku.lab.enums.BookingStatus)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test115() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test115");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        java.lang.Class<?> wildcardClass37 = arrivedState0.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass37);
+    }
+
+    @Test
+    public void test116() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test116");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.complete(reservation35);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setStatus(com.yorku.lab.enums.BookingStatus)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test117() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test117");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        java.time.LocalDateTime localDateTime40 = null;
+        java.time.LocalDateTime localDateTime41 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.modify(reservation39, localDateTime40, localDateTime41);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot modify a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test118() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test118");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        java.time.LocalDateTime localDateTime42 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.extend(reservation41, localDateTime42);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setEndTime(java.time.LocalDateTime)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test119() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test119");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.cancel(reservation39);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot cancel a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test120() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test120");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        java.time.LocalDateTime localDateTime38 = null;
+        java.time.LocalDateTime localDateTime39 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.modify(reservation37, localDateTime38, localDateTime39);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot modify a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test121() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test121");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        java.lang.Class<?> wildcardClass41 = arrivedState0.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass41);
+    }
+
+    @Test
+    public void test122() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test122");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        java.lang.Class<?> wildcardClass39 = arrivedState0.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass39);
+    }
+
+    @Test
+    public void test123() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test123");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        java.time.LocalDateTime localDateTime44 = null;
+        java.time.LocalDateTime localDateTime45 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.modify(reservation43, localDateTime44, localDateTime45);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot modify a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test124() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test124");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.complete(reservation39);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setStatus(com.yorku.lab.enums.BookingStatus)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test125() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test125");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        java.lang.Class<?> wildcardClass43 = arrivedState0.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass43);
+    }
+
+    @Test
+    public void test126() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test126");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.cancel(reservation45);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot cancel a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test127() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test127");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.markNoShow(reservation41);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: User has already arrived.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test128() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test128");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.cancel(reservation41);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot cancel a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test129() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test129");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.markNoShow(reservation45);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: User has already arrived.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test130() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test130");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.complete(reservation43);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setStatus(com.yorku.lab.enums.BookingStatus)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test131() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test131");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        java.time.LocalDateTime localDateTime44 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.extend(reservation43, localDateTime44);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setEndTime(java.time.LocalDateTime)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test132() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test132");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        java.time.LocalDateTime localDateTime42 = null;
+        java.time.LocalDateTime localDateTime43 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.modify(reservation41, localDateTime42, localDateTime43);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot modify a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test133() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test133");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.cancel(reservation43);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot cancel a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test134() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test134");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.markNoShow(reservation43);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: User has already arrived.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test135() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test135");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        java.time.LocalDateTime localDateTime46 = null;
+        java.time.LocalDateTime localDateTime47 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.modify(reservation45, localDateTime46, localDateTime47);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot modify a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test136() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test136");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.complete(reservation47);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setStatus(com.yorku.lab.enums.BookingStatus)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test137() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test137");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        java.lang.Class<?> wildcardClass45 = arrivedState0.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass45);
+    }
+
+    @Test
+    public void test138() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test138");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        java.time.LocalDateTime localDateTime38 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.extend(reservation37, localDateTime38);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setEndTime(java.time.LocalDateTime)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test139() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test139");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        java.time.LocalDateTime localDateTime48 = null;
+        java.time.LocalDateTime localDateTime49 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.modify(reservation47, localDateTime48, localDateTime49);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot modify a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test140() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test140");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        java.lang.Class<?> wildcardClass47 = arrivedState0.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass47);
+    }
+
+    @Test
+    public void test141() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test141");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.complete(reservation45);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setStatus(com.yorku.lab.enums.BookingStatus)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test142() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test142");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        java.time.LocalDateTime localDateTime48 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.extend(reservation47, localDateTime48);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setEndTime(java.time.LocalDateTime)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test143() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test143");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.cancel(reservation47);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot cancel a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test144() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test144");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.markNoShow(reservation47);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: User has already arrived.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test145() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test145");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        java.time.LocalDateTime localDateTime46 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.extend(reservation45, localDateTime46);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setEndTime(java.time.LocalDateTime)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test146() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test146");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        java.time.LocalDateTime localDateTime50 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.extend(reservation49, localDateTime50);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setEndTime(java.time.LocalDateTime)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test147() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test147");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        java.time.LocalDateTime localDateTime50 = null;
+        java.time.LocalDateTime localDateTime51 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.modify(reservation49, localDateTime50, localDateTime51);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot modify a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test148() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test148");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.complete(reservation49);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setStatus(com.yorku.lab.enums.BookingStatus)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test149() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test149");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.markNoShow(reservation49);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: User has already arrived.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test150() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test150");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        java.lang.Class<?> wildcardClass51 = arrivedState0.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass51);
+    }
+
+    @Test
+    public void test151() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test151");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.cancel(reservation51);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot cancel a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test152() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test152");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.cancel(reservation49);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot cancel a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test153() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test153");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.markNoShow(reservation51);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: User has already arrived.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test154() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test154");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        java.time.LocalDateTime localDateTime52 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.extend(reservation51, localDateTime52);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setEndTime(java.time.LocalDateTime)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test155() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test155");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.complete(reservation53);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setStatus(com.yorku.lab.enums.BookingStatus)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test156() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test156");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        java.time.LocalDateTime localDateTime54 = null;
+        java.time.LocalDateTime localDateTime55 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.modify(reservation53, localDateTime54, localDateTime55);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot modify a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test157() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test157");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.complete(reservation55);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setStatus(com.yorku.lab.enums.BookingStatus)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test158() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test158");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        java.time.LocalDateTime localDateTime58 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.extend(reservation57, localDateTime58);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setEndTime(java.time.LocalDateTime)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test159() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test159");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        java.time.LocalDateTime localDateTime52 = null;
+        java.time.LocalDateTime localDateTime53 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.modify(reservation51, localDateTime52, localDateTime53);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot modify a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test160() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test160");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        java.lang.Class<?> wildcardClass57 = arrivedState0.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass57);
+    }
+
+    @Test
+    public void test161() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test161");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        java.time.LocalDateTime localDateTime58 = null;
+        java.time.LocalDateTime localDateTime59 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.modify(reservation57, localDateTime58, localDateTime59);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot modify a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test162() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test162");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.cancel(reservation57);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot cancel a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test163() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test163");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        java.time.LocalDateTime localDateTime54 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.extend(reservation53, localDateTime54);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setEndTime(java.time.LocalDateTime)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test164() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test164");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        java.lang.Class<?> wildcardClass53 = arrivedState0.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass53);
+    }
+
+    @Test
+    public void test165() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test165");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.complete(reservation59);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setStatus(com.yorku.lab.enums.BookingStatus)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test166() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test166");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        java.time.LocalDateTime localDateTime56 = null;
+        java.time.LocalDateTime localDateTime57 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.modify(reservation55, localDateTime56, localDateTime57);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot modify a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test167() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test167");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.markNoShow(reservation53);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: User has already arrived.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test168() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test168");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        java.lang.Class<?> wildcardClass59 = arrivedState0.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass59);
+    }
+
+    @Test
+    public void test169() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test169");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.cancel(reservation53);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot cancel a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test170() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test170");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.complete(reservation57);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setStatus(com.yorku.lab.enums.BookingStatus)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test171() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test171");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.markNoShow(reservation57);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: User has already arrived.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test172() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test172");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.markNoShow(reservation59);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: User has already arrived.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test173() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test173");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        java.time.LocalDateTime localDateTime60 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.extend(reservation59, localDateTime60);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setEndTime(java.time.LocalDateTime)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test174() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test174");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        java.lang.Class<?> wildcardClass55 = arrivedState0.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass55);
+    }
+
+    @Test
+    public void test175() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test175");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        java.time.LocalDateTime localDateTime60 = null;
+        java.time.LocalDateTime localDateTime61 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.modify(reservation59, localDateTime60, localDateTime61);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot modify a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test176() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test176");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.markNoShow(reservation55);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: User has already arrived.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test177() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test177");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        java.time.LocalDateTime localDateTime56 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.extend(reservation55, localDateTime56);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setEndTime(java.time.LocalDateTime)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test178() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test178");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.cancel(reservation59);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot cancel a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test179() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test179");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.cancel(reservation55);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot cancel a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test180() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test180");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.complete(reservation51);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setStatus(com.yorku.lab.enums.BookingStatus)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test181() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test181");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.complete(reservation61);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setStatus(com.yorku.lab.enums.BookingStatus)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test182() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test182");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        java.lang.Class<?> wildcardClass63 = arrivedState0.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass63);
+    }
+
+    @Test
+    public void test183() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test183");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        java.time.LocalDateTime localDateTime62 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.extend(reservation61, localDateTime62);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setEndTime(java.time.LocalDateTime)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test184() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test184");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.complete(reservation63);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setStatus(com.yorku.lab.enums.BookingStatus)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test185() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test185");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.markNoShow(reservation63);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: User has already arrived.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test186() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test186");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.cancel(reservation61);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot cancel a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test187() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test187");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        java.time.LocalDateTime localDateTime64 = null;
+        java.time.LocalDateTime localDateTime65 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.modify(reservation63, localDateTime64, localDateTime65);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot modify a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test188() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test188");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        java.lang.Class<?> wildcardClass49 = arrivedState0.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass49);
+    }
+
+    @Test
+    public void test189() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test189");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        java.lang.Class<?> wildcardClass61 = arrivedState0.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass61);
+    }
+
+    @Test
+    public void test190() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test190");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.cancel(reservation63);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot cancel a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test191() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test191");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.markNoShow(reservation61);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: User has already arrived.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test192() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test192");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.cancel(reservation65);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot cancel a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test193() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test193");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        java.time.LocalDateTime localDateTime66 = null;
+        java.time.LocalDateTime localDateTime67 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.modify(reservation65, localDateTime66, localDateTime67);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot modify a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test194() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test194");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.complete(reservation65);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setStatus(com.yorku.lab.enums.BookingStatus)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test195() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test195");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        java.time.LocalDateTime localDateTime62 = null;
+        java.time.LocalDateTime localDateTime63 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.modify(reservation61, localDateTime62, localDateTime63);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot modify a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test196() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test196");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.markNoShow(reservation65);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: User has already arrived.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test197() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test197");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        java.time.LocalDateTime localDateTime64 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.extend(reservation63, localDateTime64);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setEndTime(java.time.LocalDateTime)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test198() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test198");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        java.lang.Class<?> wildcardClass65 = arrivedState0.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass65);
+    }
+
+    @Test
+    public void test199() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test199");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.markNoShow(reservation67);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: User has already arrived.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test200() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test200");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.complete(reservation67);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setStatus(com.yorku.lab.enums.BookingStatus)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test201() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test201");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        java.lang.Class<?> wildcardClass67 = arrivedState0.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass67);
+    }
+
+    @Test
+    public void test202() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test202");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        java.time.LocalDateTime localDateTime68 = null;
+        java.time.LocalDateTime localDateTime69 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.modify(reservation67, localDateTime68, localDateTime69);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot modify a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test203() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test203");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        java.time.LocalDateTime localDateTime68 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.extend(reservation67, localDateTime68);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setEndTime(java.time.LocalDateTime)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test204() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test204");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        java.lang.Class<?> wildcardClass69 = arrivedState0.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass69);
+    }
+
+    @Test
+    public void test205() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test205");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.cancel(reservation67);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot cancel a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test206() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test206");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.markNoShow(reservation69);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: User has already arrived.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test207() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test207");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.cancel(reservation69);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot cancel a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test208() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test208");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.complete(reservation69);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setStatus(com.yorku.lab.enums.BookingStatus)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test209() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test209");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        java.time.LocalDateTime localDateTime66 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.extend(reservation65, localDateTime66);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setEndTime(java.time.LocalDateTime)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test210() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test210");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        java.time.LocalDateTime localDateTime70 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.extend(reservation69, localDateTime70);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setEndTime(java.time.LocalDateTime)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test211() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test211");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        java.time.LocalDateTime localDateTime70 = null;
+        java.time.LocalDateTime localDateTime71 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.modify(reservation69, localDateTime70, localDateTime71);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot modify a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test212() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test212");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        arrivedState0.markArrived(reservation71);
+        com.yorku.lab.model.Reservation reservation73 = null;
+        java.time.LocalDateTime localDateTime74 = null;
+        java.time.LocalDateTime localDateTime75 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.modify(reservation73, localDateTime74, localDateTime75);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot modify a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test213() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test213");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.complete(reservation71);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setStatus(com.yorku.lab.enums.BookingStatus)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test214() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test214");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.markNoShow(reservation71);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: User has already arrived.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test215() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test215");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        arrivedState0.markArrived(reservation71);
+        com.yorku.lab.model.Reservation reservation73 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.markNoShow(reservation73);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: User has already arrived.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test216() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test216");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        java.lang.Class<?> wildcardClass71 = arrivedState0.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass71);
+    }
+
+    @Test
+    public void test217() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test217");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.cancel(reservation71);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot cancel a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test218() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test218");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        java.time.LocalDateTime localDateTime72 = null;
+        java.time.LocalDateTime localDateTime73 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.modify(reservation71, localDateTime72, localDateTime73);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot modify a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test219() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test219");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        arrivedState0.markArrived(reservation71);
+        com.yorku.lab.model.Reservation reservation73 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.cancel(reservation73);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot cancel a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test220() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test220");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        arrivedState0.markArrived(reservation71);
+        com.yorku.lab.model.Reservation reservation73 = null;
+        java.time.LocalDateTime localDateTime74 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.extend(reservation73, localDateTime74);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setEndTime(java.time.LocalDateTime)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test221() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test221");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        arrivedState0.markArrived(reservation71);
+        java.lang.Class<?> wildcardClass73 = arrivedState0.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass73);
+    }
+
+    @Test
+    public void test222() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test222");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        arrivedState0.markArrived(reservation71);
+        com.yorku.lab.model.Reservation reservation73 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.complete(reservation73);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setStatus(com.yorku.lab.enums.BookingStatus)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test223() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test223");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        java.time.LocalDateTime localDateTime72 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.extend(reservation71, localDateTime72);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setEndTime(java.time.LocalDateTime)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test224() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test224");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        arrivedState0.markArrived(reservation71);
+        com.yorku.lab.model.Reservation reservation73 = null;
+        arrivedState0.markArrived(reservation73);
+        com.yorku.lab.model.Reservation reservation75 = null;
+        arrivedState0.markArrived(reservation75);
+        com.yorku.lab.model.Reservation reservation77 = null;
+        java.time.LocalDateTime localDateTime78 = null;
+        java.time.LocalDateTime localDateTime79 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.modify(reservation77, localDateTime78, localDateTime79);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot modify a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test225() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test225");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        arrivedState0.markArrived(reservation71);
+        com.yorku.lab.model.Reservation reservation73 = null;
+        arrivedState0.markArrived(reservation73);
+        com.yorku.lab.model.Reservation reservation75 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.markNoShow(reservation75);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: User has already arrived.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test226() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test226");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        arrivedState0.markArrived(reservation71);
+        com.yorku.lab.model.Reservation reservation73 = null;
+        arrivedState0.markArrived(reservation73);
+        com.yorku.lab.model.Reservation reservation75 = null;
+        arrivedState0.markArrived(reservation75);
+        com.yorku.lab.model.Reservation reservation77 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.complete(reservation77);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setStatus(com.yorku.lab.enums.BookingStatus)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test227() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test227");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        arrivedState0.markArrived(reservation71);
+        com.yorku.lab.model.Reservation reservation73 = null;
+        arrivedState0.markArrived(reservation73);
+        com.yorku.lab.model.Reservation reservation75 = null;
+        arrivedState0.markArrived(reservation75);
+        com.yorku.lab.model.Reservation reservation77 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.cancel(reservation77);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot cancel a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test228() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test228");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        arrivedState0.markArrived(reservation71);
+        com.yorku.lab.model.Reservation reservation73 = null;
+        arrivedState0.markArrived(reservation73);
+        com.yorku.lab.model.Reservation reservation75 = null;
+        arrivedState0.markArrived(reservation75);
+        com.yorku.lab.model.Reservation reservation77 = null;
+        java.time.LocalDateTime localDateTime78 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.extend(reservation77, localDateTime78);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setEndTime(java.time.LocalDateTime)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test229() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test229");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        arrivedState0.markArrived(reservation71);
+        com.yorku.lab.model.Reservation reservation73 = null;
+        arrivedState0.markArrived(reservation73);
+        com.yorku.lab.model.Reservation reservation75 = null;
+        arrivedState0.markArrived(reservation75);
+        java.lang.Class<?> wildcardClass77 = arrivedState0.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass77);
+    }
+
+    @Test
+    public void test230() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test230");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        arrivedState0.markArrived(reservation71);
+        com.yorku.lab.model.Reservation reservation73 = null;
+        arrivedState0.markArrived(reservation73);
+        com.yorku.lab.model.Reservation reservation75 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.cancel(reservation75);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot cancel a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test231() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test231");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        arrivedState0.markArrived(reservation71);
+        com.yorku.lab.model.Reservation reservation73 = null;
+        arrivedState0.markArrived(reservation73);
+        com.yorku.lab.model.Reservation reservation75 = null;
+        java.time.LocalDateTime localDateTime76 = null;
+        java.time.LocalDateTime localDateTime77 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.modify(reservation75, localDateTime76, localDateTime77);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot modify a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test232() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test232");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        arrivedState0.markArrived(reservation71);
+        com.yorku.lab.model.Reservation reservation73 = null;
+        arrivedState0.markArrived(reservation73);
+        com.yorku.lab.model.Reservation reservation75 = null;
+        java.time.LocalDateTime localDateTime76 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.extend(reservation75, localDateTime76);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setEndTime(java.time.LocalDateTime)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test233() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test233");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        arrivedState0.markArrived(reservation71);
+        com.yorku.lab.model.Reservation reservation73 = null;
+        arrivedState0.markArrived(reservation73);
+        com.yorku.lab.model.Reservation reservation75 = null;
+        arrivedState0.markArrived(reservation75);
+        com.yorku.lab.model.Reservation reservation77 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.markNoShow(reservation77);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: User has already arrived.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test234() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test234");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        arrivedState0.markArrived(reservation71);
+        com.yorku.lab.model.Reservation reservation73 = null;
+        arrivedState0.markArrived(reservation73);
+        com.yorku.lab.model.Reservation reservation75 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.complete(reservation75);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setStatus(com.yorku.lab.enums.BookingStatus)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test235() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test235");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        arrivedState0.markArrived(reservation71);
+        com.yorku.lab.model.Reservation reservation73 = null;
+        arrivedState0.markArrived(reservation73);
+        com.yorku.lab.model.Reservation reservation75 = null;
+        arrivedState0.markArrived(reservation75);
+        com.yorku.lab.model.Reservation reservation77 = null;
+        arrivedState0.markArrived(reservation77);
+        java.lang.Class<?> wildcardClass79 = arrivedState0.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass79);
+    }
+
+    @Test
+    public void test236() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test236");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        arrivedState0.markArrived(reservation71);
+        com.yorku.lab.model.Reservation reservation73 = null;
+        arrivedState0.markArrived(reservation73);
+        com.yorku.lab.model.Reservation reservation75 = null;
+        arrivedState0.markArrived(reservation75);
+        com.yorku.lab.model.Reservation reservation77 = null;
+        arrivedState0.markArrived(reservation77);
+        com.yorku.lab.model.Reservation reservation79 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.complete(reservation79);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setStatus(com.yorku.lab.enums.BookingStatus)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test237() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test237");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        arrivedState0.markArrived(reservation71);
+        com.yorku.lab.model.Reservation reservation73 = null;
+        arrivedState0.markArrived(reservation73);
+        com.yorku.lab.model.Reservation reservation75 = null;
+        arrivedState0.markArrived(reservation75);
+        com.yorku.lab.model.Reservation reservation77 = null;
+        arrivedState0.markArrived(reservation77);
+        com.yorku.lab.model.Reservation reservation79 = null;
+        java.time.LocalDateTime localDateTime80 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.extend(reservation79, localDateTime80);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setEndTime(java.time.LocalDateTime)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test238() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test238");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        arrivedState0.markArrived(reservation71);
+        com.yorku.lab.model.Reservation reservation73 = null;
+        arrivedState0.markArrived(reservation73);
+        java.lang.Class<?> wildcardClass75 = arrivedState0.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass75);
+    }
+
+    @Test
+    public void test239() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test239");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        arrivedState0.markArrived(reservation71);
+        com.yorku.lab.model.Reservation reservation73 = null;
+        arrivedState0.markArrived(reservation73);
+        com.yorku.lab.model.Reservation reservation75 = null;
+        arrivedState0.markArrived(reservation75);
+        com.yorku.lab.model.Reservation reservation77 = null;
+        arrivedState0.markArrived(reservation77);
+        com.yorku.lab.model.Reservation reservation79 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.markNoShow(reservation79);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: User has already arrived.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test240() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test240");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        arrivedState0.markArrived(reservation71);
+        com.yorku.lab.model.Reservation reservation73 = null;
+        arrivedState0.markArrived(reservation73);
+        com.yorku.lab.model.Reservation reservation75 = null;
+        arrivedState0.markArrived(reservation75);
+        com.yorku.lab.model.Reservation reservation77 = null;
+        arrivedState0.markArrived(reservation77);
+        com.yorku.lab.model.Reservation reservation79 = null;
+        arrivedState0.markArrived(reservation79);
+        com.yorku.lab.model.Reservation reservation81 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.complete(reservation81);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setStatus(com.yorku.lab.enums.BookingStatus)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test241() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test241");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        arrivedState0.markArrived(reservation71);
+        com.yorku.lab.model.Reservation reservation73 = null;
+        arrivedState0.markArrived(reservation73);
+        com.yorku.lab.model.Reservation reservation75 = null;
+        arrivedState0.markArrived(reservation75);
+        com.yorku.lab.model.Reservation reservation77 = null;
+        arrivedState0.markArrived(reservation77);
+        com.yorku.lab.model.Reservation reservation79 = null;
+        arrivedState0.markArrived(reservation79);
+        com.yorku.lab.model.Reservation reservation81 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.cancel(reservation81);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot cancel a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test242() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test242");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        arrivedState0.markArrived(reservation71);
+        com.yorku.lab.model.Reservation reservation73 = null;
+        arrivedState0.markArrived(reservation73);
+        com.yorku.lab.model.Reservation reservation75 = null;
+        arrivedState0.markArrived(reservation75);
+        com.yorku.lab.model.Reservation reservation77 = null;
+        arrivedState0.markArrived(reservation77);
+        com.yorku.lab.model.Reservation reservation79 = null;
+        arrivedState0.markArrived(reservation79);
+        java.lang.Class<?> wildcardClass81 = arrivedState0.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass81);
+    }
+
+    @Test
+    public void test243() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test243");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        arrivedState0.markArrived(reservation71);
+        com.yorku.lab.model.Reservation reservation73 = null;
+        arrivedState0.markArrived(reservation73);
+        com.yorku.lab.model.Reservation reservation75 = null;
+        arrivedState0.markArrived(reservation75);
+        com.yorku.lab.model.Reservation reservation77 = null;
+        arrivedState0.markArrived(reservation77);
+        com.yorku.lab.model.Reservation reservation79 = null;
+        arrivedState0.markArrived(reservation79);
+        com.yorku.lab.model.Reservation reservation81 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.markNoShow(reservation81);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: User has already arrived.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test244() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test244");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        arrivedState0.markArrived(reservation71);
+        com.yorku.lab.model.Reservation reservation73 = null;
+        arrivedState0.markArrived(reservation73);
+        com.yorku.lab.model.Reservation reservation75 = null;
+        arrivedState0.markArrived(reservation75);
+        com.yorku.lab.model.Reservation reservation77 = null;
+        arrivedState0.markArrived(reservation77);
+        com.yorku.lab.model.Reservation reservation79 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.cancel(reservation79);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot cancel a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test245() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test245");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        arrivedState0.markArrived(reservation71);
+        com.yorku.lab.model.Reservation reservation73 = null;
+        arrivedState0.markArrived(reservation73);
+        com.yorku.lab.model.Reservation reservation75 = null;
+        arrivedState0.markArrived(reservation75);
+        com.yorku.lab.model.Reservation reservation77 = null;
+        arrivedState0.markArrived(reservation77);
+        com.yorku.lab.model.Reservation reservation79 = null;
+        arrivedState0.markArrived(reservation79);
+        com.yorku.lab.model.Reservation reservation81 = null;
+        java.time.LocalDateTime localDateTime82 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.extend(reservation81, localDateTime82);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setEndTime(java.time.LocalDateTime)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test246() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test246");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        arrivedState0.markArrived(reservation71);
+        com.yorku.lab.model.Reservation reservation73 = null;
+        arrivedState0.markArrived(reservation73);
+        com.yorku.lab.model.Reservation reservation75 = null;
+        arrivedState0.markArrived(reservation75);
+        com.yorku.lab.model.Reservation reservation77 = null;
+        arrivedState0.markArrived(reservation77);
+        com.yorku.lab.model.Reservation reservation79 = null;
+        arrivedState0.markArrived(reservation79);
+        com.yorku.lab.model.Reservation reservation81 = null;
+        java.time.LocalDateTime localDateTime82 = null;
+        java.time.LocalDateTime localDateTime83 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.modify(reservation81, localDateTime82, localDateTime83);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot modify a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test247() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test247");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        arrivedState0.markArrived(reservation71);
+        com.yorku.lab.model.Reservation reservation73 = null;
+        arrivedState0.markArrived(reservation73);
+        com.yorku.lab.model.Reservation reservation75 = null;
+        arrivedState0.markArrived(reservation75);
+        com.yorku.lab.model.Reservation reservation77 = null;
+        arrivedState0.markArrived(reservation77);
+        com.yorku.lab.model.Reservation reservation79 = null;
+        java.time.LocalDateTime localDateTime80 = null;
+        java.time.LocalDateTime localDateTime81 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.modify(reservation79, localDateTime80, localDateTime81);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot modify a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test248() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test248");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        arrivedState0.markArrived(reservation71);
+        com.yorku.lab.model.Reservation reservation73 = null;
+        arrivedState0.markArrived(reservation73);
+        com.yorku.lab.model.Reservation reservation75 = null;
+        arrivedState0.markArrived(reservation75);
+        com.yorku.lab.model.Reservation reservation77 = null;
+        arrivedState0.markArrived(reservation77);
+        com.yorku.lab.model.Reservation reservation79 = null;
+        arrivedState0.markArrived(reservation79);
+        com.yorku.lab.model.Reservation reservation81 = null;
+        arrivedState0.markArrived(reservation81);
+        com.yorku.lab.model.Reservation reservation83 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.cancel(reservation83);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot cancel a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test249() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test249");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        arrivedState0.markArrived(reservation71);
+        com.yorku.lab.model.Reservation reservation73 = null;
+        arrivedState0.markArrived(reservation73);
+        com.yorku.lab.model.Reservation reservation75 = null;
+        arrivedState0.markArrived(reservation75);
+        com.yorku.lab.model.Reservation reservation77 = null;
+        arrivedState0.markArrived(reservation77);
+        com.yorku.lab.model.Reservation reservation79 = null;
+        arrivedState0.markArrived(reservation79);
+        com.yorku.lab.model.Reservation reservation81 = null;
+        arrivedState0.markArrived(reservation81);
+        com.yorku.lab.model.Reservation reservation83 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.complete(reservation83);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setStatus(com.yorku.lab.enums.BookingStatus)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test250() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test250");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        arrivedState0.markArrived(reservation71);
+        com.yorku.lab.model.Reservation reservation73 = null;
+        arrivedState0.markArrived(reservation73);
+        com.yorku.lab.model.Reservation reservation75 = null;
+        arrivedState0.markArrived(reservation75);
+        com.yorku.lab.model.Reservation reservation77 = null;
+        arrivedState0.markArrived(reservation77);
+        com.yorku.lab.model.Reservation reservation79 = null;
+        arrivedState0.markArrived(reservation79);
+        com.yorku.lab.model.Reservation reservation81 = null;
+        arrivedState0.markArrived(reservation81);
+        com.yorku.lab.model.Reservation reservation83 = null;
+        java.time.LocalDateTime localDateTime84 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.extend(reservation83, localDateTime84);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setEndTime(java.time.LocalDateTime)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test251() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test251");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        arrivedState0.markArrived(reservation71);
+        com.yorku.lab.model.Reservation reservation73 = null;
+        arrivedState0.markArrived(reservation73);
+        com.yorku.lab.model.Reservation reservation75 = null;
+        arrivedState0.markArrived(reservation75);
+        com.yorku.lab.model.Reservation reservation77 = null;
+        arrivedState0.markArrived(reservation77);
+        com.yorku.lab.model.Reservation reservation79 = null;
+        arrivedState0.markArrived(reservation79);
+        com.yorku.lab.model.Reservation reservation81 = null;
+        arrivedState0.markArrived(reservation81);
+        com.yorku.lab.model.Reservation reservation83 = null;
+        java.time.LocalDateTime localDateTime84 = null;
+        java.time.LocalDateTime localDateTime85 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.modify(reservation83, localDateTime84, localDateTime85);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot modify a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test252() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test252");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        arrivedState0.markArrived(reservation71);
+        com.yorku.lab.model.Reservation reservation73 = null;
+        arrivedState0.markArrived(reservation73);
+        com.yorku.lab.model.Reservation reservation75 = null;
+        arrivedState0.markArrived(reservation75);
+        com.yorku.lab.model.Reservation reservation77 = null;
+        arrivedState0.markArrived(reservation77);
+        com.yorku.lab.model.Reservation reservation79 = null;
+        arrivedState0.markArrived(reservation79);
+        com.yorku.lab.model.Reservation reservation81 = null;
+        arrivedState0.markArrived(reservation81);
+        com.yorku.lab.model.Reservation reservation83 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.markNoShow(reservation83);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: User has already arrived.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test253() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test253");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        arrivedState0.markArrived(reservation71);
+        com.yorku.lab.model.Reservation reservation73 = null;
+        arrivedState0.markArrived(reservation73);
+        com.yorku.lab.model.Reservation reservation75 = null;
+        arrivedState0.markArrived(reservation75);
+        com.yorku.lab.model.Reservation reservation77 = null;
+        arrivedState0.markArrived(reservation77);
+        com.yorku.lab.model.Reservation reservation79 = null;
+        arrivedState0.markArrived(reservation79);
+        com.yorku.lab.model.Reservation reservation81 = null;
+        arrivedState0.markArrived(reservation81);
+        com.yorku.lab.model.Reservation reservation83 = null;
+        arrivedState0.markArrived(reservation83);
+        com.yorku.lab.model.Reservation reservation85 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.markNoShow(reservation85);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: User has already arrived.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test254() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test254");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        arrivedState0.markArrived(reservation71);
+        com.yorku.lab.model.Reservation reservation73 = null;
+        arrivedState0.markArrived(reservation73);
+        com.yorku.lab.model.Reservation reservation75 = null;
+        arrivedState0.markArrived(reservation75);
+        com.yorku.lab.model.Reservation reservation77 = null;
+        arrivedState0.markArrived(reservation77);
+        com.yorku.lab.model.Reservation reservation79 = null;
+        arrivedState0.markArrived(reservation79);
+        com.yorku.lab.model.Reservation reservation81 = null;
+        arrivedState0.markArrived(reservation81);
+        com.yorku.lab.model.Reservation reservation83 = null;
+        arrivedState0.markArrived(reservation83);
+        com.yorku.lab.model.Reservation reservation85 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.cancel(reservation85);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Cannot cancel a reservation that is already in use.");
+        } catch (java.lang.IllegalStateException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test255() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test255");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        arrivedState0.markArrived(reservation71);
+        com.yorku.lab.model.Reservation reservation73 = null;
+        arrivedState0.markArrived(reservation73);
+        com.yorku.lab.model.Reservation reservation75 = null;
+        arrivedState0.markArrived(reservation75);
+        com.yorku.lab.model.Reservation reservation77 = null;
+        arrivedState0.markArrived(reservation77);
+        com.yorku.lab.model.Reservation reservation79 = null;
+        arrivedState0.markArrived(reservation79);
+        com.yorku.lab.model.Reservation reservation81 = null;
+        arrivedState0.markArrived(reservation81);
+        com.yorku.lab.model.Reservation reservation83 = null;
+        arrivedState0.markArrived(reservation83);
+        java.lang.Class<?> wildcardClass85 = arrivedState0.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass85);
+    }
+
+    @Test
+    public void test256() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test256");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        arrivedState0.markArrived(reservation71);
+        com.yorku.lab.model.Reservation reservation73 = null;
+        arrivedState0.markArrived(reservation73);
+        com.yorku.lab.model.Reservation reservation75 = null;
+        arrivedState0.markArrived(reservation75);
+        com.yorku.lab.model.Reservation reservation77 = null;
+        arrivedState0.markArrived(reservation77);
+        com.yorku.lab.model.Reservation reservation79 = null;
+        arrivedState0.markArrived(reservation79);
+        com.yorku.lab.model.Reservation reservation81 = null;
+        arrivedState0.markArrived(reservation81);
+        com.yorku.lab.model.Reservation reservation83 = null;
+        arrivedState0.markArrived(reservation83);
+        com.yorku.lab.model.Reservation reservation85 = null;
+        java.time.LocalDateTime localDateTime86 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            arrivedState0.extend(reservation85, localDateTime86);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.model.Reservation.setEndTime(java.time.LocalDateTime)\" because \"<parameter1>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test257() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test257");
+        com.yorku.lab.pattern.state.ArrivedState arrivedState0 = new com.yorku.lab.pattern.state.ArrivedState();
+        com.yorku.lab.model.Reservation reservation1 = null;
+        arrivedState0.markArrived(reservation1);
+        com.yorku.lab.model.Reservation reservation3 = null;
+        arrivedState0.markArrived(reservation3);
+        com.yorku.lab.model.Reservation reservation5 = null;
+        arrivedState0.markArrived(reservation5);
+        com.yorku.lab.model.Reservation reservation7 = null;
+        arrivedState0.markArrived(reservation7);
+        com.yorku.lab.model.Reservation reservation9 = null;
+        arrivedState0.markArrived(reservation9);
+        com.yorku.lab.model.Reservation reservation11 = null;
+        arrivedState0.markArrived(reservation11);
+        com.yorku.lab.model.Reservation reservation13 = null;
+        arrivedState0.markArrived(reservation13);
+        com.yorku.lab.model.Reservation reservation15 = null;
+        arrivedState0.markArrived(reservation15);
+        com.yorku.lab.model.Reservation reservation17 = null;
+        arrivedState0.markArrived(reservation17);
+        com.yorku.lab.model.Reservation reservation19 = null;
+        arrivedState0.markArrived(reservation19);
+        com.yorku.lab.model.Reservation reservation21 = null;
+        arrivedState0.markArrived(reservation21);
+        com.yorku.lab.model.Reservation reservation23 = null;
+        arrivedState0.markArrived(reservation23);
+        com.yorku.lab.model.Reservation reservation25 = null;
+        arrivedState0.markArrived(reservation25);
+        com.yorku.lab.model.Reservation reservation27 = null;
+        arrivedState0.markArrived(reservation27);
+        com.yorku.lab.model.Reservation reservation29 = null;
+        arrivedState0.markArrived(reservation29);
+        com.yorku.lab.model.Reservation reservation31 = null;
+        arrivedState0.markArrived(reservation31);
+        com.yorku.lab.model.Reservation reservation33 = null;
+        arrivedState0.markArrived(reservation33);
+        com.yorku.lab.model.Reservation reservation35 = null;
+        arrivedState0.markArrived(reservation35);
+        com.yorku.lab.model.Reservation reservation37 = null;
+        arrivedState0.markArrived(reservation37);
+        com.yorku.lab.model.Reservation reservation39 = null;
+        arrivedState0.markArrived(reservation39);
+        com.yorku.lab.model.Reservation reservation41 = null;
+        arrivedState0.markArrived(reservation41);
+        com.yorku.lab.model.Reservation reservation43 = null;
+        arrivedState0.markArrived(reservation43);
+        com.yorku.lab.model.Reservation reservation45 = null;
+        arrivedState0.markArrived(reservation45);
+        com.yorku.lab.model.Reservation reservation47 = null;
+        arrivedState0.markArrived(reservation47);
+        com.yorku.lab.model.Reservation reservation49 = null;
+        arrivedState0.markArrived(reservation49);
+        com.yorku.lab.model.Reservation reservation51 = null;
+        arrivedState0.markArrived(reservation51);
+        com.yorku.lab.model.Reservation reservation53 = null;
+        arrivedState0.markArrived(reservation53);
+        com.yorku.lab.model.Reservation reservation55 = null;
+        arrivedState0.markArrived(reservation55);
+        com.yorku.lab.model.Reservation reservation57 = null;
+        arrivedState0.markArrived(reservation57);
+        com.yorku.lab.model.Reservation reservation59 = null;
+        arrivedState0.markArrived(reservation59);
+        com.yorku.lab.model.Reservation reservation61 = null;
+        arrivedState0.markArrived(reservation61);
+        com.yorku.lab.model.Reservation reservation63 = null;
+        arrivedState0.markArrived(reservation63);
+        com.yorku.lab.model.Reservation reservation65 = null;
+        arrivedState0.markArrived(reservation65);
+        com.yorku.lab.model.Reservation reservation67 = null;
+        arrivedState0.markArrived(reservation67);
+        com.yorku.lab.model.Reservation reservation69 = null;
+        arrivedState0.markArrived(reservation69);
+        com.yorku.lab.model.Reservation reservation71 = null;
+        arrivedState0.markArrived(reservation71);
+        com.yorku.lab.model.Reservation reservation73 = null;
+        arrivedState0.markArrived(reservation73);
+        com.yorku.lab.model.Reservation reservation75 = null;
+        arrivedState0.markArrived(reservation75);
+        com.yorku.lab.model.Reservation reservation77 = null;
+        arrivedState0.markArrived(reservation77);
+        com.yorku.lab.model.Reservation reservation79 = null;
+        arrivedState0.markArrived(reservation79);
+        com.yorku.lab.model.Reservation reservation81 = null;
+        arrivedState0.markArrived(reservation81);
+        com.yorku.lab.model.Reservation reservation83 = null;
+        arrivedState0.markArrived(reservation83);
+        com.yorku.lab.model.Reservation reservation85 = null;
+        arrivedState0.markArrived(reservation85);
     }
 }
 
