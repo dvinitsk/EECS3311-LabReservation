@@ -26,6 +26,8 @@ AUTO_SCAN_PACKAGES = [
     "com.yorku.lab.model",
     "com.yorku.lab.pattern.state",
     "com.yorku.lab.pattern.strategy",
+    "com.yorku.lab.repository",
+    "com.yorku.lab.service",
 ]
 
 # Classes we explicitly skip when scanning
@@ -288,9 +290,9 @@ def generate_for_class(full_class_name: str):
         "randoop.main.Main",
         "gentests",
         f"--testclass={full_class_name}",
-        "--time-limit=12",
-        "--output-limit=120",
-        "--null-ratio=0.2",
+        "--time-limit=25",
+        "--output-limit=300",
+        "--null-ratio=0.35",
     ]
 
     run_command(cmd)
