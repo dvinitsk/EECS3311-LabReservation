@@ -1,4 +1,4 @@
-package com.yorku.lab.model;
+package test.Randoop.com.yorku.lab.model;
 
 import org.junit.FixMethodOrder;
 import org.junit.Test;

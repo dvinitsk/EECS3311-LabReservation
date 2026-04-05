@@ -247,7 +247,7 @@ def move_and_fix_generated_files(full_class_name: str):
 
     prefix = class_simple_name(full_class_name)
 
-    package_line = f"package {package_name_of(full_class_name)};\n\n"
+    package_line = f"package test.Randoop.{package_name_of(full_class_name)};\n\n"
 
     clean_existing_dest_files(dest_dir, prefix)
 

@@ -1,4 +1,4 @@
-package com.yorku.lab.service;
+package test.Randoop.com.yorku.lab.service;
 
 import org.junit.FixMethodOrder;
 import org.junit.Test;
@@ -73,7 +73,7 @@ public class ArrivalMonitorRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             arrivalMonitor0.startMonitoring();
-            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@1e9469b8[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@625dfff3[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000000002d280660@26350ea2]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@74e6094b[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
+            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@512d6e60[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@6a818392[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000007800120abd0@489091bd]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@b1534d3[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
         } catch (java.util.concurrent.RejectedExecutionException e) {
             // Expected exception.
         }
@@ -249,7 +249,7 @@ public class ArrivalMonitorRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             arrivalMonitor0.startMonitoring();
-            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@422ba9b7[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@45b27ad3[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000000002d280660@3f908bc0]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@3359c3f6[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
+            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@19d3f6ad[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@556aed22[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000007800120abd0@57a982f9]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@7227926b[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
         } catch (java.util.concurrent.RejectedExecutionException e) {
             // Expected exception.
         }
@@ -288,7 +288,7 @@ public class ArrivalMonitorRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             arrivalMonitor0.startMonitoring();
-            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@20155dae[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@7e2a76be[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000000002d280660@24b8a393]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@34f60be9[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
+            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@12bcf7c6[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@54a5496f[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000007800120abd0@3a116ca6]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@4a0c512b[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
         } catch (java.util.concurrent.RejectedExecutionException e) {
             // Expected exception.
         }
@@ -386,7 +386,7 @@ public class ArrivalMonitorRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             arrivalMonitor0.startMonitoring();
-            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@5186b78a[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@af57949[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000000002d280660@f833223]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@6956eb58[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3]");
+            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@3fdbb7ee[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@1add90e0[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000007800120abd0@7bf94e91]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@5e5a2b74[Shutting down, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 2]");
         } catch (java.util.concurrent.RejectedExecutionException e) {
             // Expected exception.
         }
@@ -404,7 +404,7 @@ public class ArrivalMonitorRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             arrivalMonitor0.startMonitoring();
-            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@5f81507a[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@ed1d2cf[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000000002d280660@b814e23]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@575fe6da[Shutting down, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]");
+            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@4a7c72af[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@7f9d40b3[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000007800120abd0@ca2a03f]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@639cb0c8[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 2]");
         } catch (java.util.concurrent.RejectedExecutionException e) {
             // Expected exception.
         }
@@ -436,7 +436,7 @@ public class ArrivalMonitorRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             arrivalMonitor0.startMonitoring();
-            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@1f5f4d48[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@1a06ec24[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000000002d280660@1715193f]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@3891b430[Shutting down, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]");
+            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@2b55ea4d[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@7e1953f7[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000007800120abd0@26f07261]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@60256d1b[Shutting down, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 7]");
         } catch (java.util.concurrent.RejectedExecutionException e) {
             // Expected exception.
         }
@@ -492,7 +492,7 @@ public class ArrivalMonitorRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             arrivalMonitor0.startMonitoring();
-            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@69a031a4[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@41271320[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000000002d280660@3a2881d6]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@1dfd6023[Shutting down, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 2]");
+            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@47f4dc8d[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@6e3acd7[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000007800120abd0@55b78dad]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@48614fb3[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3]");
         } catch (java.util.concurrent.RejectedExecutionException e) {
             // Expected exception.
         }
@@ -568,7 +568,7 @@ public class ArrivalMonitorRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             arrivalMonitor0.startMonitoring();
-            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@49a46f29[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@5ea24702[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000000002d280660@1da2219c]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@27ae6f9e[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
+            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@56739ee9[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@678db8be[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000007800120abd0@77b7a4b2]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@54eea16c[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
         } catch (java.util.concurrent.RejectedExecutionException e) {
             // Expected exception.
         }
@@ -586,7 +586,7 @@ public class ArrivalMonitorRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             arrivalMonitor0.startMonitoring();
-            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@275ff5f8[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@1786e49f[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000000002d280660@3bfbe2a6]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@5f386009[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
+            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@9d455a6[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@892f1fa[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000007800120abd0@68f1e261]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@4f75c627[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
         } catch (java.util.concurrent.RejectedExecutionException e) {
             // Expected exception.
         }
@@ -624,7 +624,7 @@ public class ArrivalMonitorRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             arrivalMonitor0.startMonitoring();
-            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@b41ceac[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@5feceb2f[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000000002d280660@5327c503]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@1b1434ce[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 3]");
+            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@743167c7[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@497ccf3[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000007800120abd0@55732ae6]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@213f2d00[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 2]");
         } catch (java.util.concurrent.RejectedExecutionException e) {
             // Expected exception.
         }
@@ -645,7 +645,7 @@ public class ArrivalMonitorRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             arrivalMonitor0.startMonitoring();
-            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@456c6754[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@7441eed3[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000000002d280660@284e68ae]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@3c72c488[Shutting down, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]");
+            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@3b30409[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@1aae50f9[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000007800120abd0@2b53d6fc]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@6354a50a[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 1]");
         } catch (java.util.concurrent.RejectedExecutionException e) {
             // Expected exception.
         }
@@ -662,7 +662,7 @@ public class ArrivalMonitorRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             arrivalMonitor0.startMonitoring();
-            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@20fdd484[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@130901fd[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000000002d280660@659f5f32]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@3d1b91d1[Shutting down, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]");
+            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@1c027237[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@279e9c95[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000007800120abd0@5546a9e0]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@62ae5180[Shutting down, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 2]");
         } catch (java.util.concurrent.RejectedExecutionException e) {
             // Expected exception.
         }
@@ -682,7 +682,7 @@ public class ArrivalMonitorRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             arrivalMonitor0.startMonitoring();
-            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@15d41953[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@3abe1c9e[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000000002d280660@71586f]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@2d4e6bb2[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 4]");
+            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@7072606[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@7105d271[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000007800120abd0@12e25b4b]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@316a682b[Shutting down, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 1]");
         } catch (java.util.concurrent.RejectedExecutionException e) {
             // Expected exception.
         }
@@ -723,7 +723,7 @@ public class ArrivalMonitorRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             arrivalMonitor0.startMonitoring();
-            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@6859f102[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@2cef4321[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000000002d280660@29c471f6]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@6654e105[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
+            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@2132629e[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@64514009[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000007800120abd0@40b2aae9]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@38eb2140[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
         } catch (java.util.concurrent.RejectedExecutionException e) {
             // Expected exception.
         }
@@ -742,7 +742,7 @@ public class ArrivalMonitorRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             arrivalMonitor0.startMonitoring();
-            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@40ab1491[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@55b9ffd0[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000000002d280660@a5f5b96]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@36bf903c[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
+            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@583f6270[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@785dbe3a[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000007800120abd0@58230224]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@2a654f27[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
         } catch (java.util.concurrent.RejectedExecutionException e) {
             // Expected exception.
         }
@@ -759,7 +759,7 @@ public class ArrivalMonitorRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             arrivalMonitor0.startMonitoring();
-            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@14d294f4[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@2162b22d[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000000002d280660@6a4ec62d]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@204bd52d[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
+            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@4d19ddeb[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@48d588dd[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000007800120abd0@b09df69]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@397ff526[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
         } catch (java.util.concurrent.RejectedExecutionException e) {
             // Expected exception.
         }
@@ -778,7 +778,7 @@ public class ArrivalMonitorRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             arrivalMonitor0.startMonitoring();
-            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@6ea48ca1[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@216fe151[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000000002d280660@5cdf6bb1]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@70d3b49c[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 2]");
+            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@7cc7769d[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@6d575cd8[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000007800120abd0@69c00140]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@419fc1d6[Shutting down, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 2]");
         } catch (java.util.concurrent.RejectedExecutionException e) {
             // Expected exception.
         }
@@ -857,7 +857,7 @@ public class ArrivalMonitorRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             arrivalMonitor0.startMonitoring();
-            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@67127bb1[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@66161fee[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000000002d280660@547a79cd]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@2542d320[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
+            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@570fc662[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@6f798e5a[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000007800120abd0@cbbc0ac]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@2c6ee031[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
         } catch (java.util.concurrent.RejectedExecutionException e) {
             // Expected exception.
         }
@@ -888,7 +888,7 @@ public class ArrivalMonitorRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             arrivalMonitor0.startMonitoring();
-            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@7101fb1c[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@7ec9780b[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000000002d280660@8d0dcd9]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@299a0651[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
+            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@5dca9fd8[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@200eaca[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000007800120abd0@29f68e88]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@3ea95c22[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
         } catch (java.util.concurrent.RejectedExecutionException e) {
             // Expected exception.
         }
@@ -938,7 +938,7 @@ public class ArrivalMonitorRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             arrivalMonitor0.startMonitoring();
-            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@ae8aade[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@3d6527bf[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000000002d280660@46f322ab]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@296ca76c[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
+            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@41f53068[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@2f9b33f1[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000007800120abd0@69a0e285]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@5bae7a7b[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
         } catch (java.util.concurrent.RejectedExecutionException e) {
             // Expected exception.
         }
@@ -1045,7 +1045,7 @@ public class ArrivalMonitorRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             arrivalMonitor0.startMonitoring();
-            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@283693af[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@4d8decd1[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000000002d280660@55607e6d]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@67c602e9[Shutting down, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]");
+            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@f66ac80[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@3836ba63[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000007800120abd0@455805b3]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@3d6e18b4[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 5]");
         } catch (java.util.concurrent.RejectedExecutionException e) {
             // Expected exception.
         }
@@ -1062,7 +1062,7 @@ public class ArrivalMonitorRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             arrivalMonitor0.startMonitoring();
-            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@680a5de1[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@58a5b377[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000000002d280660@54c8b990]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@7279d0f8[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
+            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@435df9a1[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@67c492fc[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000007800120abd0@2349aa88]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@39ab2bf3[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
         } catch (java.util.concurrent.RejectedExecutionException e) {
             // Expected exception.
         }
@@ -1186,7 +1186,7 @@ public class ArrivalMonitorRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             arrivalMonitor0.startMonitoring();
-            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@70d49a95[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@7dcc6b08[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000000002d280660@17d6e44]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@5f0469e2[Shutting down, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]");
+            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@945b2f[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@1cdece3d[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000007800120abd0@263b0a8d]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@8d27060[Shutting down, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 5]");
         } catch (java.util.concurrent.RejectedExecutionException e) {
             // Expected exception.
         }
@@ -1294,7 +1294,7 @@ public class ArrivalMonitorRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             arrivalMonitor0.startMonitoring();
-            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@7728bed[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@3b8c9157[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000000002d280660@37b5203]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@7fef7c55[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
+            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@23f7ed9d[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@683cd50d[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000007800120abd0@280c955c]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@785e65cd[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
         } catch (java.util.concurrent.RejectedExecutionException e) {
             // Expected exception.
         }
@@ -1353,7 +1353,7 @@ public class ArrivalMonitorRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             arrivalMonitor0.startMonitoring();
-            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@43e07d88[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@32640b6d[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000000002d280660@2e26eed3]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@7842ad22[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
+            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@66132947[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@3c3c0916[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000007800120abd0@255cc703]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@22fc3e19[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
         } catch (java.util.concurrent.RejectedExecutionException e) {
             // Expected exception.
         }
@@ -1384,7 +1384,7 @@ public class ArrivalMonitorRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             arrivalMonitor0.startMonitoring();
-            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@3189c6d9[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@1ee7a438[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000000002d280660@108f5cd6]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@549ea731[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
+            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@79871eeb[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@20df24c0[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000007800120abd0@6256d908]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@2547d1b8[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
         } catch (java.util.concurrent.RejectedExecutionException e) {
             // Expected exception.
         }
@@ -1403,7 +1403,7 @@ public class ArrivalMonitorRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             arrivalMonitor0.startMonitoring();
-            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@84f12b6[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@b93aba8[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000000002d280660@1d361feb]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@2585437a[Shutting down, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 2]");
+            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@6c4de249[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@354de44[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000007800120abd0@7dc56c0a]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@2cf78ff[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 2]");
         } catch (java.util.concurrent.RejectedExecutionException e) {
             // Expected exception.
         }
@@ -1477,7 +1477,7 @@ public class ArrivalMonitorRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             arrivalMonitor0.startMonitoring();
-            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@654a4b51[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@27937c21[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000000002d280660@2242013]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@3aa6fef3[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 4]");
+            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@5a42eadc[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@7e0aab75[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000007800120abd0@9d45e6e]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@2294d35c[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3]");
         } catch (java.util.concurrent.RejectedExecutionException e) {
             // Expected exception.
         }
@@ -1607,7 +1607,7 @@ public class ArrivalMonitorRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             arrivalMonitor0.startMonitoring();
-            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@64eb6eda[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@1bd6c0de[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000000002d280660@2f5d95b]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@64004f10[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
+            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@5c0104df[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@5f59d707[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000007800120abd0@7aafe7b8]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@74aa4446[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
         } catch (java.util.concurrent.RejectedExecutionException e) {
             // Expected exception.
         }
@@ -1627,7 +1627,7 @@ public class ArrivalMonitorRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             arrivalMonitor0.startMonitoring();
-            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@76cad044[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@1b00613a[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000000002d280660@20854ebe]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@6046dbf9[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
+            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@10330ade[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@26308d2a[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000007800120abd0@401e1872]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@69473758[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
         } catch (java.util.concurrent.RejectedExecutionException e) {
             // Expected exception.
         }
@@ -1710,7 +1710,7 @@ public class ArrivalMonitorRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             arrivalMonitor0.startMonitoring();
-            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@34d27ee3[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@983401e[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000000002d280660@1c067ae4]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@14a78b6c[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
+            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@63c7beef[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@109ef880[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000007800120abd0@5412a7c6]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@56ec31ca[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
         } catch (java.util.concurrent.RejectedExecutionException e) {
             // Expected exception.
         }
@@ -1967,7 +1967,7 @@ public class ArrivalMonitorRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             arrivalMonitor0.startMonitoring();
-            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@31fc8c5e[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@37263abc[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000000002d280660@205d9921]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@4588f119[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 2]");
+            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@70cbe9f9[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@b7c3b07[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000007800120abd0@67452d8]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@c9cc09f[Shutting down, pool size = 2, active threads = 0, queued tasks = 0, completed tasks = 2]");
         } catch (java.util.concurrent.RejectedExecutionException e) {
             // Expected exception.
         }
@@ -2115,7 +2115,7 @@ public class ArrivalMonitorRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             arrivalMonitor0.startMonitoring();
-            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@5e365ad0[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@6822e70d[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000000002d280660@98474c2]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@67360a68[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
+            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@194c7ec5[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@664da60d[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000007800120abd0@3213df1d]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@5b2e0b59[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
         } catch (java.util.concurrent.RejectedExecutionException e) {
             // Expected exception.
         }
@@ -2428,7 +2428,7 @@ public class ArrivalMonitorRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             arrivalMonitor0.startMonitoring();
-            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@1b7999b7[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@11a44b24[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000000002d280660@147ee167]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@47d91a2d[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
+            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@2f4c9046[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@d4b922c[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000007800120abd0@6fd48fa4]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@320e5ad2[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
         } catch (java.util.concurrent.RejectedExecutionException e) {
             // Expected exception.
         }
@@ -2632,7 +2632,7 @@ public class ArrivalMonitorRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             arrivalMonitor0.startMonitoring();
-            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@24a89473[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@79ef14d2[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000000002d280660@593707c6]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@50f5a2f9[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
+            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@23df8e14[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@feac812[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000007800120abd0@2e36a6dc]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@5a6af1c7[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
         } catch (java.util.concurrent.RejectedExecutionException e) {
             // Expected exception.
         }
@@ -2654,7 +2654,7 @@ public class ArrivalMonitorRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             arrivalMonitor0.startMonitoring();
-            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@2bfe98a0[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@7566010e[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000000002d280660@1f79523a]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@6875d979[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 1]");
+            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@4c89f372[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@323fff38[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000007800120abd0@388f6d63]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@7ff735d7[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 6]");
         } catch (java.util.concurrent.RejectedExecutionException e) {
             // Expected exception.
         }
@@ -2758,7 +2758,7 @@ public class ArrivalMonitorRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             arrivalMonitor0.startMonitoring();
-            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@2369db96[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@e57c95[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000000002d280660@7d6d120b]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@21bffcac[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
+            org.junit.Assert.fail("Expected exception of type java.util.concurrent.RejectedExecutionException; message: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@2760d9e4[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@61781c28[Wrapped task = com.yorku.lab.service.ArrivalMonitor$$Lambda/0x000007800120abd0@61ec3639]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@4140e149[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]");
         } catch (java.util.concurrent.RejectedExecutionException e) {
             // Expected exception.
         }
