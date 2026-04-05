@@ -1,3 +1,4 @@
+import os
 import re
 import shutil
 import subprocess
@@ -67,7 +68,7 @@ def compile_source():
     Output .class files are placed into /out.
     """
 
-    java_files = [str(p) for p in SRC_MAIN_DIR.rglob("*.java") if "\\src\\test\\" not in str(p)]
+    java_files = [str(p) for p in SRC_MAIN_DIR.rglob("*.java") if f"{os.sep}test{os.sep}" not in str(p)]
 
     if not java_files:
         raise FileNotFoundError("No Java source files found under src")
@@ -77,7 +78,7 @@ def compile_source():
     cmd = [
         "javac",
         "-cp",
-        f"{LIB_DIR}\\*",
+        f"{LIB_DIR}{os.sep}*",
         "-d",
         str(OUT_DIR),
     ] + java_files
@@ -284,7 +285,7 @@ def generate_for_class(full_class_name: str):
     cmd = [
         "java",
         "-cp",
-        f"{OUT_DIR};{LIB_DIR}\\*",
+        f"{OUT_DIR}{os.pathsep}{LIB_DIR}{os.sep}*",
         "randoop.main.Main",
         "gentests",
         f"--testclass={full_class_name}",
@@ -312,7 +313,7 @@ def compile_generated_tests():
     cmd = [
         "javac",
         "-cp",
-        f"{OUT_DIR};{LIB_DIR}\\*",
+        f"{OUT_DIR}{os.pathsep}{LIB_DIR}{os.sep}*",
         "-d",
         str(OUT_DIR),
     ] + java_files
