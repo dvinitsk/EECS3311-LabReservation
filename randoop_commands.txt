@@ -1,0 +1,13 @@
+1. Run randoop python script to generate tests:
+
+'python generate_randoop_tests.py'
+
+
+
+2. Run all Randoop tests at once:
+
+Get-ChildItem -Recurse src/test/Randoop -Filter "*RegressionTest.java" | 
+ForEach-Object { 
+    $name = $_.FullName -replace '.*src\\test\\Randoop\\','' -replace '\\','.' -replace '.java',''
+    java -cp "out;lib/*" org.junit.runner.JUnitCore $name
+}
