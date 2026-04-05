@@ -100,7 +100,7 @@ public class ApprovalRequestAITest {
 		assertEquals("Initial rejection", request.getRejectReason());
 		request.approve();
 		assertEquals(ApprovalStatus.APPROVED, request.getStatus());
-		assertEquals("Initial rejection", request.getRejectReason());
+		assertNull(request.getRejectReason());
 	}
 	
 	@Test
@@ -121,7 +121,7 @@ public class ApprovalRequestAITest {
 		assertEquals("Updated reason", request.getRejectReason());
 		request.approve();
 		assertEquals(ApprovalStatus.APPROVED, request.getStatus());
-		assertEquals("Updated reason", request.getRejectReason());
+		assertNull(request.getRejectReason());
 	}
 	
 
