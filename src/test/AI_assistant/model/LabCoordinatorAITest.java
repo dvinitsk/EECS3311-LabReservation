@@ -1,0 +1,69 @@
+package test.AI_assistant.model;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import com.yorku.lab.enums.*;
+import com.yorku.lab.model.*;
+
+public class LabCoordinatorAITest {
+
+	private User user;
+
+	@Before
+	public void setUp() throws Exception {
+		user=new LabCoordinator("Id123","John Doe",new Credentials("a@email.com", "Pass123"));
+		user.setActive(false);
+		user.setAffiliation(AffiliationType.UNIVERSITY);
+	}
+
+	@Test
+	public void testTypeReturn() {
+		assertEquals(UserType.LABCOORDINATOR, user.getType());
+	}
+	
+	@Test
+	public void testModifyUserID() {
+		assertEquals("Id123", user.getUserId());
+		user.setUserId("Id1234");
+		assertEquals("Id1234", user.getUserId());
+	}
+	
+	@Test
+	public void testModifyUserName() {
+		assertEquals("John Doe", user.getFullName());
+		user.setFullName("Jane Doe");
+		assertEquals("Jane Doe", user.getFullName());
+	}
+	
+	@Test
+	public void testModifyRate() {
+		assertEquals(0.0, user.getHourlyRate(),0.01);
+		user.setHourlyRate(10.00);
+		assertEquals(10.00, user.getHourlyRate(),0.01);
+	}
+	
+	@Test
+	public void testActive() {
+		assertFalse(user.isActive());
+		user.setActive(true);
+		assertTrue(user.isActive());
+	}
+	
+	@Test
+	public void testCredentials() {
+		Credentials test = new Credentials("a@email.com", "Pass123");
+		assertEquals(test.getEmail(), user.getCredentials().getEmail());
+		assertEquals(test.getPasswordHash(), user.getCredentials().getPasswordHash());
+	}
+	
+	@Test
+	public void testAffiliation() {
+		assertEquals(AffiliationType.UNIVERSITY,user.getAffiliation());
+		user.setAffiliation(AffiliationType.GUEST);
+		assertEquals(AffiliationType.GUEST,user.getAffiliation());
+	}
+
+}
