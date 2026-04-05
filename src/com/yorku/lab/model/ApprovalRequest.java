@@ -18,6 +18,7 @@ public class ApprovalRequest {
     public void approve() {
         this.status = ApprovalStatus.APPROVED;
         this.user.setStatus(AccountStatus.ACTIVE);
+        this.rejectReason=null;
     }
 
     public void reject(String reason) {

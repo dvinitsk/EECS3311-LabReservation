@@ -72,9 +72,9 @@ public class ApprovalRequestTest {
 	@Test
 	public void testRejectMultipleTimes() {
 		request.reject("First rejection reason");
-		assertEquals("First rejection", request.getRejectReason());
+		assertEquals("First rejection reason", request.getRejectReason());
 		request.reject("Second rejection reason");
-		assertEquals("Second rejection", request.getRejectReason());
+		assertEquals("Second rejection reason", request.getRejectReason());
 	}
 	
 	@Test
