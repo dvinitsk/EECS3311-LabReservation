@@ -1,0 +1,863 @@
+package com.yorku.lab.model;
+
+import org.junit.FixMethodOrder;
+import org.junit.Test;
+import org.junit.runners.MethodSorters;
+
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
+public class GuestRegressionTest0 {
+
+    public static boolean debug = false;
+
+    public void assertBooleanArrayEquals(boolean[] expectedArray, boolean[] actualArray) {
+        if (expectedArray.length != actualArray.length) {
+            throw new AssertionError("Array lengths differ: " + expectedArray.length + " != " + actualArray.length);
+        }
+        for (int i = 0; i < expectedArray.length; i++) {
+            if (expectedArray[i] != actualArray[i]) {
+                throw new AssertionError("Arrays differ at index " + i + ": " + expectedArray[i] + " != " + actualArray[i]);
+            }
+        }
+    }
+
+    @Test
+    public void test01() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test01");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        guest3.setIdOrCertificationNumber("");
+        com.yorku.lab.model.Credentials credentials6 = null;
+        guest3.setCredentials(credentials6);
+        java.lang.Class<?> wildcardClass8 = guest3.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass8);
+    }
+
+    @Test
+    public void test02() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test02");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        com.yorku.lab.enums.AccountStatus accountStatus4 = null;
+        guest3.setStatus(accountStatus4);
+        guest3.setUserId("");
+        guest3.setIdOrCertificationNumber("hi!");
+        boolean boolean10 = guest3.isActive();
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + true + "'", boolean10 == true);
+    }
+
+    @Test
+    public void test03() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test03");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        com.yorku.lab.enums.AccountStatus accountStatus4 = null;
+        guest3.setStatus(accountStatus4);
+        guest3.setHourlyRate((double) '4');
+        com.yorku.lab.enums.AccountStatus accountStatus8 = null;
+        guest3.setStatus(accountStatus8);
+    }
+
+    @Test
+    public void test04() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test04");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        com.yorku.lab.model.Credentials credentials4 = null;
+        guest3.setCredentials(credentials4);
+        com.yorku.lab.enums.AffiliationType affiliationType6 = null;
+        guest3.setAffiliation(affiliationType6);
+        com.yorku.lab.model.Credentials credentials8 = null;
+        guest3.setCredentials(credentials8);
+    }
+
+    @Test
+    public void test05() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test05");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest4 = new com.yorku.lab.model.Guest("", "", credentials2, "");
+    }
+
+    @Test
+    public void test06() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test06");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        com.yorku.lab.enums.AccountStatus accountStatus4 = null;
+        guest3.setStatus(accountStatus4);
+        guest3.setUserId("");
+        guest3.setActive(false);
+        boolean boolean10 = guest3.isActive();
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+    }
+
+    @Test
+    public void test07() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test07");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        guest3.setIdOrCertificationNumber("");
+        guest3.setFullName("hi!");
+        com.yorku.lab.model.Credentials credentials8 = guest3.getCredentials();
+        org.junit.Assert.assertNull(credentials8);
+    }
+
+    @Test
+    public void test08() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test08");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        double double4 = guest3.getHourlyRate();
+        org.junit.Assert.assertTrue("'" + double4 + "' != '" + 0.0d + "'", double4 == 0.0d);
+    }
+
+    @Test
+    public void test09() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test09");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        com.yorku.lab.enums.AccountStatus accountStatus4 = null;
+        guest3.setStatus(accountStatus4);
+        guest3.setHourlyRate((double) '4');
+        java.lang.Class<?> wildcardClass8 = guest3.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass8);
+    }
+
+    @Test
+    public void test10() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test10");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        com.yorku.lab.enums.AccountStatus accountStatus4 = null;
+        guest3.setStatus(accountStatus4);
+        guest3.setHourlyRate((double) '4');
+        com.yorku.lab.enums.AffiliationType affiliationType8 = null;
+        guest3.setAffiliation(affiliationType8);
+        double double10 = guest3.getHourlyRate();
+        com.yorku.lab.enums.AccountStatus accountStatus11 = null;
+        guest3.setStatus(accountStatus11);
+        org.junit.Assert.assertTrue("'" + double10 + "' != '" + 52.0d + "'", double10 == 52.0d);
+    }
+
+    @Test
+    public void test11() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test11");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        com.yorku.lab.enums.AccountStatus accountStatus4 = null;
+        guest3.setStatus(accountStatus4);
+        guest3.setUserId("");
+        guest3.setActive(false);
+        java.lang.String str10 = guest3.getIdOrCertificationNumber();
+        java.lang.String str11 = guest3.getFullName();
+        com.yorku.lab.model.Credentials credentials12 = guest3.getCredentials();
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertEquals("'" + str11 + "' != '" + "" + "'", str11, "");
+        org.junit.Assert.assertNull(credentials12);
+    }
+
+    @Test
+    public void test12() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test12");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        com.yorku.lab.model.Credentials credentials4 = null;
+        guest3.setCredentials(credentials4);
+        com.yorku.lab.enums.AffiliationType affiliationType6 = null;
+        guest3.setAffiliation(affiliationType6);
+        com.yorku.lab.enums.UserType userType8 = guest3.getType();
+        org.junit.Assert.assertTrue("'" + userType8 + "' != '" + com.yorku.lab.enums.UserType.GUEST + "'", userType8.equals(com.yorku.lab.enums.UserType.GUEST));
+    }
+
+    @Test
+    public void test13() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test13");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        com.yorku.lab.enums.AccountStatus accountStatus4 = null;
+        guest3.setStatus(accountStatus4);
+        guest3.setHourlyRate((double) '4');
+        guest3.setActive(true);
+        com.yorku.lab.model.Credentials credentials10 = null;
+        guest3.setCredentials(credentials10);
+        guest3.setFullName("");
+        guest3.setFullName("");
+        java.lang.Class<?> wildcardClass16 = guest3.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass16);
+    }
+
+    @Test
+    public void test14() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test14");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        guest3.setIdOrCertificationNumber("");
+        guest3.setFullName("hi!");
+        guest3.setFullName("");
+    }
+
+    @Test
+    public void test15() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test15");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        com.yorku.lab.enums.AccountStatus accountStatus4 = null;
+        guest3.setStatus(accountStatus4);
+        guest3.setHourlyRate((double) '4');
+        guest3.setActive(true);
+        com.yorku.lab.model.Credentials credentials10 = null;
+        guest3.setCredentials(credentials10);
+        guest3.setFullName("");
+        guest3.setFullName("");
+        guest3.setIdOrCertificationNumber("");
+    }
+
+    @Test
+    public void test16() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test16");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        com.yorku.lab.enums.AccountStatus accountStatus4 = null;
+        guest3.setStatus(accountStatus4);
+        guest3.setHourlyRate((double) '4');
+        guest3.setActive(true);
+        guest3.setUserId("");
+        java.lang.String str12 = guest3.getUserId();
+        org.junit.Assert.assertEquals("'" + str12 + "' != '" + "" + "'", str12, "");
+    }
+
+    @Test
+    public void test17() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test17");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        com.yorku.lab.enums.AccountStatus accountStatus4 = null;
+        guest3.setStatus(accountStatus4);
+        guest3.setHourlyRate((double) '4');
+        com.yorku.lab.enums.AffiliationType affiliationType8 = null;
+        guest3.setAffiliation(affiliationType8);
+        java.lang.String str10 = guest3.getUserId();
+        guest3.setFullName("");
+        org.junit.Assert.assertEquals("'" + str10 + "' != '" + "" + "'", str10, "");
+    }
+
+    @Test
+    public void test18() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test18");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        com.yorku.lab.enums.AccountStatus accountStatus4 = null;
+        guest3.setStatus(accountStatus4);
+        guest3.setHourlyRate((double) (short) 0);
+        com.yorku.lab.enums.AccountStatus accountStatus8 = null;
+        guest3.setStatus(accountStatus8);
+        java.lang.String str10 = guest3.getFullName();
+        org.junit.Assert.assertEquals("'" + str10 + "' != '" + "" + "'", str10, "");
+    }
+
+    @Test
+    public void test19() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test19");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        com.yorku.lab.enums.AccountStatus accountStatus4 = null;
+        guest3.setStatus(accountStatus4);
+        guest3.setHourlyRate((double) '4');
+        guest3.setActive(true);
+        com.yorku.lab.model.Credentials credentials10 = null;
+        guest3.setCredentials(credentials10);
+        guest3.setFullName("");
+        guest3.setFullName("");
+        guest3.setHourlyRate(0.0d);
+        guest3.setActive(false);
+    }
+
+    @Test
+    public void test20() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test20");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        com.yorku.lab.enums.AccountStatus accountStatus4 = null;
+        guest3.setStatus(accountStatus4);
+        guest3.setHourlyRate((double) '4');
+        guest3.setActive(true);
+        com.yorku.lab.model.Credentials credentials10 = null;
+        guest3.setCredentials(credentials10);
+        guest3.setFullName("");
+        guest3.setFullName("");
+        com.yorku.lab.enums.AccountStatus accountStatus16 = null;
+        guest3.setStatus(accountStatus16);
+        guest3.setActive(false);
+    }
+
+    @Test
+    public void test21() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test21");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        guest3.setIdOrCertificationNumber("");
+        java.lang.String str6 = guest3.getIdOrCertificationNumber();
+        com.yorku.lab.model.Credentials credentials7 = guest3.getCredentials();
+        org.junit.Assert.assertEquals("'" + str6 + "' != '" + "" + "'", str6, "");
+        org.junit.Assert.assertNull(credentials7);
+    }
+
+    @Test
+    public void test22() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test22");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        com.yorku.lab.enums.AccountStatus accountStatus4 = null;
+        guest3.setStatus(accountStatus4);
+        guest3.setUserId("");
+        guest3.setActive(false);
+        guest3.setUserId("");
+    }
+
+    @Test
+    public void test23() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test23");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest4 = new com.yorku.lab.model.Guest("", "hi!", credentials2, "");
+        guest4.setUserId("");
+        guest4.setActive(true);
+    }
+
+    @Test
+    public void test24() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test24");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        com.yorku.lab.enums.AccountStatus accountStatus4 = null;
+        guest3.setStatus(accountStatus4);
+        guest3.setHourlyRate((double) (short) 0);
+        guest3.setHourlyRate(0.0d);
+    }
+
+    @Test
+    public void test25() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test25");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        com.yorku.lab.enums.AccountStatus accountStatus4 = null;
+        guest3.setStatus(accountStatus4);
+        guest3.setHourlyRate((double) '4');
+        guest3.setActive(true);
+        guest3.setActive(false);
+        guest3.setHourlyRate((double) 'a');
+    }
+
+    @Test
+    public void test26() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test26");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        com.yorku.lab.enums.AccountStatus accountStatus4 = null;
+        guest3.setStatus(accountStatus4);
+        guest3.setUserId("");
+        guest3.setActive(false);
+        java.lang.String str10 = guest3.getIdOrCertificationNumber();
+        java.lang.String str11 = guest3.getFullName();
+        java.lang.String str12 = guest3.getIdOrCertificationNumber();
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertEquals("'" + str11 + "' != '" + "" + "'", str11, "");
+        org.junit.Assert.assertNull(str12);
+    }
+
+    @Test
+    public void test27() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test27");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        com.yorku.lab.model.Credentials credentials4 = null;
+        guest3.setCredentials(credentials4);
+        com.yorku.lab.enums.AffiliationType affiliationType6 = null;
+        guest3.setAffiliation(affiliationType6);
+        java.lang.String str8 = guest3.getFullName();
+        com.yorku.lab.enums.AccountStatus accountStatus9 = guest3.getStatus();
+        com.yorku.lab.enums.AccountStatus accountStatus10 = guest3.getStatus();
+        org.junit.Assert.assertEquals("'" + str8 + "' != '" + "" + "'", str8, "");
+        org.junit.Assert.assertTrue("'" + accountStatus9 + "' != '" + com.yorku.lab.enums.AccountStatus.ACTIVE + "'", accountStatus9.equals(com.yorku.lab.enums.AccountStatus.ACTIVE));
+        org.junit.Assert.assertTrue("'" + accountStatus10 + "' != '" + com.yorku.lab.enums.AccountStatus.ACTIVE + "'", accountStatus10.equals(com.yorku.lab.enums.AccountStatus.ACTIVE));
+    }
+
+    @Test
+    public void test28() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test28");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        com.yorku.lab.model.Credentials credentials4 = null;
+        guest3.setCredentials(credentials4);
+        com.yorku.lab.enums.AffiliationType affiliationType6 = null;
+        guest3.setAffiliation(affiliationType6);
+        com.yorku.lab.enums.AccountStatus accountStatus8 = null;
+        guest3.setStatus(accountStatus8);
+    }
+
+    @Test
+    public void test29() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test29");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest4 = new com.yorku.lab.model.Guest("", "hi!", credentials2, "");
+        guest4.setUserId("");
+        guest4.setIdOrCertificationNumber("");
+    }
+
+    @Test
+    public void test30() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test30");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        com.yorku.lab.enums.AccountStatus accountStatus4 = null;
+        guest3.setStatus(accountStatus4);
+        guest3.setHourlyRate((double) '4');
+        guest3.setActive(true);
+        com.yorku.lab.model.Credentials credentials10 = null;
+        guest3.setCredentials(credentials10);
+        guest3.setFullName("");
+        double double14 = guest3.getHourlyRate();
+        org.junit.Assert.assertTrue("'" + double14 + "' != '" + 52.0d + "'", double14 == 52.0d);
+    }
+
+    @Test
+    public void test31() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test31");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        com.yorku.lab.enums.AccountStatus accountStatus4 = null;
+        guest3.setStatus(accountStatus4);
+        guest3.setUserId("");
+        guest3.setActive(false);
+        java.lang.String str10 = guest3.getIdOrCertificationNumber();
+        java.lang.String str11 = guest3.getUserId();
+        guest3.setFullName("hi!");
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertEquals("'" + str11 + "' != '" + "" + "'", str11, "");
+    }
+
+    @Test
+    public void test32() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test32");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        com.yorku.lab.model.Credentials credentials4 = null;
+        guest3.setCredentials(credentials4);
+        com.yorku.lab.enums.AffiliationType affiliationType6 = null;
+        guest3.setAffiliation(affiliationType6);
+        java.lang.String str8 = guest3.getFullName();
+        com.yorku.lab.enums.AccountStatus accountStatus9 = guest3.getStatus();
+        com.yorku.lab.enums.UserType userType10 = guest3.getType();
+        org.junit.Assert.assertEquals("'" + str8 + "' != '" + "" + "'", str8, "");
+        org.junit.Assert.assertTrue("'" + accountStatus9 + "' != '" + com.yorku.lab.enums.AccountStatus.ACTIVE + "'", accountStatus9.equals(com.yorku.lab.enums.AccountStatus.ACTIVE));
+        org.junit.Assert.assertTrue("'" + userType10 + "' != '" + com.yorku.lab.enums.UserType.GUEST + "'", userType10.equals(com.yorku.lab.enums.UserType.GUEST));
+    }
+
+    @Test
+    public void test33() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test33");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        guest3.setIdOrCertificationNumber("");
+        java.lang.String str6 = guest3.getIdOrCertificationNumber();
+        guest3.setHourlyRate(10.0d);
+        org.junit.Assert.assertEquals("'" + str6 + "' != '" + "" + "'", str6, "");
+    }
+
+    @Test
+    public void test34() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test34");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        com.yorku.lab.enums.AccountStatus accountStatus4 = null;
+        guest3.setStatus(accountStatus4);
+        guest3.setHourlyRate((double) (short) 0);
+        guest3.setIdOrCertificationNumber("hi!");
+        java.lang.Class<?> wildcardClass10 = guest3.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass10);
+    }
+
+    @Test
+    public void test35() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test35");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        com.yorku.lab.model.Credentials credentials4 = null;
+        guest3.setCredentials(credentials4);
+        com.yorku.lab.enums.AffiliationType affiliationType6 = null;
+        guest3.setAffiliation(affiliationType6);
+        java.lang.String str8 = guest3.getFullName();
+        com.yorku.lab.enums.UserType userType9 = guest3.getType();
+        org.junit.Assert.assertEquals("'" + str8 + "' != '" + "" + "'", str8, "");
+        org.junit.Assert.assertTrue("'" + userType9 + "' != '" + com.yorku.lab.enums.UserType.GUEST + "'", userType9.equals(com.yorku.lab.enums.UserType.GUEST));
+    }
+
+    @Test
+    public void test36() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test36");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        com.yorku.lab.enums.AccountStatus accountStatus4 = null;
+        guest3.setStatus(accountStatus4);
+        guest3.setHourlyRate((double) '4');
+        com.yorku.lab.enums.AffiliationType affiliationType8 = null;
+        guest3.setAffiliation(affiliationType8);
+        guest3.setActive(false);
+        com.yorku.lab.model.Credentials credentials14 = null;
+        com.yorku.lab.model.Guest guest15 = new com.yorku.lab.model.Guest("", "", credentials14);
+        guest15.setIdOrCertificationNumber("");
+        com.yorku.lab.enums.AccountStatus accountStatus18 = guest15.getStatus();
+        guest3.setStatus(accountStatus18);
+        org.junit.Assert.assertTrue("'" + accountStatus18 + "' != '" + com.yorku.lab.enums.AccountStatus.ACTIVE + "'", accountStatus18.equals(com.yorku.lab.enums.AccountStatus.ACTIVE));
+    }
+
+    @Test
+    public void test37() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test37");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest4 = new com.yorku.lab.model.Guest("hi!", "", credentials2, "");
+        guest4.setActive(true);
+        com.yorku.lab.model.Credentials credentials7 = null;
+        guest4.setCredentials(credentials7);
+    }
+
+    @Test
+    public void test38() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test38");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        com.yorku.lab.enums.AccountStatus accountStatus4 = null;
+        guest3.setStatus(accountStatus4);
+        guest3.setHourlyRate((double) '4');
+        guest3.setActive(true);
+        java.lang.String str10 = guest3.getUserId();
+        guest3.setIdOrCertificationNumber("");
+        com.yorku.lab.enums.AffiliationType affiliationType13 = guest3.getAffiliation();
+        org.junit.Assert.assertEquals("'" + str10 + "' != '" + "" + "'", str10, "");
+        org.junit.Assert.assertTrue("'" + affiliationType13 + "' != '" + com.yorku.lab.enums.AffiliationType.GUEST + "'", affiliationType13.equals(com.yorku.lab.enums.AffiliationType.GUEST));
+    }
+
+    @Test
+    public void test39() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test39");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        com.yorku.lab.model.Credentials credentials4 = null;
+        guest3.setCredentials(credentials4);
+        com.yorku.lab.enums.UserType userType6 = guest3.getType();
+        org.junit.Assert.assertTrue("'" + userType6 + "' != '" + com.yorku.lab.enums.UserType.GUEST + "'", userType6.equals(com.yorku.lab.enums.UserType.GUEST));
+    }
+
+    @Test
+    public void test40() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test40");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        com.yorku.lab.model.Credentials credentials4 = null;
+        guest3.setCredentials(credentials4);
+        com.yorku.lab.enums.AffiliationType affiliationType6 = null;
+        guest3.setAffiliation(affiliationType6);
+        guest3.setFullName("hi!");
+        com.yorku.lab.model.Credentials credentials12 = null;
+        com.yorku.lab.model.Guest guest13 = new com.yorku.lab.model.Guest("", "", credentials12);
+        com.yorku.lab.enums.UserType userType14 = guest13.getType();
+        boolean boolean15 = guest13.isActive();
+        com.yorku.lab.enums.AffiliationType affiliationType16 = guest13.getAffiliation();
+        guest3.setAffiliation(affiliationType16);
+        org.junit.Assert.assertTrue("'" + userType14 + "' != '" + com.yorku.lab.enums.UserType.GUEST + "'", userType14.equals(com.yorku.lab.enums.UserType.GUEST));
+        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + true + "'", boolean15 == true);
+        org.junit.Assert.assertTrue("'" + affiliationType16 + "' != '" + com.yorku.lab.enums.AffiliationType.GUEST + "'", affiliationType16.equals(com.yorku.lab.enums.AffiliationType.GUEST));
+    }
+
+    @Test
+    public void test41() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test41");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        com.yorku.lab.enums.AccountStatus accountStatus4 = null;
+        guest3.setStatus(accountStatus4);
+        guest3.setUserId("");
+        guest3.setActive(false);
+        java.lang.String str10 = guest3.getIdOrCertificationNumber();
+        guest3.setUserId("");
+        guest3.setActive(false);
+        double double15 = guest3.getHourlyRate();
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + double15 + "' != '" + 0.0d + "'", double15 == 0.0d);
+    }
+
+    @Test
+    public void test42() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test42");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        com.yorku.lab.enums.AccountStatus accountStatus4 = null;
+        guest3.setStatus(accountStatus4);
+        guest3.setHourlyRate((double) '4');
+        guest3.setActive(true);
+        com.yorku.lab.model.Credentials credentials10 = null;
+        guest3.setCredentials(credentials10);
+        guest3.setFullName("");
+        guest3.setFullName("");
+        guest3.setHourlyRate(0.0d);
+        java.lang.String str18 = guest3.getFullName();
+        org.junit.Assert.assertEquals("'" + str18 + "' != '" + "" + "'", str18, "");
+    }
+
+    @Test
+    public void test43() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test43");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        guest3.setIdOrCertificationNumber("");
+        guest3.setHourlyRate((double) (short) 10);
+        guest3.setFullName("");
+    }
+
+    @Test
+    public void test44() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test44");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest4 = new com.yorku.lab.model.Guest("hi!", "", credentials2, "");
+        java.lang.String str5 = guest4.getFullName();
+        java.lang.String str6 = guest4.getUserId();
+        com.yorku.lab.model.Credentials credentials7 = null;
+        guest4.setCredentials(credentials7);
+        org.junit.Assert.assertEquals("'" + str5 + "' != '" + "" + "'", str5, "");
+        org.junit.Assert.assertEquals("'" + str6 + "' != '" + "hi!" + "'", str6, "hi!");
+    }
+
+    @Test
+    public void test45() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test45");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        guest3.setIdOrCertificationNumber("");
+        com.yorku.lab.enums.AffiliationType affiliationType6 = guest3.getAffiliation();
+        java.lang.Class<?> wildcardClass7 = guest3.getClass();
+        org.junit.Assert.assertTrue("'" + affiliationType6 + "' != '" + com.yorku.lab.enums.AffiliationType.GUEST + "'", affiliationType6.equals(com.yorku.lab.enums.AffiliationType.GUEST));
+        org.junit.Assert.assertNotNull(wildcardClass7);
+    }
+
+    @Test
+    public void test46() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test46");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        com.yorku.lab.enums.AccountStatus accountStatus4 = null;
+        guest3.setStatus(accountStatus4);
+        guest3.setHourlyRate((double) '4');
+        guest3.setActive(true);
+        guest3.setUserId("");
+        com.yorku.lab.model.Credentials credentials14 = null;
+        com.yorku.lab.model.Guest guest15 = new com.yorku.lab.model.Guest("", "", credentials14);
+        com.yorku.lab.enums.AccountStatus accountStatus16 = null;
+        guest15.setStatus(accountStatus16);
+        guest15.setHourlyRate((double) '4');
+        guest15.setActive(true);
+        com.yorku.lab.model.Credentials credentials22 = null;
+        guest15.setCredentials(credentials22);
+        guest15.setFullName("");
+        guest15.setFullName("");
+        guest15.setActive(true);
+        com.yorku.lab.model.Credentials credentials32 = null;
+        com.yorku.lab.model.Guest guest33 = new com.yorku.lab.model.Guest("", "", credentials32);
+        guest33.setIdOrCertificationNumber("");
+        com.yorku.lab.enums.AccountStatus accountStatus36 = guest33.getStatus();
+        guest15.setStatus(accountStatus36);
+        com.yorku.lab.enums.AccountStatus accountStatus38 = guest15.getStatus();
+        guest3.setStatus(accountStatus38);
+        org.junit.Assert.assertTrue("'" + accountStatus36 + "' != '" + com.yorku.lab.enums.AccountStatus.ACTIVE + "'", accountStatus36.equals(com.yorku.lab.enums.AccountStatus.ACTIVE));
+        org.junit.Assert.assertTrue("'" + accountStatus38 + "' != '" + com.yorku.lab.enums.AccountStatus.ACTIVE + "'", accountStatus38.equals(com.yorku.lab.enums.AccountStatus.ACTIVE));
+    }
+
+    @Test
+    public void test47() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test47");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        com.yorku.lab.enums.AccountStatus accountStatus4 = null;
+        guest3.setStatus(accountStatus4);
+        guest3.setHourlyRate((double) '4');
+        guest3.setActive(true);
+        java.lang.String str10 = guest3.getUserId();
+        java.lang.String str11 = guest3.getUserId();
+        org.junit.Assert.assertEquals("'" + str10 + "' != '" + "" + "'", str10, "");
+        org.junit.Assert.assertEquals("'" + str11 + "' != '" + "" + "'", str11, "");
+    }
+
+    @Test
+    public void test48() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test48");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        com.yorku.lab.model.Credentials credentials4 = null;
+        guest3.setCredentials(credentials4);
+        com.yorku.lab.enums.AffiliationType affiliationType6 = null;
+        guest3.setAffiliation(affiliationType6);
+        com.yorku.lab.model.Credentials credentials10 = null;
+        com.yorku.lab.model.Guest guest11 = new com.yorku.lab.model.Guest("", "", credentials10);
+        com.yorku.lab.enums.UserType userType12 = guest11.getType();
+        com.yorku.lab.enums.AffiliationType affiliationType13 = guest11.getAffiliation();
+        guest3.setAffiliation(affiliationType13);
+        java.lang.String str15 = guest3.getIdOrCertificationNumber();
+        com.yorku.lab.model.Credentials credentials18 = null;
+        com.yorku.lab.model.Guest guest19 = new com.yorku.lab.model.Guest("hi!", "", credentials18);
+        guest19.setIdOrCertificationNumber("hi!");
+        com.yorku.lab.model.Credentials credentials24 = null;
+        com.yorku.lab.model.Guest guest25 = new com.yorku.lab.model.Guest("", "", credentials24);
+        com.yorku.lab.enums.AffiliationType affiliationType26 = null;
+        guest25.setAffiliation(affiliationType26);
+        guest25.setIdOrCertificationNumber("");
+        com.yorku.lab.enums.AccountStatus accountStatus30 = guest25.getStatus();
+        guest19.setStatus(accountStatus30);
+        guest3.setStatus(accountStatus30);
+        org.junit.Assert.assertTrue("'" + userType12 + "' != '" + com.yorku.lab.enums.UserType.GUEST + "'", userType12.equals(com.yorku.lab.enums.UserType.GUEST));
+        org.junit.Assert.assertTrue("'" + affiliationType13 + "' != '" + com.yorku.lab.enums.AffiliationType.GUEST + "'", affiliationType13.equals(com.yorku.lab.enums.AffiliationType.GUEST));
+        org.junit.Assert.assertNull(str15);
+        org.junit.Assert.assertTrue("'" + accountStatus30 + "' != '" + com.yorku.lab.enums.AccountStatus.ACTIVE + "'", accountStatus30.equals(com.yorku.lab.enums.AccountStatus.ACTIVE));
+    }
+
+    @Test
+    public void test49() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test49");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        com.yorku.lab.enums.AccountStatus accountStatus4 = null;
+        guest3.setStatus(accountStatus4);
+        guest3.setUserId("");
+        guest3.setActive(false);
+        java.lang.String str10 = guest3.getIdOrCertificationNumber();
+        java.lang.String str11 = guest3.getFullName();
+        java.lang.String str12 = guest3.getUserId();
+        java.lang.String str13 = guest3.getIdOrCertificationNumber();
+        java.lang.String str14 = guest3.getIdOrCertificationNumber();
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertEquals("'" + str11 + "' != '" + "" + "'", str11, "");
+        org.junit.Assert.assertEquals("'" + str12 + "' != '" + "" + "'", str12, "");
+        org.junit.Assert.assertNull(str13);
+        org.junit.Assert.assertNull(str14);
+    }
+
+    @Test
+    public void test50() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test50");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        com.yorku.lab.enums.AccountStatus accountStatus4 = null;
+        guest3.setStatus(accountStatus4);
+        guest3.setHourlyRate((double) '4');
+        guest3.setActive(true);
+        com.yorku.lab.model.Credentials credentials10 = null;
+        guest3.setCredentials(credentials10);
+        guest3.setFullName("");
+        guest3.setFullName("");
+        guest3.setActive(true);
+        com.yorku.lab.enums.UserType userType18 = guest3.getType();
+        org.junit.Assert.assertTrue("'" + userType18 + "' != '" + com.yorku.lab.enums.UserType.GUEST + "'", userType18.equals(com.yorku.lab.enums.UserType.GUEST));
+    }
+
+    @Test
+    public void test51() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test51");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        com.yorku.lab.enums.AccountStatus accountStatus4 = null;
+        guest3.setStatus(accountStatus4);
+        guest3.setHourlyRate((double) '4');
+        com.yorku.lab.enums.AffiliationType affiliationType8 = null;
+        guest3.setAffiliation(affiliationType8);
+        java.lang.String str10 = guest3.getUserId();
+        com.yorku.lab.enums.UserType userType11 = guest3.getType();
+        com.yorku.lab.model.Credentials credentials12 = guest3.getCredentials();
+        org.junit.Assert.assertEquals("'" + str10 + "' != '" + "" + "'", str10, "");
+        org.junit.Assert.assertTrue("'" + userType11 + "' != '" + com.yorku.lab.enums.UserType.GUEST + "'", userType11.equals(com.yorku.lab.enums.UserType.GUEST));
+        org.junit.Assert.assertNull(credentials12);
+    }
+
+    @Test
+    public void test52() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test52");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        com.yorku.lab.enums.AccountStatus accountStatus4 = null;
+        guest3.setStatus(accountStatus4);
+        guest3.setUserId("");
+        guest3.setActive(false);
+        java.lang.String str10 = guest3.getIdOrCertificationNumber();
+        guest3.setUserId("");
+        java.lang.String str13 = guest3.getIdOrCertificationNumber();
+        java.lang.String str14 = guest3.getIdOrCertificationNumber();
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertNull(str13);
+        org.junit.Assert.assertNull(str14);
+    }
+
+    @Test
+    public void test53() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test53");
+        com.yorku.lab.model.Credentials credentials2 = null;
+        com.yorku.lab.model.Guest guest3 = new com.yorku.lab.model.Guest("", "", credentials2);
+        com.yorku.lab.enums.AccountStatus accountStatus4 = null;
+        guest3.setStatus(accountStatus4);
+        guest3.setHourlyRate((double) '4');
+        guest3.setActive(true);
+        com.yorku.lab.enums.UserType userType10 = guest3.getType();
+        java.lang.String str11 = guest3.getUserId();
+        guest3.setUserId("");
+        org.junit.Assert.assertTrue("'" + userType10 + "' != '" + com.yorku.lab.enums.UserType.GUEST + "'", userType10.equals(com.yorku.lab.enums.UserType.GUEST));
+        org.junit.Assert.assertEquals("'" + str11 + "' != '" + "" + "'", str11, "");
+    }
+}
+
