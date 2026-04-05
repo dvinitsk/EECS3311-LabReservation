@@ -21,27 +21,27 @@ public class ResearchGrantPaymentStrategyRegressionTest0 {
     }
 
     @Test
-    public void test01() throws Throwable {
+    public void test001() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test01");
+            System.out.format("%n%s%n", "RegressionTest0.test001");
         java.lang.Object obj0 = new java.lang.Object();
         java.lang.Class<?> wildcardClass1 = obj0.getClass();
         org.junit.Assert.assertNotNull(wildcardClass1);
     }
 
     @Test
-    public void test02() throws Throwable {
+    public void test002() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test02");
+            System.out.format("%n%s%n", "RegressionTest0.test002");
         com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
         java.lang.Class<?> wildcardClass1 = researchGrantPaymentStrategy0.getClass();
         org.junit.Assert.assertNotNull(wildcardClass1);
     }
 
     @Test
-    public void test03() throws Throwable {
+    public void test003() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test03");
+            System.out.format("%n%s%n", "RegressionTest0.test003");
         com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
         com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
         java.lang.Class<?> wildcardClass3 = paymentTransaction2.getClass();
@@ -50,9 +50,9 @@ public class ResearchGrantPaymentStrategyRegressionTest0 {
     }
 
     @Test
-    public void test04() throws Throwable {
+    public void test004() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test04");
+            System.out.format("%n%s%n", "RegressionTest0.test004");
         com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
         com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
         java.lang.Class<?> wildcardClass3 = paymentTransaction2.getClass();
@@ -61,9 +61,9 @@ public class ResearchGrantPaymentStrategyRegressionTest0 {
     }
 
     @Test
-    public void test05() throws Throwable {
+    public void test005() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test05");
+            System.out.format("%n%s%n", "RegressionTest0.test005");
         com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
         com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
         java.lang.Class<?> wildcardClass3 = researchGrantPaymentStrategy0.getClass();
@@ -72,9 +72,9 @@ public class ResearchGrantPaymentStrategyRegressionTest0 {
     }
 
     @Test
-    public void test06() throws Throwable {
+    public void test006() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test06");
+            System.out.format("%n%s%n", "RegressionTest0.test006");
         com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
         com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
         com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
@@ -85,12 +85,12 @@ public class ResearchGrantPaymentStrategyRegressionTest0 {
     }
 
     @Test
-    public void test07() throws Throwable {
+    public void test007() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test07");
+            System.out.format("%n%s%n", "RegressionTest0.test007");
         com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
         com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(10.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 10);
         java.lang.Class<?> wildcardClass5 = researchGrantPaymentStrategy0.getClass();
         org.junit.Assert.assertNotNull(paymentTransaction2);
         org.junit.Assert.assertNotNull(paymentTransaction4);
@@ -98,28 +98,61 @@ public class ResearchGrantPaymentStrategyRegressionTest0 {
     }
 
     @Test
-    public void test08() throws Throwable {
+    public void test008() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test08");
+            System.out.format("%n%s%n", "RegressionTest0.test008");
         com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(10.0d);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(1.0d);
-        java.lang.Class<?> wildcardClass7 = researchGrantPaymentStrategy0.getClass();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        java.lang.Class<?> wildcardClass5 = researchGrantPaymentStrategy0.getClass();
         org.junit.Assert.assertNotNull(paymentTransaction2);
         org.junit.Assert.assertNotNull(paymentTransaction4);
-        org.junit.Assert.assertNotNull(paymentTransaction6);
-        org.junit.Assert.assertNotNull(wildcardClass7);
+        org.junit.Assert.assertNotNull(wildcardClass5);
     }
 
     @Test
-    public void test09() throws Throwable {
+    public void test009() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test09");
+            System.out.format("%n%s%n", "RegressionTest0.test009");
         com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(10.0d);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(1.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay(0.0d);
+        java.lang.Class<?> wildcardClass3 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(wildcardClass3);
+    }
+
+    @Test
+    public void test010() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test010");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        java.lang.Class<?> wildcardClass3 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(wildcardClass3);
+    }
+
+    @Test
+    public void test011() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test011");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        java.lang.Class<?> wildcardClass5 = paymentTransaction4.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(wildcardClass5);
+    }
+
+    @Test
+    public void test012() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test012");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((-1.0d));
         java.lang.Class<?> wildcardClass7 = paymentTransaction6.getClass();
         org.junit.Assert.assertNotNull(paymentTransaction2);
         org.junit.Assert.assertNotNull(paymentTransaction4);
@@ -128,22 +161,106 @@ public class ResearchGrantPaymentStrategyRegressionTest0 {
     }
 
     @Test
-    public void test10() throws Throwable {
+    public void test013() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test10");
+            System.out.format("%n%s%n", "RegressionTest0.test013");
         com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
         com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) (byte) 10);
+        java.lang.Class<?> wildcardClass7 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(wildcardClass7);
+    }
+
+    @Test
+    public void test014() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test014");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) ' ');
         java.lang.Class<?> wildcardClass3 = researchGrantPaymentStrategy0.getClass();
         org.junit.Assert.assertNotNull(paymentTransaction2);
         org.junit.Assert.assertNotNull(wildcardClass3);
     }
 
     @Test
-    public void test11() throws Throwable {
+    public void test015() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test11");
+            System.out.format("%n%s%n", "RegressionTest0.test015");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) 100);
+        java.lang.Class<?> wildcardClass3 = paymentTransaction2.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(wildcardClass3);
+    }
+
+    @Test
+    public void test016() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test016");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 100L);
+        java.lang.Class<?> wildcardClass5 = paymentTransaction4.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(wildcardClass5);
+    }
+
+    @Test
+    public void test017() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test017");
         com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
         com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((-1.0d));
+        java.lang.Class<?> wildcardClass7 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(wildcardClass7);
+    }
+
+    @Test
+    public void test018() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test018");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 100L);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        java.lang.Class<?> wildcardClass7 = paymentTransaction6.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(wildcardClass7);
+    }
+
+    @Test
+    public void test019() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test019");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        java.lang.Class<?> wildcardClass7 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(wildcardClass7);
+    }
+
+    @Test
+    public void test020() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test020");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay(0.0d);
         com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) (byte) 10);
         java.lang.Class<?> wildcardClass5 = paymentTransaction4.getClass();
         org.junit.Assert.assertNotNull(paymentTransaction2);
@@ -152,101 +269,13 @@ public class ResearchGrantPaymentStrategyRegressionTest0 {
     }
 
     @Test
-    public void test12() throws Throwable {
+    public void test021() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test12");
-        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 10);
-        java.lang.Class<?> wildcardClass5 = paymentTransaction4.getClass();
-        org.junit.Assert.assertNotNull(paymentTransaction2);
-        org.junit.Assert.assertNotNull(paymentTransaction4);
-        org.junit.Assert.assertNotNull(wildcardClass5);
-    }
-
-    @Test
-    public void test13() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test13");
-        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 1);
-        java.lang.Class<?> wildcardClass5 = researchGrantPaymentStrategy0.getClass();
-        org.junit.Assert.assertNotNull(paymentTransaction2);
-        org.junit.Assert.assertNotNull(paymentTransaction4);
-        org.junit.Assert.assertNotNull(wildcardClass5);
-    }
-
-    @Test
-    public void test14() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test14");
-        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) ' ');
-        java.lang.Class<?> wildcardClass5 = paymentTransaction4.getClass();
-        org.junit.Assert.assertNotNull(paymentTransaction2);
-        org.junit.Assert.assertNotNull(paymentTransaction4);
-        org.junit.Assert.assertNotNull(wildcardClass5);
-    }
-
-    @Test
-    public void test15() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test15");
-        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 10);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 0L);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) 1L);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) 10L);
-        java.lang.Class<?> wildcardClass11 = researchGrantPaymentStrategy0.getClass();
-        org.junit.Assert.assertNotNull(paymentTransaction2);
-        org.junit.Assert.assertNotNull(paymentTransaction4);
-        org.junit.Assert.assertNotNull(paymentTransaction6);
-        org.junit.Assert.assertNotNull(paymentTransaction8);
-        org.junit.Assert.assertNotNull(paymentTransaction10);
-        org.junit.Assert.assertNotNull(wildcardClass11);
-    }
-
-    @Test
-    public void test16() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test16");
-        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 10);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 0L);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) 1L);
-        java.lang.Class<?> wildcardClass9 = paymentTransaction8.getClass();
-        org.junit.Assert.assertNotNull(paymentTransaction2);
-        org.junit.Assert.assertNotNull(paymentTransaction4);
-        org.junit.Assert.assertNotNull(paymentTransaction6);
-        org.junit.Assert.assertNotNull(paymentTransaction8);
-        org.junit.Assert.assertNotNull(wildcardClass9);
-    }
-
-    @Test
-    public void test17() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test17");
-        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 10.0f);
-        java.lang.Class<?> wildcardClass5 = researchGrantPaymentStrategy0.getClass();
-        org.junit.Assert.assertNotNull(paymentTransaction2);
-        org.junit.Assert.assertNotNull(paymentTransaction4);
-        org.junit.Assert.assertNotNull(wildcardClass5);
-    }
-
-    @Test
-    public void test18() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test18");
+            System.out.format("%n%s%n", "RegressionTest0.test021");
         com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
         com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
         com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 0);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((-1.0d));
         com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(10.0d);
         java.lang.Class<?> wildcardClass9 = paymentTransaction8.getClass();
         org.junit.Assert.assertNotNull(paymentTransaction2);
@@ -257,45 +286,39 @@ public class ResearchGrantPaymentStrategyRegressionTest0 {
     }
 
     @Test
-    public void test19() throws Throwable {
+    public void test022() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test19");
+            System.out.format("%n%s%n", "RegressionTest0.test022");
         com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
         com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 1);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 0L);
-        java.lang.Class<?> wildcardClass7 = researchGrantPaymentStrategy0.getClass();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 0.0f);
+        java.lang.Class<?> wildcardClass5 = paymentTransaction4.getClass();
         org.junit.Assert.assertNotNull(paymentTransaction2);
         org.junit.Assert.assertNotNull(paymentTransaction4);
-        org.junit.Assert.assertNotNull(paymentTransaction6);
-        org.junit.Assert.assertNotNull(wildcardClass7);
+        org.junit.Assert.assertNotNull(wildcardClass5);
     }
 
     @Test
-    public void test20() throws Throwable {
+    public void test023() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test20");
+            System.out.format("%n%s%n", "RegressionTest0.test023");
         com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 1);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(100.0d);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) 100);
-        java.lang.Class<?> wildcardClass9 = paymentTransaction8.getClass();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 1L);
+        java.lang.Class<?> wildcardClass5 = researchGrantPaymentStrategy0.getClass();
         org.junit.Assert.assertNotNull(paymentTransaction2);
         org.junit.Assert.assertNotNull(paymentTransaction4);
-        org.junit.Assert.assertNotNull(paymentTransaction6);
-        org.junit.Assert.assertNotNull(paymentTransaction8);
-        org.junit.Assert.assertNotNull(wildcardClass9);
+        org.junit.Assert.assertNotNull(wildcardClass5);
     }
 
     @Test
-    public void test21() throws Throwable {
+    public void test024() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test21");
+            System.out.format("%n%s%n", "RegressionTest0.test024");
         com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 1);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(100.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) (byte) 10);
         com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
         java.lang.Class<?> wildcardClass9 = researchGrantPaymentStrategy0.getClass();
         org.junit.Assert.assertNotNull(paymentTransaction2);
@@ -306,39 +329,15 @@ public class ResearchGrantPaymentStrategyRegressionTest0 {
     }
 
     @Test
-    public void test22() throws Throwable {
+    public void test025() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test22");
+            System.out.format("%n%s%n", "RegressionTest0.test025");
         com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) 0.0f);
-        java.lang.Class<?> wildcardClass3 = paymentTransaction2.getClass();
-        org.junit.Assert.assertNotNull(paymentTransaction2);
-        org.junit.Assert.assertNotNull(wildcardClass3);
-    }
-
-    @Test
-    public void test23() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test23");
-        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 10.0f);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) (short) 0);
-        org.junit.Assert.assertNotNull(paymentTransaction2);
-        org.junit.Assert.assertNotNull(paymentTransaction4);
-        org.junit.Assert.assertNotNull(paymentTransaction6);
-    }
-
-    @Test
-    public void test24() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test24");
-        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 1);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(100.0d);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) 100L);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (short) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) (byte) 1);
         java.lang.Class<?> wildcardClass11 = paymentTransaction10.getClass();
         org.junit.Assert.assertNotNull(paymentTransaction2);
         org.junit.Assert.assertNotNull(paymentTransaction4);
@@ -349,50 +348,13 @@ public class ResearchGrantPaymentStrategyRegressionTest0 {
     }
 
     @Test
-    public void test25() throws Throwable {
+    public void test026() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test25");
-        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (short) 100);
-        java.lang.Class<?> wildcardClass3 = paymentTransaction2.getClass();
-        org.junit.Assert.assertNotNull(paymentTransaction2);
-        org.junit.Assert.assertNotNull(wildcardClass3);
-    }
-
-    @Test
-    public void test26() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test26");
-        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1L));
-        java.lang.Class<?> wildcardClass3 = paymentTransaction2.getClass();
-        org.junit.Assert.assertNotNull(paymentTransaction2);
-        org.junit.Assert.assertNotNull(wildcardClass3);
-    }
-
-    @Test
-    public void test27() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test27");
+            System.out.format("%n%s%n", "RegressionTest0.test026");
         com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
         com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) (byte) 10);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 0);
-        java.lang.Class<?> wildcardClass7 = paymentTransaction6.getClass();
-        org.junit.Assert.assertNotNull(paymentTransaction2);
-        org.junit.Assert.assertNotNull(paymentTransaction4);
-        org.junit.Assert.assertNotNull(paymentTransaction6);
-        org.junit.Assert.assertNotNull(wildcardClass7);
-    }
-
-    @Test
-    public void test28() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test28");
-        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 1);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(100.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) (short) 100);
         java.lang.Class<?> wildcardClass7 = researchGrantPaymentStrategy0.getClass();
         org.junit.Assert.assertNotNull(paymentTransaction2);
         org.junit.Assert.assertNotNull(paymentTransaction4);
@@ -401,100 +363,14 @@ public class ResearchGrantPaymentStrategyRegressionTest0 {
     }
 
     @Test
-    public void test29() throws Throwable {
+    public void test027() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test29");
-        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) (byte) 10);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 0);
-        java.lang.Class<?> wildcardClass7 = researchGrantPaymentStrategy0.getClass();
-        org.junit.Assert.assertNotNull(paymentTransaction2);
-        org.junit.Assert.assertNotNull(paymentTransaction4);
-        org.junit.Assert.assertNotNull(paymentTransaction6);
-        org.junit.Assert.assertNotNull(wildcardClass7);
-    }
-
-    @Test
-    public void test30() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test30");
+            System.out.format("%n%s%n", "RegressionTest0.test027");
         com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
         com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) ' ');
-        java.lang.Class<?> wildcardClass5 = researchGrantPaymentStrategy0.getClass();
-        org.junit.Assert.assertNotNull(paymentTransaction2);
-        org.junit.Assert.assertNotNull(paymentTransaction4);
-        org.junit.Assert.assertNotNull(wildcardClass5);
-    }
-
-    @Test
-    public void test31() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test31");
-        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 100);
-        java.lang.Class<?> wildcardClass7 = researchGrantPaymentStrategy0.getClass();
-        org.junit.Assert.assertNotNull(paymentTransaction2);
-        org.junit.Assert.assertNotNull(paymentTransaction4);
-        org.junit.Assert.assertNotNull(paymentTransaction6);
-        org.junit.Assert.assertNotNull(wildcardClass7);
-    }
-
-    @Test
-    public void test32() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test32");
-        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(10.0d);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(1.0d);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (byte) 100);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay(0.0d);
-        org.junit.Assert.assertNotNull(paymentTransaction2);
-        org.junit.Assert.assertNotNull(paymentTransaction4);
-        org.junit.Assert.assertNotNull(paymentTransaction6);
-        org.junit.Assert.assertNotNull(paymentTransaction8);
-        org.junit.Assert.assertNotNull(paymentTransaction10);
-    }
-
-    @Test
-    public void test33() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test33");
-        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 10);
-        java.lang.Class<?> wildcardClass5 = researchGrantPaymentStrategy0.getClass();
-        org.junit.Assert.assertNotNull(paymentTransaction2);
-        org.junit.Assert.assertNotNull(paymentTransaction4);
-        org.junit.Assert.assertNotNull(wildcardClass5);
-    }
-
-    @Test
-    public void test34() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test34");
-        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) (byte) 10);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 0.0f);
-        org.junit.Assert.assertNotNull(paymentTransaction2);
-        org.junit.Assert.assertNotNull(paymentTransaction4);
-        org.junit.Assert.assertNotNull(paymentTransaction6);
-    }
-
-    @Test
-    public void test35() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test35");
-        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 1);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(100.0d);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) 100);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 100L);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
         java.lang.Class<?> wildcardClass9 = researchGrantPaymentStrategy0.getClass();
         org.junit.Assert.assertNotNull(paymentTransaction2);
         org.junit.Assert.assertNotNull(paymentTransaction4);
@@ -504,12 +380,12 @@ public class ResearchGrantPaymentStrategyRegressionTest0 {
     }
 
     @Test
-    public void test36() throws Throwable {
+    public void test028() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test36");
+            System.out.format("%n%s%n", "RegressionTest0.test028");
         com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(10.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
         java.lang.Class<?> wildcardClass5 = paymentTransaction4.getClass();
         org.junit.Assert.assertNotNull(paymentTransaction2);
         org.junit.Assert.assertNotNull(paymentTransaction4);
@@ -517,40 +393,147 @@ public class ResearchGrantPaymentStrategyRegressionTest0 {
     }
 
     @Test
-    public void test37() throws Throwable {
+    public void test029() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test37");
+            System.out.format("%n%s%n", "RegressionTest0.test029");
         com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (short) 100);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) (byte) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 0);
+        java.lang.Class<?> wildcardClass7 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(wildcardClass7);
+    }
+
+    @Test
+    public void test030() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test030");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 100L);
+        java.lang.Class<?> wildcardClass5 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(wildcardClass5);
+    }
+
+    @Test
+    public void test031() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test031");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (short) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) (byte) 1);
+        java.lang.Class<?> wildcardClass11 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(wildcardClass11);
+    }
+
+    @Test
+    public void test032() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test032");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) (byte) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) (-1));
+        java.lang.Class<?> wildcardClass11 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(wildcardClass11);
+    }
+
+    @Test
+    public void test033() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test033");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) ' ');
+        java.lang.Class<?> wildcardClass3 = paymentTransaction2.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(wildcardClass3);
+    }
+
+    @Test
+    public void test034() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test034");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 0L);
+        java.lang.Class<?> wildcardClass7 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(wildcardClass7);
+    }
+
+    @Test
+    public void test035() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test035");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 1L);
+        java.lang.Class<?> wildcardClass5 = paymentTransaction4.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(wildcardClass5);
+    }
+
+    @Test
+    public void test036() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test036");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 100L);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        java.lang.Class<?> wildcardClass9 = paymentTransaction8.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(wildcardClass9);
+    }
+
+    @Test
+    public void test037() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test037");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (short) 0);
         java.lang.Class<?> wildcardClass3 = researchGrantPaymentStrategy0.getClass();
         org.junit.Assert.assertNotNull(paymentTransaction2);
         org.junit.Assert.assertNotNull(wildcardClass3);
     }
 
     @Test
-    public void test38() throws Throwable {
+    public void test038() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test38");
+            System.out.format("%n%s%n", "RegressionTest0.test038");
         com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
         com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(10.0d);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) (byte) -1);
-        java.lang.Class<?> wildcardClass7 = paymentTransaction6.getClass();
-        org.junit.Assert.assertNotNull(paymentTransaction2);
-        org.junit.Assert.assertNotNull(paymentTransaction4);
-        org.junit.Assert.assertNotNull(paymentTransaction6);
-        org.junit.Assert.assertNotNull(wildcardClass7);
-    }
-
-    @Test
-    public void test39() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test39");
-        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 1);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(100.0d);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (byte) 10);
         java.lang.Class<?> wildcardClass9 = paymentTransaction8.getClass();
         org.junit.Assert.assertNotNull(paymentTransaction2);
         org.junit.Assert.assertNotNull(paymentTransaction4);
@@ -560,221 +543,12 @@ public class ResearchGrantPaymentStrategyRegressionTest0 {
     }
 
     @Test
-    public void test40() throws Throwable {
+    public void test039() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test40");
+            System.out.format("%n%s%n", "RegressionTest0.test039");
         com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) (byte) 10);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 0L);
-        java.lang.Class<?> wildcardClass7 = researchGrantPaymentStrategy0.getClass();
-        org.junit.Assert.assertNotNull(paymentTransaction2);
-        org.junit.Assert.assertNotNull(paymentTransaction4);
-        org.junit.Assert.assertNotNull(paymentTransaction6);
-        org.junit.Assert.assertNotNull(wildcardClass7);
-    }
-
-    @Test
-    public void test41() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test41");
-        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) 100);
         com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 0);
-        java.lang.Class<?> wildcardClass7 = paymentTransaction6.getClass();
-        org.junit.Assert.assertNotNull(paymentTransaction2);
-        org.junit.Assert.assertNotNull(paymentTransaction4);
-        org.junit.Assert.assertNotNull(paymentTransaction6);
-        org.junit.Assert.assertNotNull(wildcardClass7);
-    }
-
-    @Test
-    public void test42() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test42");
-        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 1);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 0L);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) 10L);
-        org.junit.Assert.assertNotNull(paymentTransaction2);
-        org.junit.Assert.assertNotNull(paymentTransaction4);
-        org.junit.Assert.assertNotNull(paymentTransaction6);
-        org.junit.Assert.assertNotNull(paymentTransaction8);
-    }
-
-    @Test
-    public void test43() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test43");
-        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(10.0d);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(1.0d);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) 0.0f);
-        java.lang.Class<?> wildcardClass9 = researchGrantPaymentStrategy0.getClass();
-        org.junit.Assert.assertNotNull(paymentTransaction2);
-        org.junit.Assert.assertNotNull(paymentTransaction4);
-        org.junit.Assert.assertNotNull(paymentTransaction6);
-        org.junit.Assert.assertNotNull(paymentTransaction8);
-        org.junit.Assert.assertNotNull(wildcardClass9);
-    }
-
-    @Test
-    public void test44() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test44");
-        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 10);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 0L);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) 1L);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) 10L);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction12 = researchGrantPaymentStrategy0.pay(10.0d);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction14 = researchGrantPaymentStrategy0.pay(0.0d);
-        org.junit.Assert.assertNotNull(paymentTransaction2);
-        org.junit.Assert.assertNotNull(paymentTransaction4);
-        org.junit.Assert.assertNotNull(paymentTransaction6);
-        org.junit.Assert.assertNotNull(paymentTransaction8);
-        org.junit.Assert.assertNotNull(paymentTransaction10);
-        org.junit.Assert.assertNotNull(paymentTransaction12);
-        org.junit.Assert.assertNotNull(paymentTransaction14);
-    }
-
-    @Test
-    public void test45() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test45");
-        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 10);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) '#');
-        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(1.0d);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((-1.0d));
-        org.junit.Assert.assertNotNull(paymentTransaction2);
-        org.junit.Assert.assertNotNull(paymentTransaction4);
-        org.junit.Assert.assertNotNull(paymentTransaction6);
-        org.junit.Assert.assertNotNull(paymentTransaction8);
-        org.junit.Assert.assertNotNull(paymentTransaction10);
-    }
-
-    @Test
-    public void test46() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test46");
-        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(10.0d);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) ' ');
-        java.lang.Class<?> wildcardClass7 = paymentTransaction6.getClass();
-        org.junit.Assert.assertNotNull(paymentTransaction2);
-        org.junit.Assert.assertNotNull(paymentTransaction4);
-        org.junit.Assert.assertNotNull(paymentTransaction6);
-        org.junit.Assert.assertNotNull(wildcardClass7);
-    }
-
-    @Test
-    public void test47() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test47");
-        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) (byte) 10);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 0L);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) 10L);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction12 = researchGrantPaymentStrategy0.pay((double) (-1L));
-        org.junit.Assert.assertNotNull(paymentTransaction2);
-        org.junit.Assert.assertNotNull(paymentTransaction4);
-        org.junit.Assert.assertNotNull(paymentTransaction6);
-        org.junit.Assert.assertNotNull(paymentTransaction8);
-        org.junit.Assert.assertNotNull(paymentTransaction10);
-        org.junit.Assert.assertNotNull(paymentTransaction12);
-    }
-
-    @Test
-    public void test48() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test48");
-        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 10.0f);
-        java.lang.Class<?> wildcardClass5 = paymentTransaction4.getClass();
-        org.junit.Assert.assertNotNull(paymentTransaction2);
-        org.junit.Assert.assertNotNull(paymentTransaction4);
-        org.junit.Assert.assertNotNull(wildcardClass5);
-    }
-
-    @Test
-    public void test49() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test49");
-        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 10);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) '#');
-        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(1.0d);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) 1);
-        org.junit.Assert.assertNotNull(paymentTransaction2);
-        org.junit.Assert.assertNotNull(paymentTransaction4);
-        org.junit.Assert.assertNotNull(paymentTransaction6);
-        org.junit.Assert.assertNotNull(paymentTransaction8);
-        org.junit.Assert.assertNotNull(paymentTransaction10);
-    }
-
-    @Test
-    public void test50() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test50");
-        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) ' ');
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 10L);
-        java.lang.Class<?> wildcardClass7 = researchGrantPaymentStrategy0.getClass();
-        org.junit.Assert.assertNotNull(paymentTransaction2);
-        org.junit.Assert.assertNotNull(paymentTransaction4);
-        org.junit.Assert.assertNotNull(paymentTransaction6);
-        org.junit.Assert.assertNotNull(wildcardClass7);
-    }
-
-    @Test
-    public void test51() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test51");
-        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
-        java.lang.Class<?> wildcardClass5 = paymentTransaction4.getClass();
-        org.junit.Assert.assertNotNull(paymentTransaction2);
-        org.junit.Assert.assertNotNull(paymentTransaction4);
-        org.junit.Assert.assertNotNull(wildcardClass5);
-    }
-
-    @Test
-    public void test52() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test52");
-        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 100);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) '#');
-        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) (short) 0);
-        org.junit.Assert.assertNotNull(paymentTransaction2);
-        org.junit.Assert.assertNotNull(paymentTransaction4);
-        org.junit.Assert.assertNotNull(paymentTransaction6);
-        org.junit.Assert.assertNotNull(paymentTransaction8);
-        org.junit.Assert.assertNotNull(paymentTransaction10);
-    }
-
-    @Test
-    public void test53() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test53");
-        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 0.0f);
         java.lang.Class<?> wildcardClass5 = researchGrantPaymentStrategy0.getClass();
         org.junit.Assert.assertNotNull(paymentTransaction2);
         org.junit.Assert.assertNotNull(paymentTransaction4);
@@ -782,15 +556,45 @@ public class ResearchGrantPaymentStrategyRegressionTest0 {
     }
 
     @Test
-    public void test54() throws Throwable {
+    public void test040() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test54");
+            System.out.format("%n%s%n", "RegressionTest0.test040");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 1L);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 0.0f);
+        java.lang.Class<?> wildcardClass7 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(wildcardClass7);
+    }
+
+    @Test
+    public void test041() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test041");
         com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
         com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) (byte) 10);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 0L);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) 10L);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        java.lang.Class<?> wildcardClass7 = paymentTransaction6.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(wildcardClass7);
+    }
+
+    @Test
+    public void test042() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test042");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (short) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) '#');
         java.lang.Class<?> wildcardClass11 = paymentTransaction10.getClass();
         org.junit.Assert.assertNotNull(paymentTransaction2);
         org.junit.Assert.assertNotNull(paymentTransaction4);
@@ -801,66 +605,424 @@ public class ResearchGrantPaymentStrategyRegressionTest0 {
     }
 
     @Test
-    public void test55() throws Throwable {
+    public void test043() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test55");
+            System.out.format("%n%s%n", "RegressionTest0.test043");
         com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 10);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 0L);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) 1L);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) (byte) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 'a');
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) 0L);
+        java.lang.Class<?> wildcardClass9 = paymentTransaction8.getClass();
         org.junit.Assert.assertNotNull(paymentTransaction2);
         org.junit.Assert.assertNotNull(paymentTransaction4);
         org.junit.Assert.assertNotNull(paymentTransaction6);
         org.junit.Assert.assertNotNull(paymentTransaction8);
-        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(wildcardClass9);
     }
 
     @Test
-    public void test56() throws Throwable {
+    public void test044() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test56");
+            System.out.format("%n%s%n", "RegressionTest0.test044");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 0.0f);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 1L);
+        java.lang.Class<?> wildcardClass7 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(wildcardClass7);
+    }
+
+    @Test
+    public void test045() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test045");
         com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
         com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
         com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 100);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) 100L);
-        org.junit.Assert.assertNotNull(paymentTransaction2);
-        org.junit.Assert.assertNotNull(paymentTransaction4);
-        org.junit.Assert.assertNotNull(paymentTransaction6);
-        org.junit.Assert.assertNotNull(paymentTransaction8);
-    }
-
-    @Test
-    public void test57() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test57");
-        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 10);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) '#');
-        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(1.0d);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) (byte) -1);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (short) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction12 = researchGrantPaymentStrategy0.pay((double) 1);
+        java.lang.Class<?> wildcardClass13 = researchGrantPaymentStrategy0.getClass();
         org.junit.Assert.assertNotNull(paymentTransaction2);
         org.junit.Assert.assertNotNull(paymentTransaction4);
         org.junit.Assert.assertNotNull(paymentTransaction6);
         org.junit.Assert.assertNotNull(paymentTransaction8);
         org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(paymentTransaction12);
+        org.junit.Assert.assertNotNull(wildcardClass13);
     }
 
     @Test
-    public void test58() throws Throwable {
+    public void test046() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test58");
+            System.out.format("%n%s%n", "RegressionTest0.test046");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) 100.0f);
+        java.lang.Class<?> wildcardClass9 = paymentTransaction8.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(wildcardClass9);
+    }
+
+    @Test
+    public void test047() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test047");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (short) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) '#');
+        java.lang.Class<?> wildcardClass11 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(wildcardClass11);
+    }
+
+    @Test
+    public void test048() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test048");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        java.lang.Class<?> wildcardClass9 = paymentTransaction8.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(wildcardClass9);
+    }
+
+    @Test
+    public void test049() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test049");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 'a');
+        java.lang.Class<?> wildcardClass7 = paymentTransaction6.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(wildcardClass7);
+    }
+
+    @Test
+    public void test050() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test050");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        java.lang.Class<?> wildcardClass7 = paymentTransaction6.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(wildcardClass7);
+    }
+
+    @Test
+    public void test051() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test051");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (short) 10);
+        java.lang.Class<?> wildcardClass9 = paymentTransaction8.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(wildcardClass9);
+    }
+
+    @Test
+    public void test052() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test052");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) (byte) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 1);
+        java.lang.Class<?> wildcardClass7 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(wildcardClass7);
+    }
+
+    @Test
+    public void test053() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test053");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 1L);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 0.0f);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (-1L));
+        java.lang.Class<?> wildcardClass9 = paymentTransaction8.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(wildcardClass9);
+    }
+
+    @Test
+    public void test054() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test054");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (byte) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) 1L);
+        java.lang.Class<?> wildcardClass11 = paymentTransaction10.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(wildcardClass11);
+    }
+
+    @Test
+    public void test055() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test055");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        java.lang.Class<?> wildcardClass11 = paymentTransaction10.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(wildcardClass11);
+    }
+
+    @Test
+    public void test056() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test056");
         com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
         com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
         com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 10);
         com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 0L);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) 1L);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) 10L);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction12 = researchGrantPaymentStrategy0.pay(10.0d);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction14 = researchGrantPaymentStrategy0.pay((double) 'a');
+        java.lang.Class<?> wildcardClass7 = paymentTransaction6.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(wildcardClass7);
+    }
+
+    @Test
+    public void test057() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test057");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        java.lang.Class<?> wildcardClass9 = paymentTransaction8.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(wildcardClass9);
+    }
+
+    @Test
+    public void test058() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test058");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) (short) 100);
+        java.lang.Class<?> wildcardClass7 = paymentTransaction6.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(wildcardClass7);
+    }
+
+    @Test
+    public void test059() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test059");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) 100);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 1);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) 100.0f);
+        java.lang.Class<?> wildcardClass9 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(wildcardClass9);
+    }
+
+    @Test
+    public void test060() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test060");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) (byte) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 0);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (short) 1);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay(0.0d);
+        java.lang.Class<?> wildcardClass11 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(wildcardClass11);
+    }
+
+    @Test
+    public void test061() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test061");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 100L);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) 100.0f);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay(0.0d);
+        java.lang.Class<?> wildcardClass11 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(wildcardClass11);
+    }
+
+    @Test
+    public void test062() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test062");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay(0.0d);
+        java.lang.Class<?> wildcardClass3 = paymentTransaction2.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(wildcardClass3);
+    }
+
+    @Test
+    public void test063() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test063");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction12 = researchGrantPaymentStrategy0.pay(0.0d);
+        java.lang.Class<?> wildcardClass13 = paymentTransaction12.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(paymentTransaction12);
+        org.junit.Assert.assertNotNull(wildcardClass13);
+    }
+
+    @Test
+    public void test064() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test064");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(10.0d);
+        java.lang.Class<?> wildcardClass9 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(wildcardClass9);
+    }
+
+    @Test
+    public void test065() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test065");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 0.0f);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) '4');
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+    }
+
+    @Test
+    public void test066() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test066");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) 100);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 1);
+        java.lang.Class<?> wildcardClass7 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(wildcardClass7);
+    }
+
+    @Test
+    public void test067() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test067");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction12 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction14 = researchGrantPaymentStrategy0.pay(10.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction16 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction18 = researchGrantPaymentStrategy0.pay((double) 0.0f);
+        java.lang.Class<?> wildcardClass19 = researchGrantPaymentStrategy0.getClass();
         org.junit.Assert.assertNotNull(paymentTransaction2);
         org.junit.Assert.assertNotNull(paymentTransaction4);
         org.junit.Assert.assertNotNull(paymentTransaction6);
@@ -868,14 +1030,295 @@ public class ResearchGrantPaymentStrategyRegressionTest0 {
         org.junit.Assert.assertNotNull(paymentTransaction10);
         org.junit.Assert.assertNotNull(paymentTransaction12);
         org.junit.Assert.assertNotNull(paymentTransaction14);
+        org.junit.Assert.assertNotNull(paymentTransaction16);
+        org.junit.Assert.assertNotNull(paymentTransaction18);
+        org.junit.Assert.assertNotNull(wildcardClass19);
     }
 
     @Test
-    public void test59() throws Throwable {
+    public void test068() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test59");
+            System.out.format("%n%s%n", "RegressionTest0.test068");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 100L);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) 100.0f);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction12 = researchGrantPaymentStrategy0.pay(0.0d);
+        java.lang.Class<?> wildcardClass13 = paymentTransaction12.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(paymentTransaction12);
+        org.junit.Assert.assertNotNull(wildcardClass13);
+    }
+
+    @Test
+    public void test069() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test069");
         com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
         com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction12 = researchGrantPaymentStrategy0.pay(0.0d);
+        java.lang.Class<?> wildcardClass13 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(paymentTransaction12);
+        org.junit.Assert.assertNotNull(wildcardClass13);
+    }
+
+    @Test
+    public void test070() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test070");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 10);
+        java.lang.Class<?> wildcardClass5 = paymentTransaction4.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(wildcardClass5);
+    }
+
+    @Test
+    public void test071() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test071");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay(0.0d);
+        java.lang.Class<?> wildcardClass11 = paymentTransaction10.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(wildcardClass11);
+    }
+
+    @Test
+    public void test072() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test072");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 0.0f);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 1L);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (short) -1);
+        java.lang.Class<?> wildcardClass9 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(wildcardClass9);
+    }
+
+    @Test
+    public void test073() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test073");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+    }
+
+    @Test
+    public void test074() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test074");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) 0);
+        java.lang.Class<?> wildcardClass9 = paymentTransaction8.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(wildcardClass9);
+    }
+
+    @Test
+    public void test075() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test075");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 100L);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) 100.0f);
+        java.lang.Class<?> wildcardClass9 = paymentTransaction8.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(wildcardClass9);
+    }
+
+    @Test
+    public void test076() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test076");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) (short) 10);
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+    }
+
+    @Test
+    public void test077() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test077");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (short) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) '#');
+        com.yorku.lab.model.PaymentTransaction paymentTransaction12 = researchGrantPaymentStrategy0.pay((double) 10L);
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(paymentTransaction12);
+    }
+
+    @Test
+    public void test078() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test078");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) (byte) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (short) -1);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) (-1L));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction12 = researchGrantPaymentStrategy0.pay((double) 1L);
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(paymentTransaction12);
+    }
+
+    @Test
+    public void test079() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test079");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 0L);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) 100);
+        java.lang.Class<?> wildcardClass11 = paymentTransaction10.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(wildcardClass11);
+    }
+
+    @Test
+    public void test080() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test080");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction12 = researchGrantPaymentStrategy0.pay((double) 10);
+        java.lang.Class<?> wildcardClass13 = paymentTransaction12.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(paymentTransaction12);
+        org.junit.Assert.assertNotNull(wildcardClass13);
+    }
+
+    @Test
+    public void test081() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test081");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction12 = researchGrantPaymentStrategy0.pay((double) (short) 10);
+        java.lang.Class<?> wildcardClass13 = paymentTransaction12.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(paymentTransaction12);
+        org.junit.Assert.assertNotNull(wildcardClass13);
+    }
+
+    @Test
+    public void test082() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test082");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) (byte) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (short) -1);
+        java.lang.Class<?> wildcardClass9 = paymentTransaction8.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(wildcardClass9);
+    }
+
+    @Test
+    public void test083() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test083");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) (short) 100);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) 0);
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+    }
+
+    @Test
+    public void test084() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test084");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay(0.0d);
         com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) (byte) 10);
         com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 0);
         com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (short) 1);
@@ -888,15 +1331,15 @@ public class ResearchGrantPaymentStrategyRegressionTest0 {
     }
 
     @Test
-    public void test60() throws Throwable {
+    public void test085() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test60");
+            System.out.format("%n%s%n", "RegressionTest0.test085");
         com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
         com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 100);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) (short) 100);
         com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) '#');
-        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) '#');
         org.junit.Assert.assertNotNull(paymentTransaction2);
         org.junit.Assert.assertNotNull(paymentTransaction4);
         org.junit.Assert.assertNotNull(paymentTransaction6);
@@ -905,129 +1348,15 @@ public class ResearchGrantPaymentStrategyRegressionTest0 {
     }
 
     @Test
-    public void test61() throws Throwable {
+    public void test086() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test61");
-        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) (byte) 10);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) '4');
-        org.junit.Assert.assertNotNull(paymentTransaction2);
-        org.junit.Assert.assertNotNull(paymentTransaction4);
-        org.junit.Assert.assertNotNull(paymentTransaction6);
-    }
-
-    @Test
-    public void test62() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test62");
+            System.out.format("%n%s%n", "RegressionTest0.test086");
         com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
         com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
         com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 1L);
-        org.junit.Assert.assertNotNull(paymentTransaction2);
-        org.junit.Assert.assertNotNull(paymentTransaction4);
-        org.junit.Assert.assertNotNull(paymentTransaction6);
-    }
-
-    @Test
-    public void test63() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test63");
-        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) (byte) 10);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 0);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) '4');
-        org.junit.Assert.assertNotNull(paymentTransaction2);
-        org.junit.Assert.assertNotNull(paymentTransaction4);
-        org.junit.Assert.assertNotNull(paymentTransaction6);
-        org.junit.Assert.assertNotNull(paymentTransaction8);
-    }
-
-    @Test
-    public void test64() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test64");
-        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(10.0d);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) (byte) -1);
-        java.lang.Class<?> wildcardClass7 = researchGrantPaymentStrategy0.getClass();
-        org.junit.Assert.assertNotNull(paymentTransaction2);
-        org.junit.Assert.assertNotNull(paymentTransaction4);
-        org.junit.Assert.assertNotNull(paymentTransaction6);
-        org.junit.Assert.assertNotNull(wildcardClass7);
-    }
-
-    @Test
-    public void test65() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test65");
-        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) (byte) 10);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 0);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
         com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (short) 10);
-        java.lang.Class<?> wildcardClass9 = paymentTransaction8.getClass();
-        org.junit.Assert.assertNotNull(paymentTransaction2);
-        org.junit.Assert.assertNotNull(paymentTransaction4);
-        org.junit.Assert.assertNotNull(paymentTransaction6);
-        org.junit.Assert.assertNotNull(paymentTransaction8);
-        org.junit.Assert.assertNotNull(wildcardClass9);
-    }
-
-    @Test
-    public void test66() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test66");
-        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (short) 0);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 10);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) (short) -1);
-        org.junit.Assert.assertNotNull(paymentTransaction2);
-        org.junit.Assert.assertNotNull(paymentTransaction4);
-        org.junit.Assert.assertNotNull(paymentTransaction6);
-    }
-
-    @Test
-    public void test67() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test67");
-        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 100);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) '#');
-        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) ' ');
-        org.junit.Assert.assertNotNull(paymentTransaction2);
-        org.junit.Assert.assertNotNull(paymentTransaction4);
-        org.junit.Assert.assertNotNull(paymentTransaction6);
-        org.junit.Assert.assertNotNull(paymentTransaction8);
-        org.junit.Assert.assertNotNull(paymentTransaction10);
-    }
-
-    @Test
-    public void test68() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test68");
-        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (short) 0);
-        java.lang.Class<?> wildcardClass3 = researchGrantPaymentStrategy0.getClass();
-        org.junit.Assert.assertNotNull(paymentTransaction2);
-        org.junit.Assert.assertNotNull(wildcardClass3);
-    }
-
-    @Test
-    public void test69() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test69");
-        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 100);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) '#');
-        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) 0L);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay(0.0d);
         java.lang.Class<?> wildcardClass11 = paymentTransaction10.getClass();
         org.junit.Assert.assertNotNull(paymentTransaction2);
         org.junit.Assert.assertNotNull(paymentTransaction4);
@@ -1038,15 +1367,157 @@ public class ResearchGrantPaymentStrategyRegressionTest0 {
     }
 
     @Test
-    public void test70() throws Throwable {
+    public void test087() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test70");
+            System.out.format("%n%s%n", "RegressionTest0.test087");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (byte) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) ' ');
+        java.lang.Class<?> wildcardClass11 = paymentTransaction10.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(wildcardClass11);
+    }
+
+    @Test
+    public void test088() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test088");
         com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
         com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) (byte) 10);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 0);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) (short) 100);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) '#');
+        java.lang.Class<?> wildcardClass9 = paymentTransaction8.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(wildcardClass9);
+    }
+
+    @Test
+    public void test089() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test089");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay(0.0d);
+        java.lang.Class<?> wildcardClass11 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(wildcardClass11);
+    }
+
+    @Test
+    public void test090() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test090");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (-1L));
+        java.lang.Class<?> wildcardClass9 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(wildcardClass9);
+    }
+
+    @Test
+    public void test091() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test091");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 100L);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) (short) 0);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) (byte) 1);
+        java.lang.Class<?> wildcardClass11 = paymentTransaction10.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(wildcardClass11);
+    }
+
+    @Test
+    public void test092() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test092");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) (byte) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        java.lang.Class<?> wildcardClass9 = paymentTransaction8.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(wildcardClass9);
+    }
+
+    @Test
+    public void test093() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test093");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
         com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (short) 10);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) '4');
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction12 = researchGrantPaymentStrategy0.pay((double) 0);
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(paymentTransaction12);
+    }
+
+    @Test
+    public void test094() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test094");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) (short) 100);
+        java.lang.Class<?> wildcardClass7 = paymentTransaction6.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(wildcardClass7);
+    }
+
+    @Test
+    public void test095() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test095");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 100L);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) 100.0f);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) 'a');
         org.junit.Assert.assertNotNull(paymentTransaction2);
         org.junit.Assert.assertNotNull(paymentTransaction4);
         org.junit.Assert.assertNotNull(paymentTransaction6);
@@ -1055,14 +1526,1230 @@ public class ResearchGrantPaymentStrategyRegressionTest0 {
     }
 
     @Test
-    public void test71() throws Throwable {
+    public void test096() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test71");
+            System.out.format("%n%s%n", "RegressionTest0.test096");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay(0.0d);
+        java.lang.Class<?> wildcardClass11 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(wildcardClass11);
+    }
+
+    @Test
+    public void test097() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test097");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 1L);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 100.0f);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (short) 1);
+        java.lang.Class<?> wildcardClass9 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(wildcardClass9);
+    }
+
+    @Test
+    public void test098() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test098");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 0.0f);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 1L);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+    }
+
+    @Test
+    public void test099() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test099");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 0.0f);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) '4');
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (byte) 10);
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+    }
+
+    @Test
+    public void test100() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test100");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) (-1));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 0);
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+    }
+
+    @Test
+    public void test101() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test101");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) (byte) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (short) -1);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) (-1L));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction12 = researchGrantPaymentStrategy0.pay(0.0d);
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(paymentTransaction12);
+    }
+
+    @Test
+    public void test102() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test102");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) (short) 100);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) '#');
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay(100.0d);
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+    }
+
+    @Test
+    public void test103() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test103");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(10.0d);
+        java.lang.Class<?> wildcardClass9 = paymentTransaction8.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(wildcardClass9);
+    }
+
+    @Test
+    public void test104() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test104");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) (short) 100);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) '#');
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) 0.0f);
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+    }
+
+    @Test
+    public void test105() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test105");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (byte) 100);
+        java.lang.Class<?> wildcardClass9 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(wildcardClass9);
+    }
+
+    @Test
+    public void test106() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test106");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) 100);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 1);
+        java.lang.Class<?> wildcardClass7 = paymentTransaction6.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(wildcardClass7);
+    }
+
+    @Test
+    public void test107() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test107");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) (short) 100);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+    }
+
+    @Test
+    public void test108() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test108");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) (byte) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (short) -1);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) (-1L));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction12 = researchGrantPaymentStrategy0.pay((double) 1.0f);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction14 = researchGrantPaymentStrategy0.pay(10.0d);
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(paymentTransaction12);
+        org.junit.Assert.assertNotNull(paymentTransaction14);
+    }
+
+    @Test
+    public void test109() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test109");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) (byte) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay(0.0d);
+        java.lang.Class<?> wildcardClass11 = paymentTransaction10.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(wildcardClass11);
+    }
+
+    @Test
+    public void test110() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test110");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 1L);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 0.0f);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (-1L));
+        java.lang.Class<?> wildcardClass9 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(wildcardClass9);
+    }
+
+    @Test
+    public void test111() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test111");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 100L);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) 100.0f);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay(0.0d);
+        java.lang.Class<?> wildcardClass11 = paymentTransaction10.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(wildcardClass11);
+    }
+
+    @Test
+    public void test112() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test112");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) 10.0f);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction12 = researchGrantPaymentStrategy0.pay((double) (short) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction14 = researchGrantPaymentStrategy0.pay((double) (short) 100);
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(paymentTransaction12);
+        org.junit.Assert.assertNotNull(paymentTransaction14);
+    }
+
+    @Test
+    public void test113() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test113");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 1L);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 100.0f);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (short) 1);
+        java.lang.Class<?> wildcardClass9 = paymentTransaction8.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(wildcardClass9);
+    }
+
+    @Test
+    public void test114() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test114");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 'a');
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) 0L);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) 0L);
+        java.lang.Class<?> wildcardClass11 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(wildcardClass11);
+    }
+
+    @Test
+    public void test115() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test115");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) 10.0f);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction12 = researchGrantPaymentStrategy0.pay((double) (short) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction14 = researchGrantPaymentStrategy0.pay((double) (byte) 100);
+        java.lang.Class<?> wildcardClass15 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(paymentTransaction12);
+        org.junit.Assert.assertNotNull(paymentTransaction14);
+        org.junit.Assert.assertNotNull(wildcardClass15);
+    }
+
+    @Test
+    public void test116() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test116");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 'a');
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) 100.0f);
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+    }
+
+    @Test
+    public void test117() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test117");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 0.0f);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) '4');
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) 0L);
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+    }
+
+    @Test
+    public void test118() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test118");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) 1.0f);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction12 = researchGrantPaymentStrategy0.pay(0.0d);
+        java.lang.Class<?> wildcardClass13 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(paymentTransaction12);
+        org.junit.Assert.assertNotNull(wildcardClass13);
+    }
+
+    @Test
+    public void test119() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test119");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay(0.0d);
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+    }
+
+    @Test
+    public void test120() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test120");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (short) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) (-1L));
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+    }
+
+    @Test
+    public void test121() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test121");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction12 = researchGrantPaymentStrategy0.pay((double) (short) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction14 = researchGrantPaymentStrategy0.pay((double) '4');
+        java.lang.Class<?> wildcardClass15 = paymentTransaction14.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(paymentTransaction12);
+        org.junit.Assert.assertNotNull(paymentTransaction14);
+        org.junit.Assert.assertNotNull(wildcardClass15);
+    }
+
+    @Test
+    public void test122() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test122");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 0.0f);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) '4');
+        java.lang.Class<?> wildcardClass7 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(wildcardClass7);
+    }
+
+    @Test
+    public void test123() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test123");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 0.0f);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 1L);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (short) -1);
+        java.lang.Class<?> wildcardClass9 = paymentTransaction8.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(wildcardClass9);
+    }
+
+    @Test
+    public void test124() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test124");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 100L);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) (short) 0);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (short) -1);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) (byte) -1);
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+    }
+
+    @Test
+    public void test125() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test125");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) 0);
+        java.lang.Class<?> wildcardClass9 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(wildcardClass9);
+    }
+
+    @Test
+    public void test126() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test126");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 1L);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 100.0f);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (short) 1);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) (short) 1);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction12 = researchGrantPaymentStrategy0.pay(100.0d);
+        java.lang.Class<?> wildcardClass13 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(paymentTransaction12);
+        org.junit.Assert.assertNotNull(wildcardClass13);
+    }
+
+    @Test
+    public void test127() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test127");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) (byte) 100);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+    }
+
+    @Test
+    public void test128() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test128");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 100L);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) (short) 0);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) (byte) 1);
+        java.lang.Class<?> wildcardClass11 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(wildcardClass11);
+    }
+
+    @Test
+    public void test129() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test129");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 1L);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 100.0f);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (short) 1);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) 0);
+        java.lang.Class<?> wildcardClass11 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(wildcardClass11);
+    }
+
+    @Test
+    public void test130() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test130");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 1L);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 100.0f);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (short) 1);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) (short) 1);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction12 = researchGrantPaymentStrategy0.pay((double) (byte) 0);
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(paymentTransaction12);
+    }
+
+    @Test
+    public void test131() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test131");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (byte) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay(0.0d);
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+    }
+
+    @Test
+    public void test132() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test132");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 'a');
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) 0L);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay(100.0d);
+        java.lang.Class<?> wildcardClass11 = paymentTransaction10.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(wildcardClass11);
+    }
+
+    @Test
+    public void test133() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test133");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        java.lang.Class<?> wildcardClass9 = paymentTransaction8.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(wildcardClass9);
+    }
+
+    @Test
+    public void test134() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test134");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) (byte) 100);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (short) 0);
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+    }
+
+    @Test
+    public void test135() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test135");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 1L);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 0.0f);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (-1L));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) (byte) -1);
+        java.lang.Class<?> wildcardClass11 = paymentTransaction10.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(wildcardClass11);
+    }
+
+    @Test
+    public void test136() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test136");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) 100);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 1);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+    }
+
+    @Test
+    public void test137() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test137");
         com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
         com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
         com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 10);
         com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 0L);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) 1L);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay(0.0d);
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+    }
+
+    @Test
+    public void test138() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test138");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) (-1));
+        java.lang.Class<?> wildcardClass5 = paymentTransaction4.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(wildcardClass5);
+    }
+
+    @Test
+    public void test139() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test139");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) (byte) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+    }
+
+    @Test
+    public void test140() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test140");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 100L);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) (short) 0);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (short) -1);
+        java.lang.Class<?> wildcardClass9 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(wildcardClass9);
+    }
+
+    @Test
+    public void test141() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test141");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) 0L);
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+    }
+
+    @Test
+    public void test142() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test142");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) 0.0f);
+        java.lang.Class<?> wildcardClass9 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(wildcardClass9);
+    }
+
+    @Test
+    public void test143() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test143");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) (byte) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) (-1));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction12 = researchGrantPaymentStrategy0.pay((double) (short) -1);
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(paymentTransaction12);
+    }
+
+    @Test
+    public void test144() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test144");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) 100.0f);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) (-1));
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+    }
+
+    @Test
+    public void test145() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test145");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(10.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) ' ');
+        java.lang.Class<?> wildcardClass11 = paymentTransaction10.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(wildcardClass11);
+    }
+
+    @Test
+    public void test146() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test146");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (byte) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) 1L);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction12 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(paymentTransaction12);
+    }
+
+    @Test
+    public void test147() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test147");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) 100);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 1);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) 100.0f);
+        java.lang.Class<?> wildcardClass9 = paymentTransaction8.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(wildcardClass9);
+    }
+
+    @Test
+    public void test148() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test148");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) 1.0f);
+        java.lang.Class<?> wildcardClass9 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(wildcardClass9);
+    }
+
+    @Test
+    public void test149() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test149");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (short) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction12 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction14 = researchGrantPaymentStrategy0.pay(0.0d);
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(paymentTransaction12);
+        org.junit.Assert.assertNotNull(paymentTransaction14);
+    }
+
+    @Test
+    public void test150() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test150");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction12 = researchGrantPaymentStrategy0.pay((double) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction14 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction16 = researchGrantPaymentStrategy0.pay((double) (byte) -1);
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(paymentTransaction12);
+        org.junit.Assert.assertNotNull(paymentTransaction14);
+        org.junit.Assert.assertNotNull(paymentTransaction16);
+    }
+
+    @Test
+    public void test151() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test151");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction12 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction14 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction16 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction18 = researchGrantPaymentStrategy0.pay((double) 10);
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(paymentTransaction12);
+        org.junit.Assert.assertNotNull(paymentTransaction14);
+        org.junit.Assert.assertNotNull(paymentTransaction16);
+        org.junit.Assert.assertNotNull(paymentTransaction18);
+    }
+
+    @Test
+    public void test152() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test152");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction12 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction14 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction16 = researchGrantPaymentStrategy0.pay(1.0d);
+        java.lang.Class<?> wildcardClass17 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(paymentTransaction12);
+        org.junit.Assert.assertNotNull(paymentTransaction14);
+        org.junit.Assert.assertNotNull(paymentTransaction16);
+        org.junit.Assert.assertNotNull(wildcardClass17);
+    }
+
+    @Test
+    public void test153() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test153");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 100L);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) 0L);
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+    }
+
+    @Test
+    public void test154() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test154");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) (byte) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (short) -1);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay(0.0d);
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+    }
+
+    @Test
+    public void test155() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test155");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (byte) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) ' ');
+        java.lang.Class<?> wildcardClass11 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(wildcardClass11);
+    }
+
+    @Test
+    public void test156() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test156");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction12 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction14 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction16 = researchGrantPaymentStrategy0.pay((double) (-1));
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(paymentTransaction12);
+        org.junit.Assert.assertNotNull(paymentTransaction14);
+        org.junit.Assert.assertNotNull(paymentTransaction16);
+    }
+
+    @Test
+    public void test157() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test157");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 1L);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 0.0f);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (short) 0);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) (byte) -1);
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+    }
+
+    @Test
+    public void test158() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test158");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        java.lang.Class<?> wildcardClass9 = paymentTransaction8.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(wildcardClass9);
+    }
+
+    @Test
+    public void test159() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test159");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay(0.0d);
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+    }
+
+    @Test
+    public void test160() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test160");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 1L);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 100.0f);
+        java.lang.Class<?> wildcardClass7 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(wildcardClass7);
+    }
+
+    @Test
+    public void test161() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test161");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) (byte) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 0);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (-1L));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) 10.0f);
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+    }
+
+    @Test
+    public void test162() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test162");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 1L);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 100.0f);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+    }
+
+    @Test
+    public void test163() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test163");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) 10.0f);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction12 = researchGrantPaymentStrategy0.pay((double) (short) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction14 = researchGrantPaymentStrategy0.pay((double) (byte) 100);
+        java.lang.Class<?> wildcardClass15 = paymentTransaction14.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(paymentTransaction12);
+        org.junit.Assert.assertNotNull(paymentTransaction14);
+        org.junit.Assert.assertNotNull(wildcardClass15);
+    }
+
+    @Test
+    public void test164() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test164");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) 100);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 1);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) 100.0f);
         com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) 1L);
         org.junit.Assert.assertNotNull(paymentTransaction2);
         org.junit.Assert.assertNotNull(paymentTransaction4);
@@ -1072,44 +2759,126 @@ public class ResearchGrantPaymentStrategyRegressionTest0 {
     }
 
     @Test
-    public void test72() throws Throwable {
+    public void test165() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test72");
+            System.out.format("%n%s%n", "RegressionTest0.test165");
         com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(10.0d);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) 1);
+        java.lang.Class<?> wildcardClass9 = researchGrantPaymentStrategy0.getClass();
         org.junit.Assert.assertNotNull(paymentTransaction2);
         org.junit.Assert.assertNotNull(paymentTransaction4);
         org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(wildcardClass9);
     }
 
     @Test
-    public void test73() throws Throwable {
+    public void test166() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test73");
+            System.out.format("%n%s%n", "RegressionTest0.test166");
         com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
         com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
         com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 10);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 0L);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) 1L);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) (short) -1);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) (short) 100);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) 10L);
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+    }
+
+    @Test
+    public void test167() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test167");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction12 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction14 = researchGrantPaymentStrategy0.pay(10.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction16 = researchGrantPaymentStrategy0.pay(0.0d);
+        java.lang.Class<?> wildcardClass17 = paymentTransaction16.getClass();
         org.junit.Assert.assertNotNull(paymentTransaction2);
         org.junit.Assert.assertNotNull(paymentTransaction4);
         org.junit.Assert.assertNotNull(paymentTransaction6);
         org.junit.Assert.assertNotNull(paymentTransaction8);
         org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(paymentTransaction12);
+        org.junit.Assert.assertNotNull(paymentTransaction14);
+        org.junit.Assert.assertNotNull(paymentTransaction16);
+        org.junit.Assert.assertNotNull(wildcardClass17);
     }
 
     @Test
-    public void test74() throws Throwable {
+    public void test168() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test74");
+            System.out.format("%n%s%n", "RegressionTest0.test168");
         com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 10);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 0L);
-        java.lang.Class<?> wildcardClass7 = researchGrantPaymentStrategy0.getClass();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 1L);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 0.0f);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (short) 0);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) (byte) 1);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction12 = researchGrantPaymentStrategy0.pay(0.0d);
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(paymentTransaction12);
+    }
+
+    @Test
+    public void test169() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test169");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (short) 0);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 0.0f);
+        java.lang.Class<?> wildcardClass5 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(wildcardClass5);
+    }
+
+    @Test
+    public void test170() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test170");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction12 = researchGrantPaymentStrategy0.pay((double) (short) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction14 = researchGrantPaymentStrategy0.pay((double) '4');
+        com.yorku.lab.model.PaymentTransaction paymentTransaction16 = researchGrantPaymentStrategy0.pay((double) ' ');
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(paymentTransaction12);
+        org.junit.Assert.assertNotNull(paymentTransaction14);
+        org.junit.Assert.assertNotNull(paymentTransaction16);
+    }
+
+    @Test
+    public void test171() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test171");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        java.lang.Class<?> wildcardClass7 = paymentTransaction6.getClass();
         org.junit.Assert.assertNotNull(paymentTransaction2);
         org.junit.Assert.assertNotNull(paymentTransaction4);
         org.junit.Assert.assertNotNull(paymentTransaction6);
@@ -1117,18 +2886,205 @@ public class ResearchGrantPaymentStrategyRegressionTest0 {
     }
 
     @Test
-    public void test75() throws Throwable {
+    public void test172() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test75");
+            System.out.format("%n%s%n", "RegressionTest0.test172");
         com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
-        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
-        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(10.0d);
-        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) ' ');
-        java.lang.Class<?> wildcardClass7 = researchGrantPaymentStrategy0.getClass();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) 1.0f);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction12 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction14 = researchGrantPaymentStrategy0.pay((double) 0.0f);
+        java.lang.Class<?> wildcardClass15 = researchGrantPaymentStrategy0.getClass();
         org.junit.Assert.assertNotNull(paymentTransaction2);
         org.junit.Assert.assertNotNull(paymentTransaction4);
         org.junit.Assert.assertNotNull(paymentTransaction6);
-        org.junit.Assert.assertNotNull(wildcardClass7);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(paymentTransaction12);
+        org.junit.Assert.assertNotNull(paymentTransaction14);
+        org.junit.Assert.assertNotNull(wildcardClass15);
+    }
+
+    @Test
+    public void test173() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test173");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) 1.0f);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction12 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction14 = researchGrantPaymentStrategy0.pay((double) 0.0f);
+        java.lang.Class<?> wildcardClass15 = paymentTransaction14.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(paymentTransaction12);
+        org.junit.Assert.assertNotNull(paymentTransaction14);
+        org.junit.Assert.assertNotNull(wildcardClass15);
+    }
+
+    @Test
+    public void test174() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test174");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 100L);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) (byte) -1);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction12 = researchGrantPaymentStrategy0.pay(0.0d);
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(paymentTransaction12);
+    }
+
+    @Test
+    public void test175() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test175");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction12 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction14 = researchGrantPaymentStrategy0.pay(10.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction16 = researchGrantPaymentStrategy0.pay(0.0d);
+        java.lang.Class<?> wildcardClass17 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(paymentTransaction12);
+        org.junit.Assert.assertNotNull(paymentTransaction14);
+        org.junit.Assert.assertNotNull(paymentTransaction16);
+        org.junit.Assert.assertNotNull(wildcardClass17);
+    }
+
+    @Test
+    public void test176() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test176");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (byte) 10);
+        java.lang.Class<?> wildcardClass9 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(wildcardClass9);
+    }
+
+    @Test
+    public void test177() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test177");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) 100);
+        java.lang.Class<?> wildcardClass3 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(wildcardClass3);
+    }
+
+    @Test
+    public void test178() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test178");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (short) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction12 = researchGrantPaymentStrategy0.pay((double) (short) 100);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction14 = researchGrantPaymentStrategy0.pay(10.0d);
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(paymentTransaction12);
+        org.junit.Assert.assertNotNull(paymentTransaction14);
+    }
+
+    @Test
+    public void test179() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test179");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((-1.0d));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction12 = researchGrantPaymentStrategy0.pay((double) (short) 10);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction14 = researchGrantPaymentStrategy0.pay((double) '4');
+        com.yorku.lab.model.PaymentTransaction paymentTransaction16 = researchGrantPaymentStrategy0.pay(0.0d);
+        java.lang.Class<?> wildcardClass17 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(paymentTransaction12);
+        org.junit.Assert.assertNotNull(paymentTransaction14);
+        org.junit.Assert.assertNotNull(paymentTransaction16);
+        org.junit.Assert.assertNotNull(wildcardClass17);
+    }
+
+    @Test
+    public void test180() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test180");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay((double) (-1.0f));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 100L);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay(0.0d);
+        java.lang.Class<?> wildcardClass11 = researchGrantPaymentStrategy0.getClass();
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(wildcardClass11);
+    }
+
+    @Test
+    public void test181() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test181");
+        com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy researchGrantPaymentStrategy0 = new com.yorku.lab.pattern.strategy.ResearchGrantPaymentStrategy();
+        com.yorku.lab.model.PaymentTransaction paymentTransaction2 = researchGrantPaymentStrategy0.pay(0.0d);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction4 = researchGrantPaymentStrategy0.pay((double) 1L);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction6 = researchGrantPaymentStrategy0.pay((double) 0.0f);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction8 = researchGrantPaymentStrategy0.pay((double) (-1L));
+        com.yorku.lab.model.PaymentTransaction paymentTransaction10 = researchGrantPaymentStrategy0.pay((double) (byte) -1);
+        com.yorku.lab.model.PaymentTransaction paymentTransaction12 = researchGrantPaymentStrategy0.pay((double) 0L);
+        org.junit.Assert.assertNotNull(paymentTransaction2);
+        org.junit.Assert.assertNotNull(paymentTransaction4);
+        org.junit.Assert.assertNotNull(paymentTransaction6);
+        org.junit.Assert.assertNotNull(paymentTransaction8);
+        org.junit.Assert.assertNotNull(paymentTransaction10);
+        org.junit.Assert.assertNotNull(paymentTransaction12);
     }
 }
 

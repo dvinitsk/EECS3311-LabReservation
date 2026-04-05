@@ -21,22 +21,22 @@ public class EquipmentRegressionTest0 {
     }
 
     @Test
-    public void test01() throws Throwable {
+    public void test001() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test01");
+            System.out.format("%n%s%n", "RegressionTest0.test001");
         com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
         com.yorku.lab.model.UsageRecord usageRecord4 = null;
         equipment3.addUsageRecord(usageRecord4);
         java.lang.String str6 = equipment3.getDescription();
-        boolean boolean7 = equipment3.isReservable();
+        java.lang.Class<?> wildcardClass7 = equipment3.getClass();
         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "hi!" + "'", str6, "hi!");
-        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + true + "'", boolean7 == true);
+        org.junit.Assert.assertNotNull(wildcardClass7);
     }
 
     @Test
-    public void test02() throws Throwable {
+    public void test002() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test02");
+            System.out.format("%n%s%n", "RegressionTest0.test002");
         com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
         java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
         java.lang.Class<?> wildcardClass5 = equipment3.getClass();
@@ -45,9 +45,9 @@ public class EquipmentRegressionTest0 {
     }
 
     @Test
-    public void test03() throws Throwable {
+    public void test003() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test03");
+            System.out.format("%n%s%n", "RegressionTest0.test003");
         com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
         java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
         com.yorku.lab.model.UsageRecord usageRecord5 = null;
@@ -62,796 +62,325 @@ public class EquipmentRegressionTest0 {
     }
 
     @Test
-    public void test04() throws Throwable {
+    public void test004() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test04");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("hi!", "", "hi!");
-    }
-
-    @Test
-    public void test05() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test05");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("hi!", "hi!", "hi!");
+            System.out.format("%n%s%n", "RegressionTest0.test004");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "", "hi!");
         boolean boolean4 = equipment3.isInUse();
-        java.lang.String str5 = equipment3.toString();
-        com.yorku.lab.enums.OperationalStatus operationalStatus6 = equipment3.getOperationalStatus();
+        java.lang.Class<?> wildcardClass5 = equipment3.getClass();
         org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertEquals("'" + str5 + "' != '" + "hi! - hi! (hi!)" + "'", str5, "hi! - hi! (hi!)");
-        org.junit.Assert.assertTrue("'" + operationalStatus6 + "' != '" + com.yorku.lab.enums.OperationalStatus.AVAILABLE + "'", operationalStatus6.equals(com.yorku.lab.enums.OperationalStatus.AVAILABLE));
+        org.junit.Assert.assertNotNull(wildcardClass5);
     }
 
     @Test
-    public void test06() throws Throwable {
+    public void test005() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test06");
+            System.out.format("%n%s%n", "RegressionTest0.test005");
         com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
-        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
-        com.yorku.lab.model.UsageRecord usageRecord5 = null;
-        equipment3.addUsageRecord(usageRecord5);
-        com.yorku.lab.enums.OperationalStatus operationalStatus7 = null;
-        equipment3.setOperationalStatus(operationalStatus7);
-        java.lang.String str9 = equipment3.getEquipmentId();
-        boolean boolean10 = equipment3.isReservable();
-        org.junit.Assert.assertNotNull(usageRecordList4);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "" + "'", str9, "");
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver4 = null;
+        equipment3.detach(sensorObserver4);
+        java.lang.Class<?> wildcardClass6 = equipment3.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass6);
     }
 
     @Test
-    public void test07() throws Throwable {
+    public void test006() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test07");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
-        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
-        com.yorku.lab.model.UsageRecord usageRecord5 = null;
-        equipment3.addUsageRecord(usageRecord5);
-        com.yorku.lab.enums.OperationalStatus operationalStatus7 = null;
-        equipment3.setOperationalStatus(operationalStatus7);
-        java.lang.String str9 = equipment3.getEquipmentId();
-        com.yorku.lab.model.UsageRecord usageRecord10 = null;
-        equipment3.addUsageRecord(usageRecord10);
-        org.junit.Assert.assertNotNull(usageRecordList4);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "" + "'", str9, "");
-    }
-
-    @Test
-    public void test08() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test08");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
-        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
-        com.yorku.lab.model.UsageRecord usageRecord5 = null;
-        equipment3.addUsageRecord(usageRecord5);
-        com.yorku.lab.enums.OperationalStatus operationalStatus7 = null;
-        equipment3.setOperationalStatus(operationalStatus7);
-        boolean boolean9 = equipment3.isInUse();
-        org.junit.Assert.assertNotNull(usageRecordList4);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-    }
-
-    @Test
-    public void test09() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test09");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
-        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
-        com.yorku.lab.model.UsageRecord usageRecord5 = null;
-        equipment3.addUsageRecord(usageRecord5);
-        boolean boolean7 = equipment3.isInUse();
-        org.junit.Assert.assertNotNull(usageRecordList4);
-        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
-    }
-
-    @Test
-    public void test10() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test10");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
-        equipment3.notifyObservers();
-        equipment3.notifyObservers();
-        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList6 = equipment3.getUsageRecords();
-        java.lang.Class<?> wildcardClass7 = equipment3.getClass();
-        org.junit.Assert.assertNotNull(usageRecordList6);
-        org.junit.Assert.assertNotNull(wildcardClass7);
-    }
-
-    @Test
-    public void test11() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test11");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
-        equipment3.notifyObservers();
-        equipment3.notifyObservers();
-        java.lang.String str6 = equipment3.getEquipmentId();
-        java.lang.String str7 = equipment3.getEquipmentId();
-        org.junit.Assert.assertEquals("'" + str6 + "' != '" + "" + "'", str6, "");
-        org.junit.Assert.assertEquals("'" + str7 + "' != '" + "" + "'", str7, "");
-    }
-
-    @Test
-    public void test12() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test12");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
-        equipment3.notifyObservers();
-        equipment3.notifyObservers();
-        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList6 = equipment3.getUsageRecords();
-        java.lang.String str7 = equipment3.getLabLocation();
-        com.yorku.lab.pattern.observer.SensorObserver sensorObserver8 = null;
-        equipment3.detach(sensorObserver8);
-        org.junit.Assert.assertNotNull(usageRecordList6);
-        org.junit.Assert.assertEquals("'" + str7 + "' != '" + "" + "'", str7, "");
-    }
-
-    @Test
-    public void test13() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test13");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "hi! - hi! (hi!)");
-        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
-        org.junit.Assert.assertNotNull(usageRecordList4);
-    }
-
-    @Test
-    public void test14() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test14");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
-        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
-        com.yorku.lab.pattern.observer.SensorObserver sensorObserver5 = null;
-        equipment3.attach(sensorObserver5);
-        java.lang.String str7 = equipment3.toString();
-        org.junit.Assert.assertNotNull(usageRecordList4);
-        org.junit.Assert.assertEquals("'" + str7 + "' != '" + " - hi! ()" + "'", str7, " - hi! ()");
-    }
-
-    @Test
-    public void test15() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test15");
+            System.out.format("%n%s%n", "RegressionTest0.test006");
         com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
         com.yorku.lab.model.UsageRecord usageRecord4 = null;
         equipment3.addUsageRecord(usageRecord4);
         boolean boolean6 = equipment3.isReservable();
-        equipment3.notifyObservers();
-        equipment3.notifyObservers();
-        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList9 = equipment3.getUsageRecords();
+        java.lang.Class<?> wildcardClass7 = equipment3.getClass();
         org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + true + "'", boolean6 == true);
-        org.junit.Assert.assertNotNull(usageRecordList9);
+        org.junit.Assert.assertNotNull(wildcardClass7);
     }
 
     @Test
-    public void test16() throws Throwable {
+    public void test007() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test16");
+            System.out.format("%n%s%n", "RegressionTest0.test007");
         com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
-        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
-        com.yorku.lab.pattern.observer.SensorObserver sensorObserver5 = null;
-        equipment3.detach(sensorObserver5);
-        org.junit.Assert.assertNotNull(usageRecordList4);
+        equipment3.notifyObservers();
+        equipment3.notifyObservers();
+        equipment3.setInUse(true);
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver8 = null;
+        equipment3.detach(sensorObserver8);
     }
 
     @Test
-    public void test17() throws Throwable {
+    public void test008() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test17");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("hi!", "hi!", "hi!");
-        boolean boolean4 = equipment3.isInUse();
-        java.lang.String str5 = equipment3.toString();
-        com.yorku.lab.pattern.observer.SensorObserver sensorObserver6 = null;
-        equipment3.attach(sensorObserver6);
+            System.out.format("%n%s%n", "RegressionTest0.test008");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        equipment3.notifyObservers();
+        equipment3.notifyObservers();
+        equipment3.setInUse(true);
         java.lang.Class<?> wildcardClass8 = equipment3.getClass();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertEquals("'" + str5 + "' != '" + "hi! - hi! (hi!)" + "'", str5, "hi! - hi! (hi!)");
         org.junit.Assert.assertNotNull(wildcardClass8);
     }
 
     @Test
-    public void test18() throws Throwable {
+    public void test009() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test18");
+            System.out.format("%n%s%n", "RegressionTest0.test009");
         com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
         com.yorku.lab.model.UsageRecord usageRecord4 = null;
         equipment3.addUsageRecord(usageRecord4);
-        equipment3.setInUse(true);
+        java.lang.String str6 = equipment3.getDescription();
+        boolean boolean7 = equipment3.isReservable();
+        java.lang.String str8 = equipment3.getLabLocation();
+        org.junit.Assert.assertEquals("'" + str6 + "' != '" + "hi!" + "'", str6, "hi!");
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + true + "'", boolean7 == true);
+        org.junit.Assert.assertEquals("'" + str8 + "' != '" + "" + "'", str8, "");
     }
 
     @Test
-    public void test19() throws Throwable {
+    public void test010() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test19");
+            System.out.format("%n%s%n", "RegressionTest0.test010");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver4 = null;
+        equipment3.detach(sensorObserver4);
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver6 = null;
+        equipment3.detach(sensorObserver6);
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList8 = equipment3.getUsageRecords();
+        java.lang.String str9 = equipment3.getEquipmentId();
+        org.junit.Assert.assertNotNull(usageRecordList8);
+        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "" + "'", str9, "");
+    }
+
+    @Test
+    public void test011() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test011");
         com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
         java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
         com.yorku.lab.model.UsageRecord usageRecord5 = null;
         equipment3.addUsageRecord(usageRecord5);
-        com.yorku.lab.enums.OperationalStatus operationalStatus7 = null;
-        equipment3.setOperationalStatus(operationalStatus7);
+        equipment3.notifyObservers();
+        org.junit.Assert.assertNotNull(usageRecordList4);
+    }
+
+    @Test
+    public void test012() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test012");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver4 = null;
+        equipment3.detach(sensorObserver4);
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver6 = null;
+        equipment3.detach(sensorObserver6);
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList8 = equipment3.getUsageRecords();
+        java.lang.Class<?> wildcardClass9 = equipment3.getClass();
+        org.junit.Assert.assertNotNull(usageRecordList8);
+        org.junit.Assert.assertNotNull(wildcardClass9);
+    }
+
+    @Test
+    public void test013() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test013");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
+        com.yorku.lab.model.UsageRecord usageRecord5 = null;
+        equipment3.addUsageRecord(usageRecord5);
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver7 = null;
+        equipment3.detach(sensorObserver7);
         java.lang.String str9 = equipment3.toString();
         org.junit.Assert.assertNotNull(usageRecordList4);
         org.junit.Assert.assertEquals("'" + str9 + "' != '" + " - hi! ()" + "'", str9, " - hi! ()");
     }
 
     @Test
-    public void test20() throws Throwable {
+    public void test014() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test20");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
-        equipment3.notifyObservers();
-        equipment3.notifyObservers();
-        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList6 = equipment3.getUsageRecords();
-        equipment3.setInUse(true);
-        com.yorku.lab.pattern.observer.SensorObserver sensorObserver9 = null;
-        equipment3.attach(sensorObserver9);
-        org.junit.Assert.assertNotNull(usageRecordList6);
-    }
-
-    @Test
-    public void test21() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test21");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
-        com.yorku.lab.pattern.observer.SensorObserver sensorObserver4 = null;
-        equipment3.detach(sensorObserver4);
-        com.yorku.lab.model.Equipment equipment9 = new com.yorku.lab.model.Equipment("", "hi!", "");
-        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList10 = equipment9.getUsageRecords();
-        com.yorku.lab.model.UsageRecord usageRecord11 = null;
-        equipment9.addUsageRecord(usageRecord11);
-        java.lang.String str13 = equipment9.toString();
-        com.yorku.lab.model.Equipment equipment17 = new com.yorku.lab.model.Equipment("hi!", "hi!", "hi!");
-        boolean boolean18 = equipment17.isInUse();
-        java.lang.String str19 = equipment17.toString();
-        com.yorku.lab.pattern.observer.SensorObserver sensorObserver20 = null;
-        equipment17.attach(sensorObserver20);
-        java.lang.String str22 = equipment17.getDescription();
-        com.yorku.lab.enums.OperationalStatus operationalStatus23 = equipment17.getOperationalStatus();
-        equipment9.setOperationalStatus(operationalStatus23);
-        equipment3.setOperationalStatus(operationalStatus23);
-        java.lang.String str26 = equipment3.toString();
-        org.junit.Assert.assertNotNull(usageRecordList10);
-        org.junit.Assert.assertEquals("'" + str13 + "' != '" + " - hi! ()" + "'", str13, " - hi! ()");
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertEquals("'" + str19 + "' != '" + "hi! - hi! (hi!)" + "'", str19, "hi! - hi! (hi!)");
-        org.junit.Assert.assertEquals("'" + str22 + "' != '" + "hi!" + "'", str22, "hi!");
-        org.junit.Assert.assertTrue("'" + operationalStatus23 + "' != '" + com.yorku.lab.enums.OperationalStatus.AVAILABLE + "'", operationalStatus23.equals(com.yorku.lab.enums.OperationalStatus.AVAILABLE));
-        org.junit.Assert.assertEquals("'" + str26 + "' != '" + " - hi! ()" + "'", str26, " - hi! ()");
-    }
-
-    @Test
-    public void test22() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test22");
+            System.out.format("%n%s%n", "RegressionTest0.test014");
         com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
         java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
         com.yorku.lab.model.UsageRecord usageRecord5 = null;
         equipment3.addUsageRecord(usageRecord5);
-        com.yorku.lab.enums.OperationalStatus operationalStatus7 = null;
-        equipment3.setOperationalStatus(operationalStatus7);
-        java.lang.String str9 = equipment3.getDescription();
-        java.lang.String str10 = equipment3.getDescription();
+        boolean boolean7 = equipment3.isInUse();
+        com.yorku.lab.enums.OperationalStatus operationalStatus8 = equipment3.getOperationalStatus();
+        java.lang.Class<?> wildcardClass9 = operationalStatus8.getClass();
         org.junit.Assert.assertNotNull(usageRecordList4);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "hi!" + "'", str9, "hi!");
-        org.junit.Assert.assertEquals("'" + str10 + "' != '" + "hi!" + "'", str10, "hi!");
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
+        org.junit.Assert.assertTrue("'" + operationalStatus8 + "' != '" + com.yorku.lab.enums.OperationalStatus.AVAILABLE + "'", operationalStatus8.equals(com.yorku.lab.enums.OperationalStatus.AVAILABLE));
+        org.junit.Assert.assertNotNull(wildcardClass9);
     }
 
     @Test
-    public void test23() throws Throwable {
+    public void test015() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test23");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
-        com.yorku.lab.model.UsageRecord usageRecord4 = null;
-        equipment3.addUsageRecord(usageRecord4);
-        equipment3.notifyObservers();
-        equipment3.notifyObservers();
+            System.out.format("%n%s%n", "RegressionTest0.test015");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", " - hi! ()");
     }
 
     @Test
-    public void test24() throws Throwable {
+    public void test016() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test24");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
-        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
+            System.out.format("%n%s%n", "RegressionTest0.test016");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("hi!", "", "");
+        java.lang.String str4 = equipment3.toString();
         com.yorku.lab.model.UsageRecord usageRecord5 = null;
         equipment3.addUsageRecord(usageRecord5);
-        com.yorku.lab.enums.OperationalStatus operationalStatus7 = null;
-        equipment3.setOperationalStatus(operationalStatus7);
-        java.lang.String str9 = equipment3.getEquipmentId();
-        java.lang.String str10 = equipment3.getEquipmentId();
-        org.junit.Assert.assertNotNull(usageRecordList4);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "" + "'", str9, "");
-        org.junit.Assert.assertEquals("'" + str10 + "' != '" + "" + "'", str10, "");
+        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "hi! -  ()" + "'", str4, "hi! -  ()");
     }
 
     @Test
-    public void test25() throws Throwable {
+    public void test017() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test25");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
-        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
-        boolean boolean5 = equipment3.isReservable();
-        boolean boolean6 = equipment3.isReservable();
-        org.junit.Assert.assertNotNull(usageRecordList4);
-        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + true + "'", boolean5 == true);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + true + "'", boolean6 == true);
-    }
-
-    @Test
-    public void test26() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test26");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
-        boolean boolean4 = equipment3.isInUse();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-    }
-
-    @Test
-    public void test27() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test27");
+            System.out.format("%n%s%n", "RegressionTest0.test017");
         com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
         com.yorku.lab.model.UsageRecord usageRecord4 = null;
         equipment3.addUsageRecord(usageRecord4);
         java.lang.String str6 = equipment3.getDescription();
         com.yorku.lab.pattern.observer.SensorObserver sensorObserver7 = null;
         equipment3.detach(sensorObserver7);
-        java.lang.Class<?> wildcardClass9 = equipment3.getClass();
-        org.junit.Assert.assertEquals("'" + str6 + "' != '" + "hi!" + "'", str6, "hi!");
-        org.junit.Assert.assertNotNull(wildcardClass9);
-    }
-
-    @Test
-    public void test28() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test28");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
-        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
-        com.yorku.lab.model.UsageRecord usageRecord5 = null;
-        equipment3.addUsageRecord(usageRecord5);
-        com.yorku.lab.enums.OperationalStatus operationalStatus7 = null;
-        equipment3.setOperationalStatus(operationalStatus7);
-        boolean boolean9 = equipment3.isReservable();
-        org.junit.Assert.assertNotNull(usageRecordList4);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-    }
-
-    @Test
-    public void test29() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test29");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("hi!", "hi!", "hi!");
-        boolean boolean4 = equipment3.isInUse();
-        java.lang.String str5 = equipment3.toString();
-        com.yorku.lab.pattern.observer.SensorObserver sensorObserver6 = null;
-        equipment3.attach(sensorObserver6);
-        java.lang.String str8 = equipment3.getDescription();
-        java.lang.String str9 = equipment3.getEquipmentId();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertEquals("'" + str5 + "' != '" + "hi! - hi! (hi!)" + "'", str5, "hi! - hi! (hi!)");
-        org.junit.Assert.assertEquals("'" + str8 + "' != '" + "hi!" + "'", str8, "hi!");
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "hi!" + "'", str9, "hi!");
-    }
-
-    @Test
-    public void test30() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test30");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
-        com.yorku.lab.model.UsageRecord usageRecord4 = null;
-        equipment3.addUsageRecord(usageRecord4);
-        boolean boolean6 = equipment3.isReservable();
-        equipment3.notifyObservers();
-        equipment3.notifyObservers();
-        equipment3.setInUse(true);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + true + "'", boolean6 == true);
-    }
-
-    @Test
-    public void test31() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test31");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
-        com.yorku.lab.pattern.observer.SensorObserver sensorObserver4 = null;
-        equipment3.detach(sensorObserver4);
-        com.yorku.lab.pattern.observer.SensorObserver sensorObserver6 = null;
-        equipment3.detach(sensorObserver6);
-        com.yorku.lab.pattern.observer.SensorObserver sensorObserver8 = null;
-        equipment3.attach(sensorObserver8);
-        boolean boolean10 = equipment3.isInUse();
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-    }
-
-    @Test
-    public void test32() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test32");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", " - hi! ()", "hi! - hi! (hi!)");
-    }
-
-    @Test
-    public void test33() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test33");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "", "hi! - hi! (hi!)");
-    }
-
-    @Test
-    public void test34() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test34");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
-        com.yorku.lab.model.UsageRecord usageRecord4 = null;
-        equipment3.addUsageRecord(usageRecord4);
-        boolean boolean6 = equipment3.isReservable();
-        com.yorku.lab.pattern.observer.SensorObserver sensorObserver7 = null;
-        equipment3.detach(sensorObserver7);
-        equipment3.notifyObservers();
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + true + "'", boolean6 == true);
-    }
-
-    @Test
-    public void test35() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test35");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
-        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
-        com.yorku.lab.model.UsageRecord usageRecord5 = null;
-        equipment3.addUsageRecord(usageRecord5);
-        java.lang.String str7 = equipment3.toString();
-        java.lang.String str8 = equipment3.getLabLocation();
-        com.yorku.lab.model.UsageRecord usageRecord9 = null;
-        equipment3.addUsageRecord(usageRecord9);
-        org.junit.Assert.assertNotNull(usageRecordList4);
-        org.junit.Assert.assertEquals("'" + str7 + "' != '" + " - hi! ()" + "'", str7, " - hi! ()");
-        org.junit.Assert.assertEquals("'" + str8 + "' != '" + "" + "'", str8, "");
-    }
-
-    @Test
-    public void test36() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test36");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
-        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
-        com.yorku.lab.model.UsageRecord usageRecord5 = null;
-        equipment3.addUsageRecord(usageRecord5);
-        java.lang.String str7 = equipment3.toString();
-        java.lang.String str8 = equipment3.getLabLocation();
         com.yorku.lab.pattern.observer.SensorObserver sensorObserver9 = null;
         equipment3.detach(sensorObserver9);
-        org.junit.Assert.assertNotNull(usageRecordList4);
-        org.junit.Assert.assertEquals("'" + str7 + "' != '" + " - hi! ()" + "'", str7, " - hi! ()");
-        org.junit.Assert.assertEquals("'" + str8 + "' != '" + "" + "'", str8, "");
-    }
-
-    @Test
-    public void test37() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test37");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("hi!", "hi!", "hi!");
-        com.yorku.lab.model.UsageRecord usageRecord4 = null;
-        equipment3.addUsageRecord(usageRecord4);
-    }
-
-    @Test
-    public void test38() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test38");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
-        equipment3.notifyObservers();
-        com.yorku.lab.pattern.observer.SensorObserver sensorObserver5 = null;
-        equipment3.detach(sensorObserver5);
-        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList7 = equipment3.getUsageRecords();
-        java.lang.String str8 = equipment3.toString();
-        org.junit.Assert.assertNotNull(usageRecordList7);
-        org.junit.Assert.assertEquals("'" + str8 + "' != '" + " - hi! ()" + "'", str8, " - hi! ()");
-    }
-
-    @Test
-    public void test39() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test39");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("hi!", "hi!", "hi!");
-        boolean boolean4 = equipment3.isInUse();
-        java.lang.String str5 = equipment3.toString();
-        com.yorku.lab.model.Equipment equipment9 = new com.yorku.lab.model.Equipment("", "hi!", "");
-        com.yorku.lab.pattern.observer.SensorObserver sensorObserver10 = null;
-        equipment9.detach(sensorObserver10);
-        com.yorku.lab.model.Equipment equipment15 = new com.yorku.lab.model.Equipment("", "hi!", "");
-        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList16 = equipment15.getUsageRecords();
-        com.yorku.lab.model.UsageRecord usageRecord17 = null;
-        equipment15.addUsageRecord(usageRecord17);
-        java.lang.String str19 = equipment15.toString();
-        com.yorku.lab.model.Equipment equipment23 = new com.yorku.lab.model.Equipment("hi!", "hi!", "hi!");
-        boolean boolean24 = equipment23.isInUse();
-        java.lang.String str25 = equipment23.toString();
-        com.yorku.lab.pattern.observer.SensorObserver sensorObserver26 = null;
-        equipment23.attach(sensorObserver26);
-        java.lang.String str28 = equipment23.getDescription();
-        com.yorku.lab.enums.OperationalStatus operationalStatus29 = equipment23.getOperationalStatus();
-        equipment15.setOperationalStatus(operationalStatus29);
-        equipment9.setOperationalStatus(operationalStatus29);
-        equipment3.setOperationalStatus(operationalStatus29);
-        java.lang.String str33 = equipment3.getEquipmentId();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertEquals("'" + str5 + "' != '" + "hi! - hi! (hi!)" + "'", str5, "hi! - hi! (hi!)");
-        org.junit.Assert.assertNotNull(usageRecordList16);
-        org.junit.Assert.assertEquals("'" + str19 + "' != '" + " - hi! ()" + "'", str19, " - hi! ()");
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
-        org.junit.Assert.assertEquals("'" + str25 + "' != '" + "hi! - hi! (hi!)" + "'", str25, "hi! - hi! (hi!)");
-        org.junit.Assert.assertEquals("'" + str28 + "' != '" + "hi!" + "'", str28, "hi!");
-        org.junit.Assert.assertTrue("'" + operationalStatus29 + "' != '" + com.yorku.lab.enums.OperationalStatus.AVAILABLE + "'", operationalStatus29.equals(com.yorku.lab.enums.OperationalStatus.AVAILABLE));
-        org.junit.Assert.assertEquals("'" + str33 + "' != '" + "hi!" + "'", str33, "hi!");
-    }
-
-    @Test
-    public void test40() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test40");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
-        com.yorku.lab.pattern.observer.SensorObserver sensorObserver4 = null;
-        equipment3.detach(sensorObserver4);
-        java.lang.String str6 = equipment3.getEquipmentId();
-        java.lang.String str7 = equipment3.getLabLocation();
-        java.lang.String str8 = equipment3.getDescription();
-        java.lang.Class<?> wildcardClass9 = equipment3.getClass();
-        org.junit.Assert.assertEquals("'" + str6 + "' != '" + "" + "'", str6, "");
-        org.junit.Assert.assertEquals("'" + str7 + "' != '" + "" + "'", str7, "");
-        org.junit.Assert.assertEquals("'" + str8 + "' != '" + "hi!" + "'", str8, "hi!");
-        org.junit.Assert.assertNotNull(wildcardClass9);
-    }
-
-    @Test
-    public void test41() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test41");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("hi!", "hi!", "hi!");
-        boolean boolean4 = equipment3.isInUse();
-        boolean boolean5 = equipment3.isInUse();
-        boolean boolean6 = equipment3.isInUse();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-    }
-
-    @Test
-    public void test42() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test42");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
-        com.yorku.lab.pattern.observer.SensorObserver sensorObserver4 = null;
-        equipment3.detach(sensorObserver4);
-        java.lang.String str6 = equipment3.getDescription();
         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "hi!" + "'", str6, "hi!");
     }
 
     @Test
-    public void test43() throws Throwable {
+    public void test018() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test43");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("hi!", "hi!", "hi!");
-        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
-        org.junit.Assert.assertNotNull(usageRecordList4);
-    }
-
-    @Test
-    public void test44() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test44");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
-        equipment3.notifyObservers();
-        java.lang.String str5 = equipment3.getDescription();
-        java.lang.Class<?> wildcardClass6 = equipment3.getClass();
-        org.junit.Assert.assertEquals("'" + str5 + "' != '" + "hi!" + "'", str5, "hi!");
-        org.junit.Assert.assertNotNull(wildcardClass6);
-    }
-
-    @Test
-    public void test45() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test45");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("hi! - hi! (hi!)", "hi!", "");
-    }
-
-    @Test
-    public void test46() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test46");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
-        equipment3.notifyObservers();
-        equipment3.notifyObservers();
-        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList6 = equipment3.getUsageRecords();
-        equipment3.setInUse(true);
-        java.lang.String str9 = equipment3.getEquipmentId();
-        org.junit.Assert.assertNotNull(usageRecordList6);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "" + "'", str9, "");
-    }
-
-    @Test
-    public void test47() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test47");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("hi!", "hi!", "hi!");
+            System.out.format("%n%s%n", "RegressionTest0.test018");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("hi!", "", "");
         java.lang.String str4 = equipment3.toString();
-        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "hi! - hi! (hi!)" + "'", str4, "hi! - hi! (hi!)");
+        boolean boolean5 = equipment3.isInUse();
+        equipment3.setInUse(false);
+        java.lang.Class<?> wildcardClass8 = equipment3.getClass();
+        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "hi! -  ()" + "'", str4, "hi! -  ()");
+        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
+        org.junit.Assert.assertNotNull(wildcardClass8);
     }
 
     @Test
-    public void test48() throws Throwable {
+    public void test019() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test48");
+            System.out.format("%n%s%n", "RegressionTest0.test019");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
+        com.yorku.lab.model.UsageRecord usageRecord5 = null;
+        equipment3.addUsageRecord(usageRecord5);
+        java.lang.String str7 = equipment3.getLabLocation();
+        equipment3.notifyObservers();
+        org.junit.Assert.assertNotNull(usageRecordList4);
+        org.junit.Assert.assertEquals("'" + str7 + "' != '" + "" + "'", str7, "");
+    }
+
+    @Test
+    public void test020() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test020");
         com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
         java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
         com.yorku.lab.model.UsageRecord usageRecord5 = null;
         equipment3.addUsageRecord(usageRecord5);
         com.yorku.lab.enums.OperationalStatus operationalStatus7 = null;
         equipment3.setOperationalStatus(operationalStatus7);
-        com.yorku.lab.enums.OperationalStatus operationalStatus9 = null;
-        equipment3.setOperationalStatus(operationalStatus9);
-        java.lang.String str11 = equipment3.getDescription();
-        org.junit.Assert.assertNotNull(usageRecordList4);
-        org.junit.Assert.assertEquals("'" + str11 + "' != '" + "hi!" + "'", str11, "hi!");
-    }
-
-    @Test
-    public void test49() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test49");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
-        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
-        com.yorku.lab.model.UsageRecord usageRecord5 = null;
-        equipment3.addUsageRecord(usageRecord5);
-        java.lang.String str7 = equipment3.toString();
-        com.yorku.lab.model.Equipment equipment11 = new com.yorku.lab.model.Equipment("hi!", "hi!", "hi!");
-        boolean boolean12 = equipment11.isInUse();
-        java.lang.String str13 = equipment11.toString();
-        com.yorku.lab.pattern.observer.SensorObserver sensorObserver14 = null;
-        equipment11.attach(sensorObserver14);
-        java.lang.String str16 = equipment11.getDescription();
-        com.yorku.lab.enums.OperationalStatus operationalStatus17 = equipment11.getOperationalStatus();
-        equipment3.setOperationalStatus(operationalStatus17);
+        java.lang.String str9 = equipment3.getDescription();
         equipment3.notifyObservers();
-        boolean boolean20 = equipment3.isReservable();
         org.junit.Assert.assertNotNull(usageRecordList4);
-        org.junit.Assert.assertEquals("'" + str7 + "' != '" + " - hi! ()" + "'", str7, " - hi! ()");
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertEquals("'" + str13 + "' != '" + "hi! - hi! (hi!)" + "'", str13, "hi! - hi! (hi!)");
-        org.junit.Assert.assertEquals("'" + str16 + "' != '" + "hi!" + "'", str16, "hi!");
-        org.junit.Assert.assertTrue("'" + operationalStatus17 + "' != '" + com.yorku.lab.enums.OperationalStatus.AVAILABLE + "'", operationalStatus17.equals(com.yorku.lab.enums.OperationalStatus.AVAILABLE));
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + true + "'", boolean20 == true);
+        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "hi!" + "'", str9, "hi!");
     }
 
     @Test
-    public void test50() throws Throwable {
+    public void test021() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test50");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi! - hi! (hi!)", "");
-    }
-
-    @Test
-    public void test51() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test51");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("hi!", "hi!", "hi!");
+            System.out.format("%n%s%n", "RegressionTest0.test021");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "", "hi!");
         boolean boolean4 = equipment3.isInUse();
-        java.lang.String str5 = equipment3.toString();
+        boolean boolean5 = equipment3.isInUse();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
+    }
+
+    @Test
+    public void test022() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test022");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "", "hi!");
+        java.lang.String str4 = equipment3.getEquipmentId();
+        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "" + "'", str4, "");
+    }
+
+    @Test
+    public void test023() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test023");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "hi!");
+        equipment3.setInUse(false);
+    }
+
+    @Test
+    public void test024() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test024");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        equipment3.notifyObservers();
+        equipment3.notifyObservers();
+        java.lang.String str6 = equipment3.getDescription();
+        org.junit.Assert.assertEquals("'" + str6 + "' != '" + "hi!" + "'", str6, "hi!");
+    }
+
+    @Test
+    public void test025() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test025");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", " -  (hi!)");
+        com.yorku.lab.model.UsageRecord usageRecord4 = null;
+        equipment3.addUsageRecord(usageRecord4);
+        equipment3.notifyObservers();
+        com.yorku.lab.model.UsageRecord usageRecord7 = null;
+        equipment3.addUsageRecord(usageRecord7);
+    }
+
+    @Test
+    public void test026() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test026");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        com.yorku.lab.model.UsageRecord usageRecord4 = null;
+        equipment3.addUsageRecord(usageRecord4);
         com.yorku.lab.pattern.observer.SensorObserver sensorObserver6 = null;
         equipment3.attach(sensorObserver6);
-        java.lang.String str8 = equipment3.getDescription();
-        java.lang.String str9 = equipment3.getDescription();
-        com.yorku.lab.model.UsageRecord usageRecord10 = null;
-        equipment3.addUsageRecord(usageRecord10);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertEquals("'" + str5 + "' != '" + "hi! - hi! (hi!)" + "'", str5, "hi! - hi! (hi!)");
-        org.junit.Assert.assertEquals("'" + str8 + "' != '" + "hi!" + "'", str8, "hi!");
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "hi!" + "'", str9, "hi!");
     }
 
     @Test
-    public void test52() throws Throwable {
+    public void test027() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test52");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("hi!", "hi!", "hi!");
-        equipment3.setInUse(true);
-        com.yorku.lab.model.Equipment equipment9 = new com.yorku.lab.model.Equipment("hi!", "hi!", "hi!");
-        boolean boolean10 = equipment9.isInUse();
-        java.lang.String str11 = equipment9.toString();
-        com.yorku.lab.model.Equipment equipment15 = new com.yorku.lab.model.Equipment("", "hi!", "");
-        com.yorku.lab.pattern.observer.SensorObserver sensorObserver16 = null;
-        equipment15.detach(sensorObserver16);
-        com.yorku.lab.model.Equipment equipment21 = new com.yorku.lab.model.Equipment("", "hi!", "");
-        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList22 = equipment21.getUsageRecords();
-        com.yorku.lab.model.UsageRecord usageRecord23 = null;
-        equipment21.addUsageRecord(usageRecord23);
-        java.lang.String str25 = equipment21.toString();
-        com.yorku.lab.model.Equipment equipment29 = new com.yorku.lab.model.Equipment("hi!", "hi!", "hi!");
-        boolean boolean30 = equipment29.isInUse();
-        java.lang.String str31 = equipment29.toString();
-        com.yorku.lab.pattern.observer.SensorObserver sensorObserver32 = null;
-        equipment29.attach(sensorObserver32);
-        java.lang.String str34 = equipment29.getDescription();
-        com.yorku.lab.enums.OperationalStatus operationalStatus35 = equipment29.getOperationalStatus();
-        equipment21.setOperationalStatus(operationalStatus35);
-        equipment15.setOperationalStatus(operationalStatus35);
-        equipment9.setOperationalStatus(operationalStatus35);
-        equipment3.setOperationalStatus(operationalStatus35);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertEquals("'" + str11 + "' != '" + "hi! - hi! (hi!)" + "'", str11, "hi! - hi! (hi!)");
-        org.junit.Assert.assertNotNull(usageRecordList22);
-        org.junit.Assert.assertEquals("'" + str25 + "' != '" + " - hi! ()" + "'", str25, " - hi! ()");
-        org.junit.Assert.assertTrue("'" + boolean30 + "' != '" + false + "'", boolean30 == false);
-        org.junit.Assert.assertEquals("'" + str31 + "' != '" + "hi! - hi! (hi!)" + "'", str31, "hi! - hi! (hi!)");
-        org.junit.Assert.assertEquals("'" + str34 + "' != '" + "hi!" + "'", str34, "hi!");
-        org.junit.Assert.assertTrue("'" + operationalStatus35 + "' != '" + com.yorku.lab.enums.OperationalStatus.AVAILABLE + "'", operationalStatus35.equals(com.yorku.lab.enums.OperationalStatus.AVAILABLE));
-    }
-
-    @Test
-    public void test53() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test53");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
-        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
-        com.yorku.lab.model.UsageRecord usageRecord5 = null;
-        equipment3.addUsageRecord(usageRecord5);
-        com.yorku.lab.enums.OperationalStatus operationalStatus7 = null;
-        equipment3.setOperationalStatus(operationalStatus7);
-        java.lang.String str9 = equipment3.getDescription();
-        boolean boolean10 = equipment3.isInUse();
-        java.lang.String str11 = equipment3.getEquipmentId();
-        org.junit.Assert.assertNotNull(usageRecordList4);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "hi!" + "'", str9, "hi!");
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertEquals("'" + str11 + "' != '" + "" + "'", str11, "");
-    }
-
-    @Test
-    public void test54() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test54");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
-        java.lang.String str4 = equipment3.getDescription();
-        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "hi!" + "'", str4, "hi!");
-    }
-
-    @Test
-    public void test55() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test55");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("hi!", "hi!", "hi!");
-        boolean boolean4 = equipment3.isInUse();
-        boolean boolean5 = equipment3.isInUse();
-        equipment3.notifyObservers();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
-    }
-
-    @Test
-    public void test56() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test56");
+            System.out.format("%n%s%n", "RegressionTest0.test027");
         com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
         com.yorku.lab.model.UsageRecord usageRecord4 = null;
         equipment3.addUsageRecord(usageRecord4);
         java.lang.String str6 = equipment3.getDescription();
-        equipment3.notifyObservers();
-        java.lang.String str8 = equipment3.toString();
-        com.yorku.lab.model.UsageRecord usageRecord9 = null;
-        equipment3.addUsageRecord(usageRecord9);
-        java.lang.String str11 = equipment3.toString();
+        java.lang.String str7 = equipment3.getEquipmentId();
+        com.yorku.lab.model.UsageRecord usageRecord8 = null;
+        equipment3.addUsageRecord(usageRecord8);
         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "hi!" + "'", str6, "hi!");
-        org.junit.Assert.assertEquals("'" + str8 + "' != '" + " - hi! ()" + "'", str8, " - hi! ()");
-        org.junit.Assert.assertEquals("'" + str11 + "' != '" + " - hi! ()" + "'", str11, " - hi! ()");
+        org.junit.Assert.assertEquals("'" + str7 + "' != '" + "" + "'", str7, "");
     }
 
     @Test
-    public void test57() throws Throwable {
+    public void test028() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test57");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+            System.out.format("%n%s%n", "RegressionTest0.test028");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("hi!", "", "");
+        java.lang.String str4 = equipment3.toString();
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver5 = null;
+        equipment3.detach(sensorObserver5);
+        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "hi! -  ()" + "'", str4, "hi! -  ()");
+    }
+
+    @Test
+    public void test029() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test029");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("hi!", "", "");
         com.yorku.lab.pattern.observer.SensorObserver sensorObserver4 = null;
-        equipment3.detach(sensorObserver4);
-        com.yorku.lab.pattern.observer.SensorObserver sensorObserver6 = null;
-        equipment3.detach(sensorObserver6);
-        com.yorku.lab.pattern.observer.SensorObserver sensorObserver8 = null;
-        equipment3.attach(sensorObserver8);
+        equipment3.attach(sensorObserver4);
         // The following exception was thrown during execution in test generation
         try {
             equipment3.notifyObservers();
@@ -862,153 +391,1845 @@ public class EquipmentRegressionTest0 {
     }
 
     @Test
-    public void test58() throws Throwable {
+    public void test030() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test58");
+            System.out.format("%n%s%n", "RegressionTest0.test030");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment(" -  ( -  (hi!))", "hi!", " - hi! ()");
+    }
+
+    @Test
+    public void test031() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test031");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "hi!");
+        equipment3.setInUse(true);
+        java.lang.String str6 = equipment3.getLabLocation();
+        org.junit.Assert.assertEquals("'" + str6 + "' != '" + "hi!" + "'", str6, "hi!");
+    }
+
+    @Test
+    public void test032() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test032");
         com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
         com.yorku.lab.model.UsageRecord usageRecord4 = null;
         equipment3.addUsageRecord(usageRecord4);
         java.lang.String str6 = equipment3.getDescription();
-        equipment3.notifyObservers();
-        java.lang.String str8 = equipment3.toString();
-        java.lang.String str9 = equipment3.toString();
+        boolean boolean7 = equipment3.isReservable();
+        java.lang.String str8 = equipment3.getDescription();
+        com.yorku.lab.model.Equipment equipment12 = new com.yorku.lab.model.Equipment("", "", "hi!");
+        boolean boolean13 = equipment12.isInUse();
+        java.lang.String str14 = equipment12.toString();
+        com.yorku.lab.enums.OperationalStatus operationalStatus15 = equipment12.getOperationalStatus();
+        equipment3.setOperationalStatus(operationalStatus15);
         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "hi!" + "'", str6, "hi!");
-        org.junit.Assert.assertEquals("'" + str8 + "' != '" + " - hi! ()" + "'", str8, " - hi! ()");
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + true + "'", boolean7 == true);
+        org.junit.Assert.assertEquals("'" + str8 + "' != '" + "hi!" + "'", str8, "hi!");
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+        org.junit.Assert.assertEquals("'" + str14 + "' != '" + " -  (hi!)" + "'", str14, " -  (hi!)");
+        org.junit.Assert.assertTrue("'" + operationalStatus15 + "' != '" + com.yorku.lab.enums.OperationalStatus.AVAILABLE + "'", operationalStatus15.equals(com.yorku.lab.enums.OperationalStatus.AVAILABLE));
+    }
+
+    @Test
+    public void test033() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test033");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver5 = null;
+        equipment3.attach(sensorObserver5);
+        java.lang.String str7 = equipment3.getDescription();
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver8 = null;
+        equipment3.attach(sensorObserver8);
+        equipment3.setInUse(false);
+        org.junit.Assert.assertNotNull(usageRecordList4);
+        org.junit.Assert.assertEquals("'" + str7 + "' != '" + "hi!" + "'", str7, "hi!");
+    }
+
+    @Test
+    public void test034() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test034");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment(" -  ( -  (hi!))", "", " -  ( -  (hi!))");
+        java.lang.Class<?> wildcardClass4 = equipment3.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass4);
+    }
+
+    @Test
+    public void test035() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test035");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver5 = null;
+        equipment3.attach(sensorObserver5);
+        boolean boolean7 = equipment3.isReservable();
+        org.junit.Assert.assertNotNull(usageRecordList4);
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + true + "'", boolean7 == true);
+    }
+
+    @Test
+    public void test036() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test036");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver4 = null;
+        equipment3.detach(sensorObserver4);
+        boolean boolean6 = equipment3.isReservable();
+        java.lang.String str7 = equipment3.toString();
+        java.lang.Class<?> wildcardClass8 = equipment3.getClass();
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + true + "'", boolean6 == true);
+        org.junit.Assert.assertEquals("'" + str7 + "' != '" + " - hi! ()" + "'", str7, " - hi! ()");
+        org.junit.Assert.assertNotNull(wildcardClass8);
+    }
+
+    @Test
+    public void test037() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test037");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
+        com.yorku.lab.model.UsageRecord usageRecord5 = null;
+        equipment3.addUsageRecord(usageRecord5);
+        boolean boolean7 = equipment3.isInUse();
+        com.yorku.lab.enums.OperationalStatus operationalStatus8 = equipment3.getOperationalStatus();
+        com.yorku.lab.model.UsageRecord usageRecord9 = null;
+        equipment3.addUsageRecord(usageRecord9);
+        org.junit.Assert.assertNotNull(usageRecordList4);
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
+        org.junit.Assert.assertTrue("'" + operationalStatus8 + "' != '" + com.yorku.lab.enums.OperationalStatus.AVAILABLE + "'", operationalStatus8.equals(com.yorku.lab.enums.OperationalStatus.AVAILABLE));
+    }
+
+    @Test
+    public void test038() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test038");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
+        com.yorku.lab.model.UsageRecord usageRecord5 = null;
+        equipment3.addUsageRecord(usageRecord5);
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver7 = null;
+        equipment3.detach(sensorObserver7);
+        boolean boolean9 = equipment3.isInUse();
+        java.lang.String str10 = equipment3.getDescription();
+        org.junit.Assert.assertNotNull(usageRecordList4);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertEquals("'" + str10 + "' != '" + "hi!" + "'", str10, "hi!");
+    }
+
+    @Test
+    public void test039() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test039");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        equipment3.notifyObservers();
+        equipment3.notifyObservers();
+        com.yorku.lab.enums.OperationalStatus operationalStatus6 = null;
+        equipment3.setOperationalStatus(operationalStatus6);
+    }
+
+    @Test
+    public void test040() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test040");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
+        com.yorku.lab.model.UsageRecord usageRecord5 = null;
+        equipment3.addUsageRecord(usageRecord5);
+        java.lang.String str7 = equipment3.getLabLocation();
+        boolean boolean8 = equipment3.isReservable();
+        java.lang.String str9 = equipment3.toString();
+        org.junit.Assert.assertNotNull(usageRecordList4);
+        org.junit.Assert.assertEquals("'" + str7 + "' != '" + "" + "'", str7, "");
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + true + "'", boolean8 == true);
         org.junit.Assert.assertEquals("'" + str9 + "' != '" + " - hi! ()" + "'", str9, " - hi! ()");
     }
 
     @Test
-    public void test59() throws Throwable {
+    public void test041() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test59");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", " - hi! ()", " - hi! ()");
+            System.out.format("%n%s%n", "RegressionTest0.test041");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        boolean boolean4 = equipment3.isReservable();
+        equipment3.setInUse(true);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + true + "'", boolean4 == true);
     }
 
     @Test
-    public void test60() throws Throwable {
+    public void test042() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test60");
+            System.out.format("%n%s%n", "RegressionTest0.test042");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", " -  (hi!)");
+        com.yorku.lab.model.UsageRecord usageRecord4 = null;
+        equipment3.addUsageRecord(usageRecord4);
+        equipment3.notifyObservers();
+        boolean boolean7 = equipment3.isReservable();
+        java.lang.String str8 = equipment3.getLabLocation();
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + true + "'", boolean7 == true);
+        org.junit.Assert.assertEquals("'" + str8 + "' != '" + " -  (hi!)" + "'", str8, " -  (hi!)");
+    }
+
+    @Test
+    public void test043() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test043");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        com.yorku.lab.model.UsageRecord usageRecord4 = null;
+        equipment3.addUsageRecord(usageRecord4);
+        java.lang.String str6 = equipment3.getDescription();
+        java.lang.String str7 = equipment3.getEquipmentId();
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver8 = null;
+        equipment3.attach(sensorObserver8);
+        java.lang.String str10 = equipment3.getDescription();
+        org.junit.Assert.assertEquals("'" + str6 + "' != '" + "hi!" + "'", str6, "hi!");
+        org.junit.Assert.assertEquals("'" + str7 + "' != '" + "" + "'", str7, "");
+        org.junit.Assert.assertEquals("'" + str10 + "' != '" + "hi!" + "'", str10, "hi!");
+    }
+
+    @Test
+    public void test044() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test044");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", " -  (hi!)");
+        equipment3.notifyObservers();
+        com.yorku.lab.enums.OperationalStatus operationalStatus5 = null;
+        equipment3.setOperationalStatus(operationalStatus5);
+        java.lang.String str7 = equipment3.getDescription();
+        java.lang.String str8 = equipment3.getLabLocation();
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver9 = null;
+        equipment3.detach(sensorObserver9);
+        org.junit.Assert.assertEquals("'" + str7 + "' != '" + "hi!" + "'", str7, "hi!");
+        org.junit.Assert.assertEquals("'" + str8 + "' != '" + " -  (hi!)" + "'", str8, " -  (hi!)");
+    }
+
+    @Test
+    public void test045() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test045");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        com.yorku.lab.model.UsageRecord usageRecord4 = null;
+        equipment3.addUsageRecord(usageRecord4);
+        java.lang.String str6 = equipment3.getDescription();
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver7 = null;
+        equipment3.detach(sensorObserver7);
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver9 = null;
+        equipment3.attach(sensorObserver9);
+        org.junit.Assert.assertEquals("'" + str6 + "' != '" + "hi!" + "'", str6, "hi!");
+    }
+
+    @Test
+    public void test046() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test046");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "", "hi!");
+        boolean boolean4 = equipment3.isInUse();
+        java.lang.String str5 = equipment3.toString();
+        com.yorku.lab.enums.OperationalStatus operationalStatus6 = equipment3.getOperationalStatus();
+        java.lang.String str7 = equipment3.getDescription();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertEquals("'" + str5 + "' != '" + " -  (hi!)" + "'", str5, " -  (hi!)");
+        org.junit.Assert.assertTrue("'" + operationalStatus6 + "' != '" + com.yorku.lab.enums.OperationalStatus.AVAILABLE + "'", operationalStatus6.equals(com.yorku.lab.enums.OperationalStatus.AVAILABLE));
+        org.junit.Assert.assertEquals("'" + str7 + "' != '" + "" + "'", str7, "");
+    }
+
+    @Test
+    public void test047() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test047");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "", " -  (hi!)");
+        java.lang.String str4 = equipment3.toString();
+        com.yorku.lab.enums.OperationalStatus operationalStatus5 = equipment3.getOperationalStatus();
+        org.junit.Assert.assertEquals("'" + str4 + "' != '" + " -  ( -  (hi!))" + "'", str4, " -  ( -  (hi!))");
+        org.junit.Assert.assertTrue("'" + operationalStatus5 + "' != '" + com.yorku.lab.enums.OperationalStatus.AVAILABLE + "'", operationalStatus5.equals(com.yorku.lab.enums.OperationalStatus.AVAILABLE));
+    }
+
+    @Test
+    public void test048() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test048");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "", " - hi! ()");
+    }
+
+    @Test
+    public void test049() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test049");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        com.yorku.lab.model.UsageRecord usageRecord4 = null;
+        equipment3.addUsageRecord(usageRecord4);
+        java.lang.String str6 = equipment3.getDescription();
+        java.lang.String str7 = equipment3.getEquipmentId();
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver8 = null;
+        equipment3.attach(sensorObserver8);
+        // The following exception was thrown during execution in test generation
+        try {
+            equipment3.notifyObservers();
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.pattern.observer.SensorObserver.update(com.yorku.lab.model.Equipment)\" because \"<local2>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertEquals("'" + str6 + "' != '" + "hi!" + "'", str6, "hi!");
+        org.junit.Assert.assertEquals("'" + str7 + "' != '" + "" + "'", str7, "");
+    }
+
+    @Test
+    public void test050() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test050");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("hi!", "", "");
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver4 = null;
+        equipment3.attach(sensorObserver4);
+        equipment3.setInUse(true);
+        java.lang.Class<?> wildcardClass8 = equipment3.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass8);
+    }
+
+    @Test
+    public void test051() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test051");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("hi! -  ()", " -  (hi!)", "hi! -  ()");
+        com.yorku.lab.model.Equipment equipment7 = new com.yorku.lab.model.Equipment("", "hi!", "hi!");
+        equipment7.setInUse(true);
+        equipment7.notifyObservers();
+        com.yorku.lab.enums.OperationalStatus operationalStatus11 = equipment7.getOperationalStatus();
+        equipment3.setOperationalStatus(operationalStatus11);
+        com.yorku.lab.enums.OperationalStatus operationalStatus13 = null;
+        equipment3.setOperationalStatus(operationalStatus13);
+        org.junit.Assert.assertTrue("'" + operationalStatus11 + "' != '" + com.yorku.lab.enums.OperationalStatus.AVAILABLE + "'", operationalStatus11.equals(com.yorku.lab.enums.OperationalStatus.AVAILABLE));
+    }
+
+    @Test
+    public void test052() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test052");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "hi!");
+        equipment3.setInUse(true);
+        equipment3.notifyObservers();
+        java.lang.String str7 = equipment3.getEquipmentId();
+        org.junit.Assert.assertEquals("'" + str7 + "' != '" + "" + "'", str7, "");
+    }
+
+    @Test
+    public void test053() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test053");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
+        com.yorku.lab.model.UsageRecord usageRecord5 = null;
+        equipment3.addUsageRecord(usageRecord5);
+        boolean boolean7 = equipment3.isInUse();
+        com.yorku.lab.enums.OperationalStatus operationalStatus8 = equipment3.getOperationalStatus();
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver9 = null;
+        equipment3.attach(sensorObserver9);
+        org.junit.Assert.assertNotNull(usageRecordList4);
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
+        org.junit.Assert.assertTrue("'" + operationalStatus8 + "' != '" + com.yorku.lab.enums.OperationalStatus.AVAILABLE + "'", operationalStatus8.equals(com.yorku.lab.enums.OperationalStatus.AVAILABLE));
+    }
+
+    @Test
+    public void test054() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test054");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment(" -  (hi!)", "", "");
+        java.lang.Class<?> wildcardClass4 = equipment3.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass4);
+    }
+
+    @Test
+    public void test055() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test055");
         com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
         equipment3.notifyObservers();
-        com.yorku.lab.pattern.observer.SensorObserver sensorObserver5 = null;
-        equipment3.attach(sensorObserver5);
+        equipment3.notifyObservers();
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList6 = equipment3.getUsageRecords();
+        equipment3.notifyObservers();
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver8 = null;
+        equipment3.attach(sensorObserver8);
+        org.junit.Assert.assertNotNull(usageRecordList6);
     }
 
     @Test
-    public void test61() throws Throwable {
+    public void test056() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test61");
+            System.out.format("%n%s%n", "RegressionTest0.test056");
         com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
         com.yorku.lab.pattern.observer.SensorObserver sensorObserver4 = null;
         equipment3.detach(sensorObserver4);
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver6 = null;
+        equipment3.detach(sensorObserver6);
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList8 = equipment3.getUsageRecords();
+        java.lang.String str9 = equipment3.getDescription();
+        java.lang.String str10 = equipment3.getLabLocation();
+        org.junit.Assert.assertNotNull(usageRecordList8);
+        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "hi!" + "'", str9, "hi!");
+        org.junit.Assert.assertEquals("'" + str10 + "' != '" + "" + "'", str10, "");
+    }
+
+    @Test
+    public void test057() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test057");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver5 = null;
+        equipment3.attach(sensorObserver5);
+        java.lang.String str7 = equipment3.getDescription();
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver8 = null;
+        equipment3.attach(sensorObserver8);
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver10 = null;
+        equipment3.detach(sensorObserver10);
+        org.junit.Assert.assertNotNull(usageRecordList4);
+        org.junit.Assert.assertEquals("'" + str7 + "' != '" + "hi!" + "'", str7, "hi!");
+    }
+
+    @Test
+    public void test058() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test058");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
+        com.yorku.lab.model.UsageRecord usageRecord5 = null;
+        equipment3.addUsageRecord(usageRecord5);
+        boolean boolean7 = equipment3.isInUse();
+        com.yorku.lab.enums.OperationalStatus operationalStatus8 = equipment3.getOperationalStatus();
+        boolean boolean9 = equipment3.isInUse();
+        org.junit.Assert.assertNotNull(usageRecordList4);
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
+        org.junit.Assert.assertTrue("'" + operationalStatus8 + "' != '" + com.yorku.lab.enums.OperationalStatus.AVAILABLE + "'", operationalStatus8.equals(com.yorku.lab.enums.OperationalStatus.AVAILABLE));
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+    }
+
+    @Test
+    public void test059() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test059");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
+        boolean boolean5 = equipment3.isReservable();
+        boolean boolean6 = equipment3.isInUse();
+        com.yorku.lab.enums.OperationalStatus operationalStatus7 = null;
+        equipment3.setOperationalStatus(operationalStatus7);
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList9 = equipment3.getUsageRecords();
+        org.junit.Assert.assertNotNull(usageRecordList4);
+        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + true + "'", boolean5 == true);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        org.junit.Assert.assertNotNull(usageRecordList9);
+    }
+
+    @Test
+    public void test060() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test060");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "", "hi!");
+        boolean boolean4 = equipment3.isInUse();
+        java.lang.String str5 = equipment3.toString();
+        com.yorku.lab.enums.OperationalStatus operationalStatus6 = equipment3.getOperationalStatus();
+        equipment3.setInUse(false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertEquals("'" + str5 + "' != '" + " -  (hi!)" + "'", str5, " -  (hi!)");
+        org.junit.Assert.assertTrue("'" + operationalStatus6 + "' != '" + com.yorku.lab.enums.OperationalStatus.AVAILABLE + "'", operationalStatus6.equals(com.yorku.lab.enums.OperationalStatus.AVAILABLE));
+    }
+
+    @Test
+    public void test061() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test061");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment(" - hi! ( -  (hi!))", "hi! -  ()", " - hi! ()");
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver4 = null;
+        equipment3.attach(sensorObserver4);
+    }
+
+    @Test
+    public void test062() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test062");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
+        com.yorku.lab.model.UsageRecord usageRecord5 = null;
+        equipment3.addUsageRecord(usageRecord5);
+        java.lang.String str7 = equipment3.toString();
+        org.junit.Assert.assertNotNull(usageRecordList4);
+        org.junit.Assert.assertEquals("'" + str7 + "' != '" + " - hi! ()" + "'", str7, " - hi! ()");
+    }
+
+    @Test
+    public void test063() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test063");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", " -  (hi!)");
+        com.yorku.lab.model.UsageRecord usageRecord4 = null;
+        equipment3.addUsageRecord(usageRecord4);
+        boolean boolean6 = equipment3.isInUse();
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+    }
+
+    @Test
+    public void test064() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test064");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver5 = null;
+        equipment3.attach(sensorObserver5);
+        com.yorku.lab.enums.OperationalStatus operationalStatus7 = equipment3.getOperationalStatus();
+        org.junit.Assert.assertNotNull(usageRecordList4);
+        org.junit.Assert.assertTrue("'" + operationalStatus7 + "' != '" + com.yorku.lab.enums.OperationalStatus.AVAILABLE + "'", operationalStatus7.equals(com.yorku.lab.enums.OperationalStatus.AVAILABLE));
+    }
+
+    @Test
+    public void test065() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test065");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("hi!", "", "");
+        java.lang.String str4 = equipment3.getLabLocation();
+        boolean boolean5 = equipment3.isReservable();
+        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "" + "'", str4, "");
+        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + true + "'", boolean5 == true);
+    }
+
+    @Test
+    public void test066() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test066");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "", " -  ( -  (hi!))");
+        java.lang.String str4 = equipment3.getEquipmentId();
+        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "" + "'", str4, "");
+    }
+
+    @Test
+    public void test067() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test067");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        equipment3.notifyObservers();
+        com.yorku.lab.model.Equipment equipment8 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList9 = equipment8.getUsageRecords();
+        com.yorku.lab.model.UsageRecord usageRecord10 = null;
+        equipment8.addUsageRecord(usageRecord10);
+        boolean boolean12 = equipment8.isInUse();
+        com.yorku.lab.enums.OperationalStatus operationalStatus13 = equipment8.getOperationalStatus();
+        equipment3.setOperationalStatus(operationalStatus13);
+        com.yorku.lab.model.UsageRecord usageRecord15 = null;
+        equipment3.addUsageRecord(usageRecord15);
+        org.junit.Assert.assertNotNull(usageRecordList9);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + operationalStatus13 + "' != '" + com.yorku.lab.enums.OperationalStatus.AVAILABLE + "'", operationalStatus13.equals(com.yorku.lab.enums.OperationalStatus.AVAILABLE));
+    }
+
+    @Test
+    public void test068() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test068");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("hi!", "", "");
+        java.lang.String str4 = equipment3.getLabLocation();
+        java.lang.String str5 = equipment3.toString();
+        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "" + "'", str4, "");
+        org.junit.Assert.assertEquals("'" + str5 + "' != '" + "hi! -  ()" + "'", str5, "hi! -  ()");
+    }
+
+    @Test
+    public void test069() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test069");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment(" -  (hi!)", "", "hi!");
+    }
+
+    @Test
+    public void test070() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test070");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "hi!");
+        equipment3.setInUse(true);
         java.lang.String str6 = equipment3.getEquipmentId();
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver7 = null;
+        equipment3.attach(sensorObserver7);
+        org.junit.Assert.assertEquals("'" + str6 + "' != '" + "" + "'", str6, "");
+    }
+
+    @Test
+    public void test071() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test071");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "hi!");
+        equipment3.setInUse(true);
+        equipment3.notifyObservers();
+        java.lang.String str7 = equipment3.toString();
+        org.junit.Assert.assertEquals("'" + str7 + "' != '" + " - hi! (hi!)" + "'", str7, " - hi! (hi!)");
+    }
+
+    @Test
+    public void test072() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test072");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        boolean boolean4 = equipment3.isReservable();
+        java.lang.String str5 = equipment3.getDescription();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + true + "'", boolean4 == true);
+        org.junit.Assert.assertEquals("'" + str5 + "' != '" + "hi!" + "'", str5, "hi!");
+    }
+
+    @Test
+    public void test073() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test073");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "", " -  (hi!)");
+        com.yorku.lab.model.UsageRecord usageRecord4 = null;
+        equipment3.addUsageRecord(usageRecord4);
+        java.lang.String str6 = equipment3.getDescription();
+        java.lang.String str7 = equipment3.toString();
+        boolean boolean8 = equipment3.isReservable();
+        org.junit.Assert.assertEquals("'" + str6 + "' != '" + "" + "'", str6, "");
+        org.junit.Assert.assertEquals("'" + str7 + "' != '" + " -  ( -  (hi!))" + "'", str7, " -  ( -  (hi!))");
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + true + "'", boolean8 == true);
+    }
+
+    @Test
+    public void test074() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test074");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
+        com.yorku.lab.model.UsageRecord usageRecord5 = null;
+        equipment3.addUsageRecord(usageRecord5);
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver7 = null;
+        equipment3.detach(sensorObserver7);
+        boolean boolean9 = equipment3.isInUse();
+        com.yorku.lab.enums.OperationalStatus operationalStatus10 = null;
+        equipment3.setOperationalStatus(operationalStatus10);
+        java.lang.String str12 = equipment3.getEquipmentId();
+        java.lang.String str13 = equipment3.getEquipmentId();
+        org.junit.Assert.assertNotNull(usageRecordList4);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertEquals("'" + str12 + "' != '" + "" + "'", str12, "");
+        org.junit.Assert.assertEquals("'" + str13 + "' != '" + "" + "'", str13, "");
+    }
+
+    @Test
+    public void test075() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test075");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", " -  (hi!)");
+        com.yorku.lab.model.UsageRecord usageRecord4 = null;
+        equipment3.addUsageRecord(usageRecord4);
+        equipment3.notifyObservers();
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver7 = null;
+        equipment3.detach(sensorObserver7);
+        boolean boolean9 = equipment3.isInUse();
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+    }
+
+    @Test
+    public void test076() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test076");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("hi!", "hi! -  ()", "");
+        equipment3.notifyObservers();
+    }
+
+    @Test
+    public void test077() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test077");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", " -  (hi!)");
+        equipment3.notifyObservers();
+        com.yorku.lab.enums.OperationalStatus operationalStatus5 = null;
+        equipment3.setOperationalStatus(operationalStatus5);
         java.lang.String str7 = equipment3.getDescription();
         java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList8 = equipment3.getUsageRecords();
+        com.yorku.lab.model.UsageRecord usageRecord9 = null;
+        equipment3.addUsageRecord(usageRecord9);
+        equipment3.notifyObservers();
+        boolean boolean12 = equipment3.isReservable();
+        org.junit.Assert.assertEquals("'" + str7 + "' != '" + "hi!" + "'", str7, "hi!");
+        org.junit.Assert.assertNotNull(usageRecordList8);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+    }
+
+    @Test
+    public void test078() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test078");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "", "hi!");
+        boolean boolean4 = equipment3.isInUse();
+        java.lang.String str5 = equipment3.getDescription();
+        com.yorku.lab.model.UsageRecord usageRecord6 = null;
+        equipment3.addUsageRecord(usageRecord6);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertEquals("'" + str5 + "' != '" + "" + "'", str5, "");
+    }
+
+    @Test
+    public void test079() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test079");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
+        com.yorku.lab.model.UsageRecord usageRecord5 = null;
+        equipment3.addUsageRecord(usageRecord5);
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver7 = null;
+        equipment3.detach(sensorObserver7);
+        boolean boolean9 = equipment3.isInUse();
+        com.yorku.lab.enums.OperationalStatus operationalStatus10 = null;
+        equipment3.setOperationalStatus(operationalStatus10);
+        java.lang.String str12 = equipment3.getEquipmentId();
+        java.lang.String str13 = equipment3.getLabLocation();
+        org.junit.Assert.assertNotNull(usageRecordList4);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertEquals("'" + str12 + "' != '" + "" + "'", str12, "");
+        org.junit.Assert.assertEquals("'" + str13 + "' != '" + "" + "'", str13, "");
+    }
+
+    @Test
+    public void test080() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test080");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("hi!", "", "");
+        boolean boolean4 = equipment3.isInUse();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+    }
+
+    @Test
+    public void test081() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test081");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        com.yorku.lab.model.UsageRecord usageRecord4 = null;
+        equipment3.addUsageRecord(usageRecord4);
+        boolean boolean6 = equipment3.isReservable();
+        boolean boolean7 = equipment3.isReservable();
+        boolean boolean8 = equipment3.isInUse();
+        equipment3.notifyObservers();
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + true + "'", boolean6 == true);
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + true + "'", boolean7 == true);
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+    }
+
+    @Test
+    public void test082() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test082");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver5 = null;
+        equipment3.attach(sensorObserver5);
+        java.lang.String str7 = equipment3.getDescription();
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver8 = null;
+        equipment3.detach(sensorObserver8);
+        org.junit.Assert.assertNotNull(usageRecordList4);
+        org.junit.Assert.assertEquals("'" + str7 + "' != '" + "hi!" + "'", str7, "hi!");
+    }
+
+    @Test
+    public void test083() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test083");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment(" - hi! ( -  (hi!))", "", "");
+        com.yorku.lab.enums.OperationalStatus operationalStatus4 = equipment3.getOperationalStatus();
+        org.junit.Assert.assertTrue("'" + operationalStatus4 + "' != '" + com.yorku.lab.enums.OperationalStatus.AVAILABLE + "'", operationalStatus4.equals(com.yorku.lab.enums.OperationalStatus.AVAILABLE));
+    }
+
+    @Test
+    public void test084() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test084");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "hi!");
+        equipment3.setInUse(true);
+        boolean boolean6 = equipment3.isInUse();
+        boolean boolean7 = equipment3.isReservable();
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + true + "'", boolean6 == true);
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + true + "'", boolean7 == true);
+    }
+
+    @Test
+    public void test085() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test085");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        com.yorku.lab.model.UsageRecord usageRecord4 = null;
+        equipment3.addUsageRecord(usageRecord4);
+        boolean boolean6 = equipment3.isReservable();
+        boolean boolean7 = equipment3.isReservable();
+        equipment3.notifyObservers();
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList9 = equipment3.getUsageRecords();
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver10 = null;
+        equipment3.attach(sensorObserver10);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + true + "'", boolean6 == true);
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + true + "'", boolean7 == true);
+        org.junit.Assert.assertNotNull(usageRecordList9);
+    }
+
+    @Test
+    public void test086() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test086");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", " -  (hi!)");
+        equipment3.notifyObservers();
+        com.yorku.lab.enums.OperationalStatus operationalStatus5 = null;
+        equipment3.setOperationalStatus(operationalStatus5);
+        java.lang.String str7 = equipment3.toString();
+        equipment3.notifyObservers();
+        org.junit.Assert.assertEquals("'" + str7 + "' != '" + " - hi! ( -  (hi!))" + "'", str7, " - hi! ( -  (hi!))");
+    }
+
+    @Test
+    public void test087() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test087");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        equipment3.notifyObservers();
+        equipment3.notifyObservers();
+        equipment3.setInUse(true);
+        equipment3.notifyObservers();
+    }
+
+    @Test
+    public void test088() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test088");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment(" -  (hi!)", " - hi! ()", "hi!");
+        equipment3.setInUse(false);
+    }
+
+    @Test
+    public void test089() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test089");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
+        com.yorku.lab.model.UsageRecord usageRecord5 = null;
+        equipment3.addUsageRecord(usageRecord5);
+        com.yorku.lab.enums.OperationalStatus operationalStatus7 = null;
+        equipment3.setOperationalStatus(operationalStatus7);
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList9 = equipment3.getUsageRecords();
+        org.junit.Assert.assertNotNull(usageRecordList4);
+        org.junit.Assert.assertNotNull(usageRecordList9);
+    }
+
+    @Test
+    public void test090() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test090");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
+        com.yorku.lab.model.UsageRecord usageRecord5 = null;
+        equipment3.addUsageRecord(usageRecord5);
+        java.lang.String str7 = equipment3.getLabLocation();
+        boolean boolean8 = equipment3.isReservable();
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver9 = null;
+        equipment3.attach(sensorObserver9);
+        java.lang.String str11 = equipment3.getLabLocation();
+        com.yorku.lab.enums.OperationalStatus operationalStatus12 = equipment3.getOperationalStatus();
+        org.junit.Assert.assertNotNull(usageRecordList4);
+        org.junit.Assert.assertEquals("'" + str7 + "' != '" + "" + "'", str7, "");
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + true + "'", boolean8 == true);
+        org.junit.Assert.assertEquals("'" + str11 + "' != '" + "" + "'", str11, "");
+        org.junit.Assert.assertTrue("'" + operationalStatus12 + "' != '" + com.yorku.lab.enums.OperationalStatus.AVAILABLE + "'", operationalStatus12.equals(com.yorku.lab.enums.OperationalStatus.AVAILABLE));
+    }
+
+    @Test
+    public void test091() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test091");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
+        com.yorku.lab.model.UsageRecord usageRecord5 = null;
+        equipment3.addUsageRecord(usageRecord5);
+        boolean boolean7 = equipment3.isInUse();
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver8 = null;
+        equipment3.detach(sensorObserver8);
+        java.lang.String str10 = equipment3.getDescription();
+        java.lang.String str11 = equipment3.getLabLocation();
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver12 = null;
+        equipment3.attach(sensorObserver12);
+        com.yorku.lab.model.UsageRecord usageRecord14 = null;
+        equipment3.addUsageRecord(usageRecord14);
+        org.junit.Assert.assertNotNull(usageRecordList4);
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
+        org.junit.Assert.assertEquals("'" + str10 + "' != '" + "hi!" + "'", str10, "hi!");
+        org.junit.Assert.assertEquals("'" + str11 + "' != '" + "" + "'", str11, "");
+    }
+
+    @Test
+    public void test092() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test092");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("hi!", "hi! -  ()", "");
+        java.lang.String str4 = equipment3.getDescription();
+        equipment3.notifyObservers();
+        com.yorku.lab.enums.OperationalStatus operationalStatus6 = null;
+        equipment3.setOperationalStatus(operationalStatus6);
+        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "hi! -  ()" + "'", str4, "hi! -  ()");
+    }
+
+    @Test
+    public void test093() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test093");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver5 = null;
+        equipment3.attach(sensorObserver5);
+        java.lang.String str7 = equipment3.getDescription();
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver8 = null;
+        equipment3.attach(sensorObserver8);
+        // The following exception was thrown during execution in test generation
+        try {
+            equipment3.notifyObservers();
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.yorku.lab.pattern.observer.SensorObserver.update(com.yorku.lab.model.Equipment)\" because \"<local2>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(usageRecordList4);
+        org.junit.Assert.assertEquals("'" + str7 + "' != '" + "hi!" + "'", str7, "hi!");
+    }
+
+    @Test
+    public void test094() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test094");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        com.yorku.lab.model.UsageRecord usageRecord4 = null;
+        equipment3.addUsageRecord(usageRecord4);
+        java.lang.String str6 = equipment3.getDescription();
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver7 = null;
+        equipment3.detach(sensorObserver7);
+        boolean boolean9 = equipment3.isReservable();
+        org.junit.Assert.assertEquals("'" + str6 + "' != '" + "hi!" + "'", str6, "hi!");
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + true + "'", boolean9 == true);
+    }
+
+    @Test
+    public void test095() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test095");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
+        com.yorku.lab.model.UsageRecord usageRecord5 = null;
+        equipment3.addUsageRecord(usageRecord5);
+        java.lang.String str7 = equipment3.getLabLocation();
+        boolean boolean8 = equipment3.isReservable();
+        com.yorku.lab.enums.OperationalStatus operationalStatus9 = equipment3.getOperationalStatus();
+        org.junit.Assert.assertNotNull(usageRecordList4);
+        org.junit.Assert.assertEquals("'" + str7 + "' != '" + "" + "'", str7, "");
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + true + "'", boolean8 == true);
+        org.junit.Assert.assertTrue("'" + operationalStatus9 + "' != '" + com.yorku.lab.enums.OperationalStatus.AVAILABLE + "'", operationalStatus9.equals(com.yorku.lab.enums.OperationalStatus.AVAILABLE));
+    }
+
+    @Test
+    public void test096() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test096");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
+        com.yorku.lab.model.UsageRecord usageRecord5 = null;
+        equipment3.addUsageRecord(usageRecord5);
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver7 = null;
+        equipment3.detach(sensorObserver7);
+        java.lang.String str9 = equipment3.getEquipmentId();
+        java.lang.String str10 = equipment3.getDescription();
+        java.lang.String str11 = equipment3.getDescription();
+        org.junit.Assert.assertNotNull(usageRecordList4);
+        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "" + "'", str9, "");
+        org.junit.Assert.assertEquals("'" + str10 + "' != '" + "hi!" + "'", str10, "hi!");
+        org.junit.Assert.assertEquals("'" + str11 + "' != '" + "hi!" + "'", str11, "hi!");
+    }
+
+    @Test
+    public void test097() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test097");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
+        com.yorku.lab.model.UsageRecord usageRecord5 = null;
+        equipment3.addUsageRecord(usageRecord5);
+        com.yorku.lab.enums.OperationalStatus operationalStatus7 = null;
+        equipment3.setOperationalStatus(operationalStatus7);
+        java.lang.String str9 = equipment3.getDescription();
+        equipment3.setInUse(true);
+        java.lang.String str12 = equipment3.getDescription();
+        org.junit.Assert.assertNotNull(usageRecordList4);
+        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "hi!" + "'", str9, "hi!");
+        org.junit.Assert.assertEquals("'" + str12 + "' != '" + "hi!" + "'", str12, "hi!");
+    }
+
+    @Test
+    public void test098() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test098");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", " -  (hi!)");
+        com.yorku.lab.model.UsageRecord usageRecord4 = null;
+        equipment3.addUsageRecord(usageRecord4);
+        equipment3.notifyObservers();
+        java.lang.String str7 = equipment3.getDescription();
+        java.lang.String str8 = equipment3.getLabLocation();
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver9 = null;
+        equipment3.detach(sensorObserver9);
+        org.junit.Assert.assertEquals("'" + str7 + "' != '" + "hi!" + "'", str7, "hi!");
+        org.junit.Assert.assertEquals("'" + str8 + "' != '" + " -  (hi!)" + "'", str8, " -  (hi!)");
+    }
+
+    @Test
+    public void test099() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test099");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        boolean boolean4 = equipment3.isReservable();
+        com.yorku.lab.model.Equipment equipment8 = new com.yorku.lab.model.Equipment("", "hi!", "hi!");
+        equipment8.setInUse(true);
+        equipment8.notifyObservers();
+        com.yorku.lab.enums.OperationalStatus operationalStatus12 = equipment8.getOperationalStatus();
+        equipment3.setOperationalStatus(operationalStatus12);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + true + "'", boolean4 == true);
+        org.junit.Assert.assertTrue("'" + operationalStatus12 + "' != '" + com.yorku.lab.enums.OperationalStatus.AVAILABLE + "'", operationalStatus12.equals(com.yorku.lab.enums.OperationalStatus.AVAILABLE));
+    }
+
+    @Test
+    public void test100() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test100");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        com.yorku.lab.model.UsageRecord usageRecord4 = null;
+        equipment3.addUsageRecord(usageRecord4);
+        boolean boolean6 = equipment3.isReservable();
+        boolean boolean7 = equipment3.isReservable();
+        equipment3.notifyObservers();
+        java.lang.String str9 = equipment3.getEquipmentId();
+        com.yorku.lab.enums.OperationalStatus operationalStatus10 = equipment3.getOperationalStatus();
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + true + "'", boolean6 == true);
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + true + "'", boolean7 == true);
+        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "" + "'", str9, "");
+        org.junit.Assert.assertTrue("'" + operationalStatus10 + "' != '" + com.yorku.lab.enums.OperationalStatus.AVAILABLE + "'", operationalStatus10.equals(com.yorku.lab.enums.OperationalStatus.AVAILABLE));
+    }
+
+    @Test
+    public void test101() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test101");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        com.yorku.lab.model.UsageRecord usageRecord4 = null;
+        equipment3.addUsageRecord(usageRecord4);
+        boolean boolean6 = equipment3.isReservable();
+        boolean boolean7 = equipment3.isReservable();
+        java.lang.String str8 = equipment3.getLabLocation();
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + true + "'", boolean6 == true);
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + true + "'", boolean7 == true);
+        org.junit.Assert.assertEquals("'" + str8 + "' != '" + "" + "'", str8, "");
+    }
+
+    @Test
+    public void test102() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test102");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "", "hi!");
+        java.lang.String str4 = equipment3.getDescription();
+        equipment3.setInUse(false);
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver7 = null;
+        equipment3.detach(sensorObserver7);
+        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "" + "'", str4, "");
+    }
+
+    @Test
+    public void test103() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test103");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        equipment3.notifyObservers();
+        com.yorku.lab.model.Equipment equipment8 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList9 = equipment8.getUsageRecords();
+        com.yorku.lab.model.UsageRecord usageRecord10 = null;
+        equipment8.addUsageRecord(usageRecord10);
+        boolean boolean12 = equipment8.isInUse();
+        com.yorku.lab.enums.OperationalStatus operationalStatus13 = equipment8.getOperationalStatus();
+        equipment3.setOperationalStatus(operationalStatus13);
+        java.lang.Class<?> wildcardClass15 = equipment3.getClass();
+        org.junit.Assert.assertNotNull(usageRecordList9);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + operationalStatus13 + "' != '" + com.yorku.lab.enums.OperationalStatus.AVAILABLE + "'", operationalStatus13.equals(com.yorku.lab.enums.OperationalStatus.AVAILABLE));
+        org.junit.Assert.assertNotNull(wildcardClass15);
+    }
+
+    @Test
+    public void test104() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test104");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver4 = null;
+        equipment3.detach(sensorObserver4);
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver6 = null;
+        equipment3.detach(sensorObserver6);
+        boolean boolean8 = equipment3.isInUse();
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver9 = null;
+        equipment3.attach(sensorObserver9);
+        java.lang.String str11 = equipment3.getEquipmentId();
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertEquals("'" + str11 + "' != '" + "" + "'", str11, "");
+    }
+
+    @Test
+    public void test105() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test105");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        com.yorku.lab.model.UsageRecord usageRecord4 = null;
+        equipment3.addUsageRecord(usageRecord4);
+        boolean boolean6 = equipment3.isReservable();
+        boolean boolean7 = equipment3.isReservable();
+        equipment3.notifyObservers();
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList9 = equipment3.getUsageRecords();
+        equipment3.notifyObservers();
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + true + "'", boolean6 == true);
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + true + "'", boolean7 == true);
+        org.junit.Assert.assertNotNull(usageRecordList9);
+    }
+
+    @Test
+    public void test106() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test106");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "", " -  (hi!)");
+        boolean boolean4 = equipment3.isReservable();
+        java.lang.String str5 = equipment3.getLabLocation();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + true + "'", boolean4 == true);
+        org.junit.Assert.assertEquals("'" + str5 + "' != '" + " -  (hi!)" + "'", str5, " -  (hi!)");
+    }
+
+    @Test
+    public void test107() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test107");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
+        com.yorku.lab.model.UsageRecord usageRecord5 = null;
+        equipment3.addUsageRecord(usageRecord5);
+        com.yorku.lab.enums.OperationalStatus operationalStatus7 = null;
+        equipment3.setOperationalStatus(operationalStatus7);
+        java.lang.String str9 = equipment3.getDescription();
+        equipment3.setInUse(true);
+        boolean boolean12 = equipment3.isInUse();
+        java.lang.String str13 = equipment3.getDescription();
+        boolean boolean14 = equipment3.isInUse();
+        org.junit.Assert.assertNotNull(usageRecordList4);
+        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "hi!" + "'", str9, "hi!");
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + true + "'", boolean12 == true);
+        org.junit.Assert.assertEquals("'" + str13 + "' != '" + "hi!" + "'", str13, "hi!");
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + true + "'", boolean14 == true);
+    }
+
+    @Test
+    public void test108() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test108");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver5 = null;
+        equipment3.attach(sensorObserver5);
+        com.yorku.lab.enums.OperationalStatus operationalStatus7 = null;
+        equipment3.setOperationalStatus(operationalStatus7);
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver9 = null;
+        equipment3.attach(sensorObserver9);
+        org.junit.Assert.assertNotNull(usageRecordList4);
+    }
+
+    @Test
+    public void test109() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test109");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "hi!");
+        equipment3.setInUse(true);
+        boolean boolean6 = equipment3.isInUse();
+        equipment3.setInUse(false);
         com.yorku.lab.model.Equipment equipment12 = new com.yorku.lab.model.Equipment("", "hi!", "");
-        com.yorku.lab.pattern.observer.SensorObserver sensorObserver13 = null;
-        equipment12.detach(sensorObserver13);
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList13 = equipment12.getUsageRecords();
+        com.yorku.lab.model.UsageRecord usageRecord14 = null;
+        equipment12.addUsageRecord(usageRecord14);
+        com.yorku.lab.enums.OperationalStatus operationalStatus16 = equipment12.getOperationalStatus();
+        equipment3.setOperationalStatus(operationalStatus16);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + true + "'", boolean6 == true);
+        org.junit.Assert.assertNotNull(usageRecordList13);
+        org.junit.Assert.assertTrue("'" + operationalStatus16 + "' != '" + com.yorku.lab.enums.OperationalStatus.AVAILABLE + "'", operationalStatus16.equals(com.yorku.lab.enums.OperationalStatus.AVAILABLE));
+    }
+
+    @Test
+    public void test110() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test110");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "", "hi!");
+        boolean boolean4 = equipment3.isInUse();
+        java.lang.String str5 = equipment3.getDescription();
+        java.lang.String str6 = equipment3.getLabLocation();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertEquals("'" + str5 + "' != '" + "" + "'", str5, "");
+        org.junit.Assert.assertEquals("'" + str6 + "' != '" + "hi!" + "'", str6, "hi!");
+    }
+
+    @Test
+    public void test111() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test111");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
+        boolean boolean5 = equipment3.isReservable();
+        com.yorku.lab.model.UsageRecord usageRecord6 = null;
+        equipment3.addUsageRecord(usageRecord6);
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver8 = null;
+        equipment3.detach(sensorObserver8);
+        org.junit.Assert.assertNotNull(usageRecordList4);
+        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + true + "'", boolean5 == true);
+    }
+
+    @Test
+    public void test112() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test112");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
+        boolean boolean5 = equipment3.isReservable();
+        com.yorku.lab.model.UsageRecord usageRecord6 = null;
+        equipment3.addUsageRecord(usageRecord6);
+        java.lang.String str8 = equipment3.toString();
+        java.lang.String str9 = equipment3.getLabLocation();
+        org.junit.Assert.assertNotNull(usageRecordList4);
+        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + true + "'", boolean5 == true);
+        org.junit.Assert.assertEquals("'" + str8 + "' != '" + " - hi! ()" + "'", str8, " - hi! ()");
+        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "" + "'", str9, "");
+    }
+
+    @Test
+    public void test113() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test113");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        com.yorku.lab.model.UsageRecord usageRecord4 = null;
+        equipment3.addUsageRecord(usageRecord4);
+        java.lang.String str6 = equipment3.getDescription();
+        boolean boolean7 = equipment3.isReservable();
+        java.lang.String str8 = equipment3.toString();
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver9 = null;
+        equipment3.detach(sensorObserver9);
+        org.junit.Assert.assertEquals("'" + str6 + "' != '" + "hi!" + "'", str6, "hi!");
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + true + "'", boolean7 == true);
+        org.junit.Assert.assertEquals("'" + str8 + "' != '" + " - hi! ()" + "'", str8, " - hi! ()");
+    }
+
+    @Test
+    public void test114() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test114");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("hi! -  ()", " -  (hi!)", "hi! -  ()");
+        com.yorku.lab.model.Equipment equipment7 = new com.yorku.lab.model.Equipment("", "hi!", "hi!");
+        equipment7.setInUse(true);
+        equipment7.notifyObservers();
+        com.yorku.lab.enums.OperationalStatus operationalStatus11 = equipment7.getOperationalStatus();
+        equipment3.setOperationalStatus(operationalStatus11);
+        boolean boolean13 = equipment3.isReservable();
+        com.yorku.lab.model.UsageRecord usageRecord14 = null;
+        equipment3.addUsageRecord(usageRecord14);
+        org.junit.Assert.assertTrue("'" + operationalStatus11 + "' != '" + com.yorku.lab.enums.OperationalStatus.AVAILABLE + "'", operationalStatus11.equals(com.yorku.lab.enums.OperationalStatus.AVAILABLE));
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + true + "'", boolean13 == true);
+    }
+
+    @Test
+    public void test115() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test115");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("hi!", "hi! -  ()", "");
+        java.lang.String str4 = equipment3.getDescription();
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver5 = null;
+        equipment3.attach(sensorObserver5);
+        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "hi! -  ()" + "'", str4, "hi! -  ()");
+    }
+
+    @Test
+    public void test116() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test116");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "hi!");
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
+        org.junit.Assert.assertNotNull(usageRecordList4);
+    }
+
+    @Test
+    public void test117() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test117");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver4 = null;
+        equipment3.detach(sensorObserver4);
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver6 = null;
+        equipment3.detach(sensorObserver6);
+        boolean boolean8 = equipment3.isInUse();
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList9 = equipment3.getUsageRecords();
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList10 = equipment3.getUsageRecords();
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertNotNull(usageRecordList9);
+        org.junit.Assert.assertNotNull(usageRecordList10);
+    }
+
+    @Test
+    public void test118() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test118");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
+        com.yorku.lab.model.UsageRecord usageRecord5 = null;
+        equipment3.addUsageRecord(usageRecord5);
+        com.yorku.lab.enums.OperationalStatus operationalStatus7 = equipment3.getOperationalStatus();
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver8 = null;
+        equipment3.detach(sensorObserver8);
+        org.junit.Assert.assertNotNull(usageRecordList4);
+        org.junit.Assert.assertTrue("'" + operationalStatus7 + "' != '" + com.yorku.lab.enums.OperationalStatus.AVAILABLE + "'", operationalStatus7.equals(com.yorku.lab.enums.OperationalStatus.AVAILABLE));
+    }
+
+    @Test
+    public void test119() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test119");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment(" - hi! (hi!)", " - hi! ()", " - hi! ( -  (hi!))");
+    }
+
+    @Test
+    public void test120() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test120");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment(" - hi! ( -  (hi!))", " - hi! ( -  (hi!))", " - hi! ( -  (hi!))");
+    }
+
+    @Test
+    public void test121() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test121");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver5 = null;
+        equipment3.attach(sensorObserver5);
+        java.lang.String str7 = equipment3.getDescription();
+        com.yorku.lab.enums.OperationalStatus operationalStatus8 = equipment3.getOperationalStatus();
+        java.lang.String str9 = equipment3.getEquipmentId();
+        org.junit.Assert.assertNotNull(usageRecordList4);
+        org.junit.Assert.assertEquals("'" + str7 + "' != '" + "hi!" + "'", str7, "hi!");
+        org.junit.Assert.assertTrue("'" + operationalStatus8 + "' != '" + com.yorku.lab.enums.OperationalStatus.AVAILABLE + "'", operationalStatus8.equals(com.yorku.lab.enums.OperationalStatus.AVAILABLE));
+        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "" + "'", str9, "");
+    }
+
+    @Test
+    public void test122() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test122");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("hi!", "", "");
+        java.lang.String str4 = equipment3.toString();
+        boolean boolean5 = equipment3.isInUse();
+        java.lang.String str6 = equipment3.getLabLocation();
+        equipment3.notifyObservers();
+        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "hi! -  ()" + "'", str4, "hi! -  ()");
+        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
+        org.junit.Assert.assertEquals("'" + str6 + "' != '" + "" + "'", str6, "");
+    }
+
+    @Test
+    public void test123() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test123");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment(" -  (hi!)", " - hi! ()", "hi!");
+        com.yorku.lab.model.UsageRecord usageRecord4 = null;
+        equipment3.addUsageRecord(usageRecord4);
+    }
+
+    @Test
+    public void test124() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test124");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        com.yorku.lab.model.UsageRecord usageRecord4 = null;
+        equipment3.addUsageRecord(usageRecord4);
+        boolean boolean6 = equipment3.isReservable();
+        boolean boolean7 = equipment3.isReservable();
+        equipment3.notifyObservers();
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList9 = equipment3.getUsageRecords();
+        com.yorku.lab.model.Equipment equipment13 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        equipment13.notifyObservers();
         com.yorku.lab.model.Equipment equipment18 = new com.yorku.lab.model.Equipment("", "hi!", "");
         java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList19 = equipment18.getUsageRecords();
         com.yorku.lab.model.UsageRecord usageRecord20 = null;
         equipment18.addUsageRecord(usageRecord20);
-        java.lang.String str22 = equipment18.toString();
-        com.yorku.lab.model.Equipment equipment26 = new com.yorku.lab.model.Equipment("hi!", "hi!", "hi!");
-        boolean boolean27 = equipment26.isInUse();
-        java.lang.String str28 = equipment26.toString();
-        com.yorku.lab.pattern.observer.SensorObserver sensorObserver29 = null;
-        equipment26.attach(sensorObserver29);
-        java.lang.String str31 = equipment26.getDescription();
-        com.yorku.lab.enums.OperationalStatus operationalStatus32 = equipment26.getOperationalStatus();
-        equipment18.setOperationalStatus(operationalStatus32);
-        equipment12.setOperationalStatus(operationalStatus32);
-        equipment3.setOperationalStatus(operationalStatus32);
-        org.junit.Assert.assertEquals("'" + str6 + "' != '" + "" + "'", str6, "");
-        org.junit.Assert.assertEquals("'" + str7 + "' != '" + "hi!" + "'", str7, "hi!");
-        org.junit.Assert.assertNotNull(usageRecordList8);
-        org.junit.Assert.assertNotNull(usageRecordList19);
-        org.junit.Assert.assertEquals("'" + str22 + "' != '" + " - hi! ()" + "'", str22, " - hi! ()");
-        org.junit.Assert.assertTrue("'" + boolean27 + "' != '" + false + "'", boolean27 == false);
-        org.junit.Assert.assertEquals("'" + str28 + "' != '" + "hi! - hi! (hi!)" + "'", str28, "hi! - hi! (hi!)");
-        org.junit.Assert.assertEquals("'" + str31 + "' != '" + "hi!" + "'", str31, "hi!");
-        org.junit.Assert.assertTrue("'" + operationalStatus32 + "' != '" + com.yorku.lab.enums.OperationalStatus.AVAILABLE + "'", operationalStatus32.equals(com.yorku.lab.enums.OperationalStatus.AVAILABLE));
-    }
-
-    @Test
-    public void test62() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test62");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
-        com.yorku.lab.pattern.observer.SensorObserver sensorObserver4 = null;
-        equipment3.detach(sensorObserver4);
-        com.yorku.lab.model.Equipment equipment9 = new com.yorku.lab.model.Equipment("", "hi!", "");
-        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList10 = equipment9.getUsageRecords();
-        com.yorku.lab.model.UsageRecord usageRecord11 = null;
-        equipment9.addUsageRecord(usageRecord11);
-        java.lang.String str13 = equipment9.toString();
-        com.yorku.lab.model.Equipment equipment17 = new com.yorku.lab.model.Equipment("hi!", "hi!", "hi!");
-        boolean boolean18 = equipment17.isInUse();
-        java.lang.String str19 = equipment17.toString();
-        com.yorku.lab.pattern.observer.SensorObserver sensorObserver20 = null;
-        equipment17.attach(sensorObserver20);
-        java.lang.String str22 = equipment17.getDescription();
-        com.yorku.lab.enums.OperationalStatus operationalStatus23 = equipment17.getOperationalStatus();
-        equipment9.setOperationalStatus(operationalStatus23);
+        boolean boolean22 = equipment18.isInUse();
+        com.yorku.lab.enums.OperationalStatus operationalStatus23 = equipment18.getOperationalStatus();
+        equipment13.setOperationalStatus(operationalStatus23);
         equipment3.setOperationalStatus(operationalStatus23);
         com.yorku.lab.pattern.observer.SensorObserver sensorObserver26 = null;
         equipment3.detach(sensorObserver26);
-        org.junit.Assert.assertNotNull(usageRecordList10);
-        org.junit.Assert.assertEquals("'" + str13 + "' != '" + " - hi! ()" + "'", str13, " - hi! ()");
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertEquals("'" + str19 + "' != '" + "hi! - hi! (hi!)" + "'", str19, "hi! - hi! (hi!)");
-        org.junit.Assert.assertEquals("'" + str22 + "' != '" + "hi!" + "'", str22, "hi!");
+        equipment3.notifyObservers();
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList29 = equipment3.getUsageRecords();
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + true + "'", boolean6 == true);
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + true + "'", boolean7 == true);
+        org.junit.Assert.assertNotNull(usageRecordList9);
+        org.junit.Assert.assertNotNull(usageRecordList19);
+        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
         org.junit.Assert.assertTrue("'" + operationalStatus23 + "' != '" + com.yorku.lab.enums.OperationalStatus.AVAILABLE + "'", operationalStatus23.equals(com.yorku.lab.enums.OperationalStatus.AVAILABLE));
+        org.junit.Assert.assertNotNull(usageRecordList29);
     }
 
     @Test
-    public void test63() throws Throwable {
+    public void test125() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test63");
+            System.out.format("%n%s%n", "RegressionTest0.test125");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
+        com.yorku.lab.model.UsageRecord usageRecord5 = null;
+        equipment3.addUsageRecord(usageRecord5);
+        java.lang.String str7 = equipment3.getLabLocation();
+        boolean boolean8 = equipment3.isReservable();
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList9 = equipment3.getUsageRecords();
+        boolean boolean10 = equipment3.isInUse();
+        org.junit.Assert.assertNotNull(usageRecordList4);
+        org.junit.Assert.assertEquals("'" + str7 + "' != '" + "" + "'", str7, "");
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + true + "'", boolean8 == true);
+        org.junit.Assert.assertNotNull(usageRecordList9);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+    }
+
+    @Test
+    public void test126() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test126");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        com.yorku.lab.model.UsageRecord usageRecord4 = null;
+        equipment3.addUsageRecord(usageRecord4);
+        boolean boolean6 = equipment3.isReservable();
+        boolean boolean7 = equipment3.isReservable();
+        equipment3.notifyObservers();
+        java.lang.String str9 = equipment3.getEquipmentId();
+        com.yorku.lab.model.UsageRecord usageRecord10 = null;
+        equipment3.addUsageRecord(usageRecord10);
+        boolean boolean12 = equipment3.isInUse();
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + true + "'", boolean6 == true);
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + true + "'", boolean7 == true);
+        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "" + "'", str9, "");
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+    }
+
+    @Test
+    public void test127() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test127");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("hi!", " - hi! (hi!)", "");
+    }
+
+    @Test
+    public void test128() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test128");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("hi!", "", "");
+        java.lang.String str4 = equipment3.getLabLocation();
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver5 = null;
+        equipment3.attach(sensorObserver5);
+        com.yorku.lab.model.Equipment equipment10 = new com.yorku.lab.model.Equipment("hi! -  ()", " -  (hi!)", "hi! -  ()");
+        com.yorku.lab.model.Equipment equipment14 = new com.yorku.lab.model.Equipment("", "hi!", "hi!");
+        equipment14.setInUse(true);
+        equipment14.notifyObservers();
+        com.yorku.lab.enums.OperationalStatus operationalStatus18 = equipment14.getOperationalStatus();
+        equipment10.setOperationalStatus(operationalStatus18);
+        equipment3.setOperationalStatus(operationalStatus18);
+        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "" + "'", str4, "");
+        org.junit.Assert.assertTrue("'" + operationalStatus18 + "' != '" + com.yorku.lab.enums.OperationalStatus.AVAILABLE + "'", operationalStatus18.equals(com.yorku.lab.enums.OperationalStatus.AVAILABLE));
+    }
+
+    @Test
+    public void test129() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test129");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
+        com.yorku.lab.model.UsageRecord usageRecord5 = null;
+        equipment3.addUsageRecord(usageRecord5);
+        java.lang.String str7 = equipment3.getLabLocation();
+        boolean boolean8 = equipment3.isReservable();
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList9 = equipment3.getUsageRecords();
+        java.lang.Class<?> wildcardClass10 = equipment3.getClass();
+        org.junit.Assert.assertNotNull(usageRecordList4);
+        org.junit.Assert.assertEquals("'" + str7 + "' != '" + "" + "'", str7, "");
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + true + "'", boolean8 == true);
+        org.junit.Assert.assertNotNull(usageRecordList9);
+        org.junit.Assert.assertNotNull(wildcardClass10);
+    }
+
+    @Test
+    public void test130() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test130");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", " -  (hi!)");
+        com.yorku.lab.model.UsageRecord usageRecord4 = null;
+        equipment3.addUsageRecord(usageRecord4);
+        equipment3.notifyObservers();
+        java.lang.String str7 = equipment3.getDescription();
+        java.lang.String str8 = equipment3.getLabLocation();
+        boolean boolean9 = equipment3.isInUse();
+        org.junit.Assert.assertEquals("'" + str7 + "' != '" + "hi!" + "'", str7, "hi!");
+        org.junit.Assert.assertEquals("'" + str8 + "' != '" + " -  (hi!)" + "'", str8, " -  (hi!)");
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+    }
+
+    @Test
+    public void test131() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test131");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "hi!");
+        equipment3.setInUse(true);
+        java.lang.String str6 = equipment3.getEquipmentId();
+        java.lang.Class<?> wildcardClass7 = equipment3.getClass();
+        org.junit.Assert.assertEquals("'" + str6 + "' != '" + "" + "'", str6, "");
+        org.junit.Assert.assertNotNull(wildcardClass7);
+    }
+
+    @Test
+    public void test132() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test132");
         com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
         com.yorku.lab.pattern.observer.SensorObserver sensorObserver4 = null;
         equipment3.detach(sensorObserver4);
-        java.lang.String str6 = equipment3.getEquipmentId();
-        com.yorku.lab.pattern.observer.SensorObserver sensorObserver7 = null;
-        equipment3.detach(sensorObserver7);
-        com.yorku.lab.model.Equipment equipment12 = new com.yorku.lab.model.Equipment("", "hi!", "");
-        com.yorku.lab.model.UsageRecord usageRecord13 = null;
-        equipment12.addUsageRecord(usageRecord13);
-        java.lang.String str15 = equipment12.getDescription();
-        equipment12.notifyObservers();
-        com.yorku.lab.model.Equipment equipment20 = new com.yorku.lab.model.Equipment("", "hi!", "");
-        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList21 = equipment20.getUsageRecords();
-        com.yorku.lab.model.UsageRecord usageRecord22 = null;
-        equipment20.addUsageRecord(usageRecord22);
-        java.lang.String str24 = equipment20.toString();
-        com.yorku.lab.model.Equipment equipment28 = new com.yorku.lab.model.Equipment("hi!", "hi!", "hi!");
-        boolean boolean29 = equipment28.isInUse();
-        java.lang.String str30 = equipment28.toString();
-        com.yorku.lab.pattern.observer.SensorObserver sensorObserver31 = null;
-        equipment28.attach(sensorObserver31);
-        java.lang.String str33 = equipment28.getDescription();
-        com.yorku.lab.enums.OperationalStatus operationalStatus34 = equipment28.getOperationalStatus();
-        equipment20.setOperationalStatus(operationalStatus34);
-        equipment12.setOperationalStatus(operationalStatus34);
-        equipment3.setOperationalStatus(operationalStatus34);
-        org.junit.Assert.assertEquals("'" + str6 + "' != '" + "" + "'", str6, "");
-        org.junit.Assert.assertEquals("'" + str15 + "' != '" + "hi!" + "'", str15, "hi!");
-        org.junit.Assert.assertNotNull(usageRecordList21);
-        org.junit.Assert.assertEquals("'" + str24 + "' != '" + " - hi! ()" + "'", str24, " - hi! ()");
-        org.junit.Assert.assertTrue("'" + boolean29 + "' != '" + false + "'", boolean29 == false);
-        org.junit.Assert.assertEquals("'" + str30 + "' != '" + "hi! - hi! (hi!)" + "'", str30, "hi! - hi! (hi!)");
-        org.junit.Assert.assertEquals("'" + str33 + "' != '" + "hi!" + "'", str33, "hi!");
-        org.junit.Assert.assertTrue("'" + operationalStatus34 + "' != '" + com.yorku.lab.enums.OperationalStatus.AVAILABLE + "'", operationalStatus34.equals(com.yorku.lab.enums.OperationalStatus.AVAILABLE));
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver6 = null;
+        equipment3.detach(sensorObserver6);
+        boolean boolean8 = equipment3.isInUse();
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver9 = null;
+        equipment3.attach(sensorObserver9);
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver11 = null;
+        equipment3.attach(sensorObserver11);
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver13 = null;
+        equipment3.attach(sensorObserver13);
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
     }
 
     @Test
-    public void test64() throws Throwable {
+    public void test133() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test64");
-        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment(" - hi! ()", "", "");
+            System.out.format("%n%s%n", "RegressionTest0.test133");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver4 = null;
+        equipment3.detach(sensorObserver4);
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver6 = null;
+        equipment3.detach(sensorObserver6);
+        boolean boolean8 = equipment3.isInUse();
+        com.yorku.lab.enums.OperationalStatus operationalStatus9 = equipment3.getOperationalStatus();
+        boolean boolean10 = equipment3.isReservable();
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertTrue("'" + operationalStatus9 + "' != '" + com.yorku.lab.enums.OperationalStatus.AVAILABLE + "'", operationalStatus9.equals(com.yorku.lab.enums.OperationalStatus.AVAILABLE));
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + true + "'", boolean10 == true);
+    }
+
+    @Test
+    public void test134() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test134");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "", "hi!");
+        boolean boolean4 = equipment3.isInUse();
+        com.yorku.lab.enums.OperationalStatus operationalStatus5 = equipment3.getOperationalStatus();
+        java.lang.Class<?> wildcardClass6 = operationalStatus5.getClass();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + operationalStatus5 + "' != '" + com.yorku.lab.enums.OperationalStatus.AVAILABLE + "'", operationalStatus5.equals(com.yorku.lab.enums.OperationalStatus.AVAILABLE));
+        org.junit.Assert.assertNotNull(wildcardClass6);
+    }
+
+    @Test
+    public void test135() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test135");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "", " -  (hi!)");
+        com.yorku.lab.model.UsageRecord usageRecord4 = null;
+        equipment3.addUsageRecord(usageRecord4);
+        boolean boolean6 = equipment3.isReservable();
+        com.yorku.lab.enums.OperationalStatus operationalStatus7 = equipment3.getOperationalStatus();
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + true + "'", boolean6 == true);
+        org.junit.Assert.assertTrue("'" + operationalStatus7 + "' != '" + com.yorku.lab.enums.OperationalStatus.AVAILABLE + "'", operationalStatus7.equals(com.yorku.lab.enums.OperationalStatus.AVAILABLE));
+    }
+
+    @Test
+    public void test136() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test136");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver4 = null;
+        equipment3.detach(sensorObserver4);
+        equipment3.notifyObservers();
+        com.yorku.lab.enums.OperationalStatus operationalStatus7 = equipment3.getOperationalStatus();
+        org.junit.Assert.assertTrue("'" + operationalStatus7 + "' != '" + com.yorku.lab.enums.OperationalStatus.AVAILABLE + "'", operationalStatus7.equals(com.yorku.lab.enums.OperationalStatus.AVAILABLE));
+    }
+
+    @Test
+    public void test137() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test137");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
+        com.yorku.lab.model.UsageRecord usageRecord5 = null;
+        equipment3.addUsageRecord(usageRecord5);
+        com.yorku.lab.enums.OperationalStatus operationalStatus7 = null;
+        equipment3.setOperationalStatus(operationalStatus7);
+        java.lang.String str9 = equipment3.getLabLocation();
+        org.junit.Assert.assertNotNull(usageRecordList4);
+        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "" + "'", str9, "");
+    }
+
+    @Test
+    public void test138() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test138");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        com.yorku.lab.model.UsageRecord usageRecord4 = null;
+        equipment3.addUsageRecord(usageRecord4);
+        java.lang.String str6 = equipment3.getDescription();
+        boolean boolean7 = equipment3.isReservable();
+        equipment3.notifyObservers();
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver9 = null;
+        equipment3.detach(sensorObserver9);
+        org.junit.Assert.assertEquals("'" + str6 + "' != '" + "hi!" + "'", str6, "hi!");
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + true + "'", boolean7 == true);
+    }
+
+    @Test
+    public void test139() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test139");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", " -  (hi!)");
+        equipment3.notifyObservers();
+        com.yorku.lab.enums.OperationalStatus operationalStatus5 = null;
+        equipment3.setOperationalStatus(operationalStatus5);
+        java.lang.String str7 = equipment3.getDescription();
+        java.lang.String str8 = equipment3.toString();
+        org.junit.Assert.assertEquals("'" + str7 + "' != '" + "hi!" + "'", str7, "hi!");
+        org.junit.Assert.assertEquals("'" + str8 + "' != '" + " - hi! ( -  (hi!))" + "'", str8, " - hi! ( -  (hi!))");
+    }
+
+    @Test
+    public void test140() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test140");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("hi!", "", "");
+        java.lang.String str4 = equipment3.toString();
+        boolean boolean5 = equipment3.isInUse();
+        equipment3.notifyObservers();
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList7 = equipment3.getUsageRecords();
+        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "hi! -  ()" + "'", str4, "hi! -  ()");
+        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
+        org.junit.Assert.assertNotNull(usageRecordList7);
+    }
+
+    @Test
+    public void test141() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test141");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment(" -  ( -  (hi!))", "hi! -  ()", " -  (hi!)");
+    }
+
+    @Test
+    public void test142() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test142");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "", "hi!");
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
+        java.lang.Class<?> wildcardClass5 = equipment3.getClass();
+        org.junit.Assert.assertNotNull(usageRecordList4);
+        org.junit.Assert.assertNotNull(wildcardClass5);
+    }
+
+    @Test
+    public void test143() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test143");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
+        com.yorku.lab.model.UsageRecord usageRecord5 = null;
+        equipment3.addUsageRecord(usageRecord5);
+        boolean boolean7 = equipment3.isInUse();
+        java.lang.String str8 = equipment3.getEquipmentId();
+        com.yorku.lab.model.UsageRecord usageRecord9 = null;
+        equipment3.addUsageRecord(usageRecord9);
+        org.junit.Assert.assertNotNull(usageRecordList4);
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
+        org.junit.Assert.assertEquals("'" + str8 + "' != '" + "" + "'", str8, "");
+    }
+
+    @Test
+    public void test144() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test144");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "hi!");
+        equipment3.setInUse(true);
+        equipment3.notifyObservers();
+        com.yorku.lab.enums.OperationalStatus operationalStatus7 = equipment3.getOperationalStatus();
+        java.lang.String str8 = equipment3.toString();
+        org.junit.Assert.assertTrue("'" + operationalStatus7 + "' != '" + com.yorku.lab.enums.OperationalStatus.AVAILABLE + "'", operationalStatus7.equals(com.yorku.lab.enums.OperationalStatus.AVAILABLE));
+        org.junit.Assert.assertEquals("'" + str8 + "' != '" + " - hi! (hi!)" + "'", str8, " - hi! (hi!)");
+    }
+
+    @Test
+    public void test145() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test145");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "", "hi!");
+        boolean boolean4 = equipment3.isInUse();
+        java.lang.String str5 = equipment3.toString();
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver6 = null;
+        equipment3.detach(sensorObserver6);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertEquals("'" + str5 + "' != '" + " -  (hi!)" + "'", str5, " -  (hi!)");
+    }
+
+    @Test
+    public void test146() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test146");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver4 = null;
+        equipment3.detach(sensorObserver4);
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver6 = null;
+        equipment3.detach(sensorObserver6);
+        equipment3.notifyObservers();
+    }
+
+    @Test
+    public void test147() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test147");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver5 = null;
+        equipment3.attach(sensorObserver5);
+        java.lang.String str7 = equipment3.getDescription();
+        com.yorku.lab.enums.OperationalStatus operationalStatus8 = equipment3.getOperationalStatus();
+        com.yorku.lab.model.Equipment equipment12 = new com.yorku.lab.model.Equipment("", "", "hi!");
+        boolean boolean13 = equipment12.isInUse();
+        java.lang.String str14 = equipment12.toString();
+        com.yorku.lab.enums.OperationalStatus operationalStatus15 = equipment12.getOperationalStatus();
+        equipment3.setOperationalStatus(operationalStatus15);
+        org.junit.Assert.assertNotNull(usageRecordList4);
+        org.junit.Assert.assertEquals("'" + str7 + "' != '" + "hi!" + "'", str7, "hi!");
+        org.junit.Assert.assertTrue("'" + operationalStatus8 + "' != '" + com.yorku.lab.enums.OperationalStatus.AVAILABLE + "'", operationalStatus8.equals(com.yorku.lab.enums.OperationalStatus.AVAILABLE));
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+        org.junit.Assert.assertEquals("'" + str14 + "' != '" + " -  (hi!)" + "'", str14, " -  (hi!)");
+        org.junit.Assert.assertTrue("'" + operationalStatus15 + "' != '" + com.yorku.lab.enums.OperationalStatus.AVAILABLE + "'", operationalStatus15.equals(com.yorku.lab.enums.OperationalStatus.AVAILABLE));
+    }
+
+    @Test
+    public void test148() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test148");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "", "hi!");
+        boolean boolean4 = equipment3.isInUse();
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver5 = null;
+        equipment3.detach(sensorObserver5);
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver7 = null;
+        equipment3.attach(sensorObserver7);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+    }
+
+    @Test
+    public void test149() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test149");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
+        boolean boolean5 = equipment3.isInUse();
+        equipment3.notifyObservers();
+        org.junit.Assert.assertNotNull(usageRecordList4);
+        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
+    }
+
+    @Test
+    public void test150() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test150");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        com.yorku.lab.model.UsageRecord usageRecord4 = null;
+        equipment3.addUsageRecord(usageRecord4);
+        boolean boolean6 = equipment3.isReservable();
+        boolean boolean7 = equipment3.isReservable();
+        equipment3.notifyObservers();
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList9 = equipment3.getUsageRecords();
+        com.yorku.lab.model.Equipment equipment13 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        equipment13.notifyObservers();
+        com.yorku.lab.model.Equipment equipment18 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList19 = equipment18.getUsageRecords();
+        com.yorku.lab.model.UsageRecord usageRecord20 = null;
+        equipment18.addUsageRecord(usageRecord20);
+        boolean boolean22 = equipment18.isInUse();
+        com.yorku.lab.enums.OperationalStatus operationalStatus23 = equipment18.getOperationalStatus();
+        equipment13.setOperationalStatus(operationalStatus23);
+        equipment3.setOperationalStatus(operationalStatus23);
+        com.yorku.lab.enums.OperationalStatus operationalStatus26 = equipment3.getOperationalStatus();
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver27 = null;
+        equipment3.attach(sensorObserver27);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + true + "'", boolean6 == true);
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + true + "'", boolean7 == true);
+        org.junit.Assert.assertNotNull(usageRecordList9);
+        org.junit.Assert.assertNotNull(usageRecordList19);
+        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
+        org.junit.Assert.assertTrue("'" + operationalStatus23 + "' != '" + com.yorku.lab.enums.OperationalStatus.AVAILABLE + "'", operationalStatus23.equals(com.yorku.lab.enums.OperationalStatus.AVAILABLE));
+        org.junit.Assert.assertTrue("'" + operationalStatus26 + "' != '" + com.yorku.lab.enums.OperationalStatus.AVAILABLE + "'", operationalStatus26.equals(com.yorku.lab.enums.OperationalStatus.AVAILABLE));
+    }
+
+    @Test
+    public void test151() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test151");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList4 = equipment3.getUsageRecords();
+        com.yorku.lab.model.UsageRecord usageRecord5 = null;
+        equipment3.addUsageRecord(usageRecord5);
+        com.yorku.lab.enums.OperationalStatus operationalStatus7 = null;
+        equipment3.setOperationalStatus(operationalStatus7);
+        java.lang.String str9 = equipment3.getDescription();
+        equipment3.setInUse(true);
+        boolean boolean12 = equipment3.isInUse();
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver13 = null;
+        equipment3.attach(sensorObserver13);
+        java.lang.String str15 = equipment3.getLabLocation();
+        com.yorku.lab.model.UsageRecord usageRecord16 = null;
+        equipment3.addUsageRecord(usageRecord16);
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList18 = equipment3.getUsageRecords();
+        com.yorku.lab.enums.OperationalStatus operationalStatus19 = equipment3.getOperationalStatus();
+        org.junit.Assert.assertNotNull(usageRecordList4);
+        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "hi!" + "'", str9, "hi!");
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + true + "'", boolean12 == true);
+        org.junit.Assert.assertEquals("'" + str15 + "' != '" + "" + "'", str15, "");
+        org.junit.Assert.assertNotNull(usageRecordList18);
+        org.junit.Assert.assertNull(operationalStatus19);
+    }
+
+    @Test
+    public void test152() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test152");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("", "hi!", "");
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver4 = null;
+        equipment3.detach(sensorObserver4);
+        com.yorku.lab.pattern.observer.SensorObserver sensorObserver6 = null;
+        equipment3.detach(sensorObserver6);
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList8 = equipment3.getUsageRecords();
+        java.util.List<com.yorku.lab.model.UsageRecord> usageRecordList9 = equipment3.getUsageRecords();
+        com.yorku.lab.enums.OperationalStatus operationalStatus10 = equipment3.getOperationalStatus();
+        org.junit.Assert.assertNotNull(usageRecordList8);
+        org.junit.Assert.assertNotNull(usageRecordList9);
+        org.junit.Assert.assertTrue("'" + operationalStatus10 + "' != '" + com.yorku.lab.enums.OperationalStatus.AVAILABLE + "'", operationalStatus10.equals(com.yorku.lab.enums.OperationalStatus.AVAILABLE));
+    }
+
+    @Test
+    public void test153() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test153");
+        com.yorku.lab.model.Equipment equipment3 = new com.yorku.lab.model.Equipment("hi!", "", "");
+        java.lang.String str4 = equipment3.toString();
+        boolean boolean5 = equipment3.isInUse();
+        equipment3.notifyObservers();
+        equipment3.setInUse(true);
+        equipment3.notifyObservers();
+        java.lang.String str10 = equipment3.getDescription();
+        equipment3.notifyObservers();
+        equipment3.setInUse(false);
+        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "hi! -  ()" + "'", str4, "hi! -  ()");
+        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
+        org.junit.Assert.assertEquals("'" + str10 + "' != '" + "" + "'", str10, "");
     }
 }
 
