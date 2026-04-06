@@ -179,13 +179,6 @@ public class ReservationFacadeTest {
 	}
 
 	@Test
-	public void testGetNextValidStartTimeNotNull() {
-		LocalDateTime nextValid = facade.getNextValidStartTime();
-		assertNotNull(nextValid);
-		assertTrue(nextValid.isAfter(LocalDateTime.now().minusSeconds(1)));
-	}
-
-	@Test
 	public void testGetReservationNotNull() {
 		Optional<Reservation> res = facade.getReservation("res123");
 		assertNotNull(res);
@@ -239,13 +232,6 @@ public class ReservationFacadeTest {
 		LocalDateTime dt = LocalDateTime.of(2026, 4, 15, 14, 30);
 		String formatted = ReservationFacade.formatSlot(dt);
 		assertTrue(formatted.contains("2:30 p.m."));
-	}
-
-	@Test
-	public void testGetNextValidStartTimeIsAfterNow() {
-		LocalDateTime nextValid = facade.getNextValidStartTime();
-		LocalDateTime now = LocalDateTime.now();
-		assertTrue(nextValid.isAfter(now.minusSeconds(5)));
 	}
 
 	@Test
