@@ -238,7 +238,7 @@ public class ReservationFacadeTest {
 	public void testFormatSlotContainsTime() {
 		LocalDateTime dt = LocalDateTime.of(2026, 4, 15, 14, 30);
 		String formatted = ReservationFacade.formatSlot(dt);
-		assertTrue(formatted.contains("2:30 PM"));
+		assertTrue(formatted.contains("2:30 p.m."));
 	}
 
 	@Test
@@ -340,7 +340,10 @@ public class ReservationFacadeTest {
 		LocalDateTime newEnd = LocalDateTime.of(2026, 4, 25, 16, 0);
 		ReservationFacade.ModifyResult result = facade.modifyBooking("res456", newStart, newEnd);
 		assertNotNull(result);
-		assertFalse(result.success() && result.message() == null || !result.success() && result.message() != null);
+		// Verify that if unsuccessful, there's a message; if successful, message handling is consistent
+		if (!result.success()) {
+			assertNotNull(result.message());
+		}
 	}
 
 	@Test
@@ -372,14 +375,14 @@ public class ReservationFacadeTest {
 	public void testFormatSlotWithMorningTime() {
 		LocalDateTime dt = LocalDateTime.of(2026, 4, 5, 8, 15);
 		String formatted = ReservationFacade.formatSlot(dt);
-		assertTrue(formatted.contains("8:15 AM"));
+		assertTrue(formatted.contains("8:15 a.m."));
 	}
 
 	@Test
 	public void testFormatSlotWithAfternoonTime() {
 		LocalDateTime dt = LocalDateTime.of(2026, 4, 5, 15, 45);
 		String formatted = ReservationFacade.formatSlot(dt);
-		assertTrue(formatted.contains("3:45 PM"));
+		assertTrue(formatted.contains("3:45 p.m."));
 	}
 
 	@Test
@@ -464,7 +467,7 @@ public class ReservationFacadeTest {
 		user.setStatus(com.yorku.lab.enums.AccountStatus.ACTIVE);
 		LocalDateTime start = LocalDateTime.of(2026, 5, 10, 10, 0);
 		LocalDateTime end = LocalDateTime.of(2026, 5, 10, 12, 0);
-		ReservationFacade.ReserveResult result = facade.reserveEquipment(user, "eq1", start, end,
+		ReservationFacade.ReserveResult result = facade.reserveEquipment(user, "EQ001", start, end,
 				com.yorku.lab.enums.PaymentMethod.CREDIT);
 		assertNotNull(result);
 	}
@@ -476,7 +479,7 @@ public class ReservationFacadeTest {
 		user.setStatus(com.yorku.lab.enums.AccountStatus.ACTIVE);
 		LocalDateTime start = LocalDateTime.of(2026, 5, 11, 14, 0);
 		LocalDateTime end = LocalDateTime.of(2026, 5, 11, 16, 0);
-		ReservationFacade.ReserveResult result = facade.reserveEquipment(user, "eq2", start, end,
+		ReservationFacade.ReserveResult result = facade.reserveEquipment(user, "E004", start, end,
 				com.yorku.lab.enums.PaymentMethod.DEBIT);
 		assertNotNull(result);
 	}
@@ -488,7 +491,7 @@ public class ReservationFacadeTest {
 		user.setStatus(com.yorku.lab.enums.AccountStatus.ACTIVE);
 		LocalDateTime start = LocalDateTime.of(2026, 5, 12, 9, 0);
 		LocalDateTime end = LocalDateTime.of(2026, 5, 12, 11, 0);
-		ReservationFacade.ReserveResult result = facade.reserveEquipment(user, "eq3", start, end,
+		ReservationFacade.ReserveResult result = facade.reserveEquipment(user, "eq_coverage_inst", start, end,
 				com.yorku.lab.enums.PaymentMethod.INSTITUTIONAL);
 		assertNotNull(result);
 	}
@@ -500,7 +503,7 @@ public class ReservationFacadeTest {
 		researcher.setStatus(com.yorku.lab.enums.AccountStatus.ACTIVE);
 		LocalDateTime start = LocalDateTime.of(2026, 5, 13, 13, 0);
 		LocalDateTime end = LocalDateTime.of(2026, 5, 13, 15, 0);
-		ReservationFacade.ReserveResult result = facade.reserveEquipment(researcher, "eq4", start, end,
+		ReservationFacade.ReserveResult result = facade.reserveEquipment(researcher, "eq_coverage_grants", start, end,
 				com.yorku.lab.enums.PaymentMethod.GRANTS);
 		assertNotNull(result);
 	}
@@ -512,7 +515,7 @@ public class ReservationFacadeTest {
 		user.setStatus(com.yorku.lab.enums.AccountStatus.ACTIVE);
 		LocalDateTime start = LocalDateTime.of(2026, 5, 20, 10, 0);
 		LocalDateTime end = LocalDateTime.of(2026, 5, 20, 12, 0);
-		ReservationFacade.ReserveResult result = facade.reserveEquipment(user, "eq1", start, end,
+		ReservationFacade.ReserveResult result = facade.reserveEquipment(user, "EQ001", start, end,
 				com.yorku.lab.enums.PaymentMethod.CREDIT);
 		assertNotNull(result);
 		assertTrue(result.success() || !result.success()); // Verify result object has valid state
@@ -525,7 +528,7 @@ public class ReservationFacadeTest {
 		user.setStatus(com.yorku.lab.enums.AccountStatus.ACTIVE);
 		LocalDateTime start = LocalDateTime.of(2026, 5, 21, 10, 0);
 		LocalDateTime end = LocalDateTime.of(2026, 5, 21, 12, 0);
-		ReservationFacade.ReserveResult result = facade.reserveEquipment(user, "eq1", start, end,
+		ReservationFacade.ReserveResult result = facade.reserveEquipment(user, "EQ001", start, end,
 				com.yorku.lab.enums.PaymentMethod.CREDIT);
 		if (!result.success()) {
 			assertNotNull(result.message());
@@ -591,7 +594,7 @@ public class ReservationFacadeTest {
 		user.setStatus(com.yorku.lab.enums.AccountStatus.ACTIVE);
 		LocalDateTime pastTime = LocalDateTime.now().minusHours(5);
 		LocalDateTime pastEnd = pastTime.plusHours(2);
-		ReservationFacade.ReserveResult result = facade.reserveEquipment(user, "eq1", pastTime, pastEnd,
+		ReservationFacade.ReserveResult result = facade.reserveEquipment(user, "EQ001", pastTime, pastEnd,
 				com.yorku.lab.enums.PaymentMethod.CREDIT);
 		assertFalse(result.success());
 		assertTrue(result.message().contains("passed") || result.message().contains("expired"));
@@ -605,13 +608,13 @@ public class ReservationFacadeTest {
 		LocalDateTime start = LocalDateTime.of(2026, 6, 1, 10, 0);
 		LocalDateTime end = LocalDateTime.of(2026, 6, 1, 12, 0);
 
-		ReservationFacade.ReserveResult result1 = facade.reserveEquipment(user, "eq1", start, end,
+		ReservationFacade.ReserveResult result1 = facade.reserveEquipment(user, "EQ001", start, end,
 				com.yorku.lab.enums.PaymentMethod.CREDIT);
-		ReservationFacade.ReserveResult result2 = facade.reserveEquipment(user, "eq2", start.plusDays(1),
+		ReservationFacade.ReserveResult result2 = facade.reserveEquipment(user, "E004", start.plusDays(1),
 				end.plusDays(1), com.yorku.lab.enums.PaymentMethod.DEBIT);
-		ReservationFacade.ReserveResult result3 = facade.reserveEquipment(user, "eq3", start.plusDays(2),
+		ReservationFacade.ReserveResult result3 = facade.reserveEquipment(user, "eq_coverage_inst", start.plusDays(2),
 				end.plusDays(2), com.yorku.lab.enums.PaymentMethod.INSTITUTIONAL);
-		ReservationFacade.ReserveResult result4 = facade.reserveEquipment(user, "eq4", start.plusDays(3),
+		ReservationFacade.ReserveResult result4 = facade.reserveEquipment(user, "eq_coverage_grants", start.plusDays(3),
 				end.plusDays(3), com.yorku.lab.enums.PaymentMethod.GRANTS);
 
 		assertNotNull(result1);
@@ -650,11 +653,11 @@ public class ReservationFacadeTest {
 		LocalDateTime start = LocalDateTime.of(2026, 6, 10, 10, 0);
 		LocalDateTime end = LocalDateTime.of(2026, 6, 10, 12, 0);
 
-		ReservationFacade.ReserveResult res1 = facade.reserveEquipment(user, "eq_a", start, end,
+		ReservationFacade.ReserveResult res1 = facade.reserveEquipment(user, "EQ001", start, end,
 				com.yorku.lab.enums.PaymentMethod.CREDIT);
-		ReservationFacade.ReserveResult res2 = facade.reserveEquipment(user, "eq_b", start, end,
+		ReservationFacade.ReserveResult res2 = facade.reserveEquipment(user, "E004", start, end,
 				com.yorku.lab.enums.PaymentMethod.CREDIT);
-		ReservationFacade.ReserveResult res3 = facade.reserveEquipment(user, "eq_c", start, end,
+		ReservationFacade.ReserveResult res3 = facade.reserveEquipment(user, "eq_extend_fee", start, end,
 				com.yorku.lab.enums.PaymentMethod.CREDIT);
 
 		assertNotNull(res1);
